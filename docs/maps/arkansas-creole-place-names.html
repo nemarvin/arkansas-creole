@@ -255,7 +255,8 @@
   <script>
     const map = L.map("map", {
       scrollWheelZoom:false,
-      zoomControl:true
+      zoomControl:true,
+      zoomSnap:0.25
     });
 
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -488,11 +489,10 @@
         renderPoints();
 
         currentBounds = pointLayer.getBounds();
-        if (currentBounds.isValid()) {
-          map.fitBounds(currentBounds, {padding:[35,35], maxZoom:7});
-        } else {
-          map.setView([34.9,-92.3],7);
-        }
+
+        // Fixed opening view chosen to match the desired Arkansas-wide framing:
+        // the state nearly fills the map while retaining a little surrounding context.
+        map.setView([34.85, -92.35], 8);
 
         setTimeout(() => {
           if (pointLayer) pointLayer.bringToFront();
@@ -525,7 +525,7 @@
     document.getElementById("detailsClose").addEventListener("click", clearDetails);
 
     document.getElementById("resetBtn").addEventListener("click", () => {
-      if (currentBounds?.isValid()) map.fitBounds(currentBounds, {padding:[35,35], maxZoom:7});
+      map.setView([34.85, -92.35], 8);
       clearDetails();
       searchBox.value = "";
       searchResults.classList.remove("open");
