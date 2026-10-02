@@ -1062,11 +1062,11 @@ html[data-reader-theme="dark"] .reader-toc-toggle {
         <li><a href="#evolution-of-a-legend">Evolution of a Legend</a></li>
       </ul>
     </li>
-    <li><a href="#survival-strategies">Survival Strategies</a>
+    <li><a href="#survival-strategies">Mapping Survival Strategies</a>
       <ul>
-        <li><a href="#mapping-survival-strategies">Mapping Survival Strategies</a></li>
-        <li><a href="#lines-of-dispossession-us-quapaw-treaties">Lines of Dispossession: US-Quapaw Treaties</a></li>
-        <li><a href="#a-creole-carve-out">A Creole Carve-Out</a></li>
+        <li><a href="#mapping-survival-strategies">Spanish Land Grants</a></li>
+        <li><a href="#lines-of-dispossession-us-quapaw-treaties">Lines of Quapaw Dispossession</a></li>
+        <li><a href="#a-creole-carve-out">A Mixed-Ancestry Creole Carve-Out</a></li>
         <li><a href="#joining-indian-removal-arkansass-m-tis-creoles-and-the-treaty-of-1833">Joining Indian Removal: Arkansas's Métis Creoles and the Treaty of 1833</a></li>
         <li><a href="#the-villemonts-of-chicot-county">The Villemonts of Chicot County</a></li>
         <li><a href="#northeast-arkansas">Northeast Arkansas</a></li>
@@ -1670,7 +1670,7 @@ Below is a timeline of allusions to Petit Jean in non-academic print sources—r
 [↑ Back to Contents](#contents)
 
 <a id="survival-strategies"></a>
-## Survival Strategies
+## Mapping Survival Strategies
 
 <blockquote><em>“As we swept away from the shore, I ... prayed that the inhabitants might long retain their happy ignorance, their absence of all enterprise and improvement, their respect for the fiddle, and their contempt for the almighty dollar. ... In a little while the steamboat whirled me to an American town, just springing into bustling and prosperous existence. Alas! with such an enterprising neighbor, what is to become of the poor little Creole village!” </em></blockquote>
 
@@ -1716,7 +1716,7 @@ In the end, Arkansas Creoles were unable to sustain many of these cultural pract
 </figure>
 
 <a id="mapping-survival-strategies"></a>
-### Mapping Survival Strategies
+### Spanish Land Grants
 
 The Spanish land grant system was nominally honored by the U.S. government. If an individual could prove both that they had received the land through an official Spanish document and that the property had been occupied and “improved,” their claim would be recognized. U.S. surveys of these Spanish land grants became a tool for supporting Creole land claims—especially amid the growing influx of American squatters and the government’s negotiations with the Quapaw and other tribes to “officially” annex land in Arkansas.
 
@@ -1731,14 +1731,22 @@ The Spanish land grant system was nominally honored by the U.S. government. If a
 </figure>
 
 <a id="lines-of-dispossession-us-quapaw-treaties"></a>
-### Lines of Dispossession: US-Quapaw Treaties
+### Lines of Quapaw Dispossession
 
 Signed at St. Louis on August 24, 1818, the treaty later designated “Cession 94” formalized the removal of the Quapaw from most of their ancestral lands. The vast "ceded" area is highlighted on this map. In return, the Quapaw retained only a narrow wedge of land—bounded by Arkansas Post to the east and Little Rock to the west—entirely south of the river and hemmed in by white settlements. U.S. negotiators described this as a permanent "reservation" under U.S. protection...
+
+<figure class="interactive-map">
+  <iframe src="maps/quapaw-treaty-map.html"
+          title="Interactive map of Quapaw treaty lands and territorial change, 1818–1833"
+          loading="lazy"
+          allowfullscreen></iframe>
+  <figcaption>Interactive map of Quapaw territorial dispossession and relocation, 1818–1833. Use the date buttons to move among the 1818 and 1824 cessions and the land assigned to the Quapaw in 1833; optional layers provide Native Land Digital territorial representations and modern state boundaries.</figcaption>
+</figure>
 
 ...But little more than five years after signing the Treaty of 1818, the United States took even that. On November 15, 1824, under a new treaty (“Cession 121”), the Quapaw were pressured into ceding all claims in Arkansas, retaining only an 80-acre parcel at Saracen’s village. They agreed to relocate to Caddo lands near the Red River by early 1826 — a move that proved disastrous and prompted many to return within a year.
 
 <a id="a-creole-carve-out"></a>
-### A Creole Carve-Out
+### A Mixed-Ancestry Creole Carve-Out
 
 The seventh article of the 1824 treaty between the United States and the Quapaw Nation featured a unique provision: it allocated land—or confirmed existing land claims—along the Arkansas River, within what had been the Quapaw reserve since 1818, to eleven parties. The justification? The individuals named—all Arkansas Creoles with French surnames—were described as “Indians by descent.” This designation enabled them to remain amid the forced removal of the Quapaw and the anticipated influx of Anglo-American settlers.
 
