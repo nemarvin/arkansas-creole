@@ -1750,9 +1750,76 @@ Signed at St. Louis on August 24, 1818, the treaty later designated “Cession 9
 
 The seventh article of the 1824 treaty between the United States and the Quapaw Nation featured a unique provision: it allocated land—or confirmed existing land claims—along the Arkansas River, within what had been the Quapaw reserve since 1818, to eleven parties. The justification? The individuals named—all Arkansas Creoles with French surnames—were described as “Indians by descent.” This designation enabled them to remain amid the forced removal of the Quapaw and the anticipated influx of Anglo-American settlers.
 
-The individuals named in the treaty are:
+<p style="text-align: center;"><strong>The individuals named in the treaty are:</strong></p>
 
-<li><strong>Francois Imbeau</strong>, granted the starting tract of land on the south side of the river near Little Rock, opposite "Wright Daniel’s farm" (just east of the "Quapaw Line" that ran through the town).</li><li><strong>Joseph Duchassin</strong> received the next tract of downriver land;</li><li><strong>Saracen </strong>[Sarassin], identified with one name only and explicitly as a “half-breed Quapaw,” was granted 80 acres of land farther east, including his current residence, situated opposite Vaugine’s (who is notably not named among the “Indians by descent” in the document). Saracen is the only individual on this list who also appears as a signatory to the treaty, alongside the Quapaw chiefs—at once a Creole settler and a spokesperson for the Quapaw Nation.</li><li><strong>Batiste Socié</strong>;</li><li><strong>Joseph Bonne</strong>;</li><li><strong>Baptiste Bonne</strong>;</li><li><strong>Lewis Bartelmi [Louis Barthélémi]</strong>;</li><li><strong>Antoine Duchassin</strong>;</li><li><strong>Baptiste Imbeau</strong>;</li><li><strong>Francois Coussot</strong>;</li><li><strong>Joseph Valliere</strong>.</li>
+<div style="max-width: 820px; margin: 1.5rem auto 2.5rem;">
+<table style="width: 100%; margin: 0 auto; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="width: 6%; text-align: center;">#</th>
+      <th style="width: 28%; text-align: center;">Individual</th>
+      <th style="text-align: left;">Article 7 provision</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center;">1</td>
+      <td style="text-align: center;"><strong>Francois Imbeau</strong></td>
+      <td>Granted the starting tract on the south side of the Arkansas River near Little Rock, opposite “Wright Daniel’s farm,” just east of the “Quapaw Line” that ran through the town.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">2</td>
+      <td style="text-align: center;"><strong>Joseph Duchassin</strong></td>
+      <td>Received the next tract of land downriver.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">3</td>
+      <td style="text-align: center;"><strong>Saracen [Sarassin]</strong></td>
+      <td>Identified explicitly as a “half-breed Quapaw,” Saracen received eighty acres including his existing residence opposite Vaugine’s. He is the only person in this list who also appears among the treaty’s Quapaw signatories.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">4</td>
+      <td style="text-align: center;"><strong>Batiste Socié</strong></td>
+      <td>Eighty acres adjoining Saracen’s grant.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">5</td>
+      <td style="text-align: center;"><strong>Joseph Bonne</strong></td>
+      <td>Eighty acres adjoining Socié’s grant.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">6</td>
+      <td style="text-align: center;"><strong>Baptiste Bonne</strong></td>
+      <td>Eighty acres adjoining Joseph Bonne’s grant.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">7</td>
+      <td style="text-align: center;"><strong>Lewis Bartelmi [Louis Barthélémi]</strong></td>
+      <td>Eighty acres adjoining Baptiste Bonne’s grant.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">8</td>
+      <td style="text-align: center;"><strong>Antoine Duchassin</strong></td>
+      <td>Eighty acres adjoining Bartelmi’s grant.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">9</td>
+      <td style="text-align: center;"><strong>Baptiste Imbeau</strong></td>
+      <td>Eighty acres adjoining Antoine Duchassin’s grant.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">10</td>
+      <td style="text-align: center;"><strong>Francois Coussot</strong></td>
+      <td>Eighty acres adjoining Baptiste Imbeau’s grant.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">11</td>
+      <td style="text-align: center;"><strong>Joseph Valliere</strong></td>
+      <td>Eighty acres adjoining Francois Coussot’s grant.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 The logic behind these allocations anticipated what would later become U.S. “blood quantum” policy: a bureaucratic framework that treated Indianness as inheritable, quantifiable, and subject to state recognition. Although the treaty singled out “Indians by descent,” some of those named were of exclusively European ancestry but had wives of Indigenous ancestry. In many cases—with the exceptions of Saracen and the Bonnes—their ancestry was not Quapaw but from other Indigenous nations, a striking fact given that this treaty was ostensibly an agreement with the Quapaw Nation specifically. For the U.S. government, an Indian was an Indian. An “Indian by descent”—or, in another term used in the treaty, a “half-breed”—was considered something closer to white, yet still unacceptably Indian. By lumping all these individuals together, U.S. officials implicitly marked Creoles as a group “in between”—quite literally—Indigenous and American nations—highlighting their perceived difference from English-speaking settlers and from more recent French arrivals, including the U.S. negotiators of this very treaty, who may have shared some of these prejudices.
 
