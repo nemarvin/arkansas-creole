@@ -1,0 +1,725 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0715,
+          29.9511
+        ]
+      },
+      "properties": {
+        "Settlement": "New Orleans",
+        "Alt_Location": "New Orleans, Louisiana",
+        "Note2": 2,
+        "Image": "Archbishop's Palace, formerly Ursuline Convent (18th-century) with gatehouse and chapel (19th-century), French Quarter, New Orleans, circa 1910",
+        "URL": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Archbishopric_New_Orleans_Louisiana_DetPub.jpg",
+        "Note3": null,
+        "Note4": null,
+        "Note5": 27000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5673,
+          45.5017
+        ]
+      },
+      "properties": {
+        "Settlement": "Montreal",
+        "Alt_Location": "Montreal, Canada",
+        "Note2": 3,
+        "Image": "1923 photograph of the 17th-century Sulpician Seminary in Old Montreal",
+        "URL": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Sulpician_Seminary%2C_Montreal_%28I0001239%29.tif",
+        "Note3": null,
+        "Note4": 1642.0,
+        "Note5": 15000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1994,
+          38.627
+        ]
+      },
+      "properties": {
+        "Settlement": "St. Louis",
+        "Alt_Location": "St. Louis, Missouri",
+        "Note2": 4,
+        "Image": "1848 daguerreotype of the cathedral of St. Louis, King of France (The Old Cathedral), completed in 1834 by Morton & Laveille",
+        "URL": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Old_Cathedral._Walnut_Street_looking_East_from_Third_Street.jpg",
+        "Note3": null,
+        "Note4": null,
+        "Note5": 4600
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.4032,
+          31.5604
+        ]
+      },
+      "properties": {
+        "Settlement": "Natchez",
+        "Alt_Location": "Natchez, Mississippi",
+        "Note2": 6,
+        "Image": "Natchez, Mississippi",
+        "URL": "https://upload.wikimedia.org/wikipedia/commons/0/0f/View_of_the_Fort_of_the_Natchez.jpg",
+        "Note3": null,
+        "Note4": null,
+        "Note5": 2000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.0754,
+          31.7334
+        ]
+      },
+      "properties": {
+        "Settlement": "Natchez",
+        "Alt_Location": "Natchez, Louisiana",
+        "Note2": 7,
+        "Image": "2002 photo of Cherokee Plantation (1839), a French Creole architectural example, likely constructed by Charles Emile Sompeyrac after his 1837 marriage to Clarisse Prudhomme, on Highway 494 in Natchez, Natchitoches Parish, LA.",
+        "URL": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Southeast_elevation_-_Cherokee_Plantation%2C_Highway_494%2C_Natchez%2C_Natchitoches_Parish%2C_LA_HABS_LA-1318-6.tif/lossy-page1-800px-Southeast_elevation_-_Cherokee_Plantation%2C_Highway_494%2C_Natchez%2C_Natchitoches_Parish%2C_LA_HABS_LA-1318-6.tif.jpg?20140718014617",
+        "Note3": null,
+        "Note4": null,
+        "Note5": 2000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.0431,
+          30.6944
+        ]
+      },
+      "properties": {
+        "Settlement": "Mobile",
+        "Alt_Location": "Mobile, Alabama",
+        "Note2": 8,
+        "Image": null,
+        "URL": null,
+        "Note3": null,
+        "Note4": null,
+        "Note5": 1500
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.0458,
+          42.3314
+        ]
+      },
+      "properties": {
+        "Settlement": "Detroit",
+        "Alt_Location": "Detroit, Michigan",
+        "Note2": 9,
+        "Image": "Photograph from 1880 of Ste. Anne's church, built 1818, on the corner of Larned St and Bates St in downtown Detroit. The original parish was founded in 1701 (Archdiocese of Detroit Archives).",
+        "URL": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Stannesdetroit1840s.jpg",
+        "Note3": null,
+        "Note4": 1701.0,
+        "Note5": 1400
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0456,
+          37.9736
+        ]
+      },
+      "properties": {
+        "Settlement": "Ste. Genevieve",
+        "Alt_Location": "Ste. Genevieve, Missouri",
+        "Note2": 10,
+        "Image": "1980s photograph of a room restored to its original appearance in the Bolduc House, constructed in 1740 by prominent merchant Peter Bolduc in Ste. Geneviève, Missouri. The entire village, including this house, was relocated to higher ground in 1785 to avoid Mississippi River flooding.",
+        "URL": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Photograph_of_a_Room_Restored_to_the_Original_Look_in_the_Bolduc_House_in_Ste_Genevieve_MO.png/1280px-Photograph_of_a_Room_Restored_to_the_Original_Look_in_the_Bolduc_House_in_Ste_Genevieve_MO.png",
+        "Note3": null,
+        "Note4": null,
+        "Note5": 1400
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.5286,
+          38.6773
+        ]
+      },
+      "properties": {
+        "Settlement": "Vincennes",
+        "Alt_Location": "Vincennes, Indiana",
+        "Note2": 11,
+        "Image": "Interior view of St. Francis Xavier Cathedral in Vincennes, Indiana, constructed between 1826 and 1837, looking toward the altar. Photograph taken in March 1934 as part of the Historic American Buildings Survey. Public domain image via Wikimedia Commons.",
+        "URL": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/HISTORIC_AMERICAN_BUILDINGS_SURVEY_THE_SHORES_STUDIO%2C_PHOTOGRAPHERS%2C_March%2C_1934_INTERIOR%2C_LOOKING_TOWARD_ALTAR_-_St._Francis_Xavier_Cathedral%2C_Vigo_Street%2C_Vincennes%2C_Knox_County_HABS_IND%2C42-VINC%2C1-3.tif/lossy-page1-1280px-thumbnail.tif.jpg",
+        "Note3": null,
+        "Note4": 1732.0,
+        "Note5": 1200
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.3226,
+          38.7892
+        ]
+      },
+      "properties": {
+        "Settlement": "St. Ferdinand de Florissant",
+        "Alt_Location": "Florissant, Missouri",
+        "Note2": 12,
+        "Image": null,
+        "URL": null,
+        "Note3": null,
+        "Note4": null,
+        "Note5": 1200
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.5291,
+          36.5869
+        ]
+      },
+      "properties": {
+        "Settlement": "New Madrid",
+        "Alt_Location": "New Madrid, Missouri",
+        "Note2": 13,
+        "Image": null,
+        "URL": "https://upload.wikimedia.org/wikipedia/commons/4/43/Das_illustrirte_Mississippithal_-_dargestellt_in_80_nach_der_natur_aufgenommenen_ansichten_vom_wasserfalle_zu_St._Anthony_an_bis_zum_gulf_von_Mexico_%281857%29_%2814590346260%29.jpg",
+        "Note3": null,
+        "Note4": null,
+        "Note5": 1200
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.086,
+          31.7607
+        ]
+      },
+      "properties": {
+        "Settlement": "Natchitoches",
+        "Alt_Location": "Natchitoches, Louisiana",
+        "Note2": 14,
+        "Image": "1933 photo of Melrose Plantation House, built by Louis Metoyer in the 1830s, descendant of Marie Therese Coin-coin. Natchitoches Parish, Louisiana",
+        "URL": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Perspective_view_of_south_southeast_elevation_looking_from_the_southeast_-_Melrose_Plantation%2C_Big_House%2C_State_Highway_119%2C_Melrose%2C_Natchitoches_Parish%2C_LA_HABS_LA%2C35-MELRO%2C1D-5.tif/lossy-page1-800px-thumbnail.tif.jpg?20140721041638",
+        "Note3": null,
+        "Note4": null,
+        "Note5": 1200
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.9048,
+          37.9879
+        ]
+      },
+      "properties": {
+        "Settlement": "Kaskasia",
+        "Alt_Location": "Kaskaskia, Illinois",
+        "Note2": 15,
+        "Image": null,
+        "URL": null,
+        "Note3": null,
+        "Note4": null,
+        "Note5": 900
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.518,
+          37.3059
+        ]
+      },
+      "properties": {
+        "Settlement": "Cape Girardeau",
+        "Alt_Location": "Cape Girardeau, Missouri",
+        "Note2": 16,
+        "Image": null,
+        "URL": null,
+        "Note3": null,
+        "Note4": null,
+        "Note5": 800
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1798,
+          38.5701
+        ]
+      },
+      "properties": {
+        "Settlement": "Cahokia",
+        "Alt_Location": "Cahokia, Missouri",
+        "Note2": 17,
+        "Image": "1976 photo of the church of the Holy Family, State Route 157, Cahokia, IL (built 1786–1799)",
+        "URL": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Church_of_the_Holy_Family%2C_State_Route_157%2C_Cahokia_%28St._Clair_County%2C_Illinois%29.jpg",
+        "Note3": null,
+        "Note4": null,
+        "Note5": 700
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.589,
+          40.6936
+        ]
+      },
+      "properties": {
+        "Settlement": "Peoria",
+        "Alt_Location": "Peoria, Illinois",
+        "Note2": 18,
+        "Image": "Fort Crevecoeur, as depicted by the Illinois Historical Society in 1932. Public domain image by John Leonard Conger and William Edgar Hull, via Wikimedia Commons.",
+        "URL": "https://upload.wikimedia.org/wikipedia/commons/4/40/Fort_Crevecoeur_Illinois_Historical_Society.jpg",
+        "Note3": null,
+        "Note4": 1680.0,
+        "Note5": 600
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.345278,
+          34.016667
+        ]
+      },
+      "properties": {
+        "Settlement": "Arkansas Post",
+        "Alt_Location": "Gillett, Arkansas",
+        "Note2": 19,
+        "Image": "Bombardment and Capture of Fort Hindman, Arkansas Post, January 11, 1863. Lithograph by Currier & Ives, hand-colored. No known publication restrictions. Courtesy of the Library of Congress via Wikimedia Commons.",
+        "URL": "https://upload.wikimedia.org/wikipedia/commons/d/df/Bombardment_and_capture_of_Fort_Hindman%2C_Arkansas_Post%2C_Ark._Jany._11th_1863_LCCN90711974_%28cropped%29.jpg",
+        "Note3": null,
+        "Note4": null,
+        "Note5": 600
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.6168,
+          45.8499
+        ]
+      },
+      "properties": {
+        "Settlement": "Ft. Michilimackinac",
+        "Alt_Location": "Mackinac Island, Michigan",
+        "Note2": 20,
+        "Image": "Fort Mackinac, as viewed from the pier, part of the series 'Views of the National Park, Mackinac Island, Michigan.' Photograph by P. B. Greene, created between 1865-1900. Public domain image via Wikimedia Commons.",
+        "URL": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Fort_Mackintac%2C_from_Pier%2C_by_Greene%2C_P._B..jpg",
+        "Note3": null,
+        "Note4": 1715.0,
+        "Note5": 500
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.161,
+          38.0979
+        ]
+      },
+      "properties": {
+        "Settlement": "Prairie du Rocher",
+        "Alt_Location": "Prairie du Rocher, Illinois",
+        "Note2": 21,
+        "Image": "1935 photo by Clark Bullard: French Creole House, Prairie du Rocher, IL.",
+        "URL": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HISTORIC_AMERICAN_BUILDINGS_SURVEY_CLARK_BULLARD%2C_PHOTOGRAPHER_APRIL_1935._VIEW_FROM_WEST_-_FRONT_ELEVATION_-_French_%28Creole%29_House%2C_Market_Street%2C_Prairie_du_Rocher%2C_Randolph_HABS_ILL%2C79-PRARO%2C1-1.tif/lossy-page1-800px-thumbnail.tif.jpg?20140716151712",
+        "Note3": null,
+        "Note4": null,
+        "Note5": 450
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.1398,
+          43.0514
+        ]
+      },
+      "properties": {
+        "Settlement": "Prairie du Chien",
+        "Alt_Location": "Prairie du Chien, Wisconsin",
+        "Note2": 22,
+        "Image": null,
+        "URL": null,
+        "Note3": null,
+        "Note4": null,
+        "Note5": 400
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.7195,
+          38.006
+        ]
+      },
+      "properties": {
+        "Settlement": "Vieilles Mines",
+        "Alt_Location": "Old Mines, Missouri",
+        "Note2": 23,
+        "Image": "Etienne and Louise LaMarque's historic home in Old Mines, Missouri, constructed in 1818 and acquired by LaMarque in 1822, stands near St. Joachim Catholic Church, built in 1831 with their significant donations. This colonial French-style residence remains privately occupied. (See: Paul T. Hellmann, 2005, Historical Gazetteer of the United States, p.635; Vallé Higginbotham, 1968, John Smith T, Missouri Pioneer, p.18.)",
+        "URL": "https://upload.wikimedia.org/wikipedia/commons/1/17/Old_Mines_LaMarque_House_26.jpg",
+        "Note3": null,
+        "Note4": null,
+        "Note5": 350
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.4139,
+          39.4667
+        ]
+      },
+      "properties": {
+        "Settlement": "Terre Haute",
+        "Alt_Location": "Terre Haute, Indiana",
+        "Note2": 24,
+        "Image": "Sanborn Fire Insurance Map from Terre Haute, Vigo County, Indiana, 1896, Plate title. Created in 1896. Public domain image via Wikimedia Commons.",
+        "URL": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Sanborn_Fire_Insurance_Map_from_Terre_Haute%2C_Vigo_County%2C_Indiana%2C_1896%2C_Plate_titl.jpg",
+        "Note3": null,
+        "Note4": 1818.0,
+        "Note5": 300
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.0133,
+          44.5133
+        ]
+      },
+      "properties": {
+        "Settlement": "La Baie Verte/Green Bay",
+        "Alt_Location": "Green Bay, Wisconsin",
+        "Note2": 25,
+        "Image": "The 1934 U.S. postage stamp commemorating Wisconsin's tercentenary, depicting Jean Nicolet's landing at the Bay of Green Bay in 1634. Public domain image via Wikimedia Commons.",
+        "URL": "https://upload.wikimedia.org/wikipedia/commons/a/a7/WisconsinTercentenary-1934.jpg",
+        "Note3": null,
+        "Note4": 1632.0,
+        "Note5": 300
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.1394,
+          41.0793
+        ]
+      },
+      "properties": {
+        "Settlement": "Fort Wayne/Kekionga/Miamitown",
+        "Alt_Location": "Fort Wayne, Indiana",
+        "Note2": 26,
+        "Image": "Page from The discovery and conquests of the Northwest, featuring “Fort Wayne in 1795.” Published in 1880 by Rufus Blanchard and Elijah Middlebrook Haines. Digitized by The Library of Congress, sponsored by the Sloan Foundation. Public domain image via Wikimedia Commons.",
+        "URL": "https://upload.wikimedia.org/wikipedia/commons/9/97/The_discovery_and_conquests_of_the_Northwest_-_including_the_early_history_of_Chicago%2C_Detroit%2C_Vincennes%2C_St._Louis%2C_Ft._Wayne%2C_Prairie_du_Chien%2C_Marietta%2C_Cincinnati%2C_Cleveland%2C_etc.%2C_etc.%2C_and_%2814779724502%29.jpg",
+        "Note3": null,
+        "Note4": 1706.0,
+        "Note5": 250
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.9065,
+          43.0389
+        ]
+      },
+      "properties": {
+        "Settlement": "Milwaukee/Juneau Town",
+        "Alt_Location": "Milwaukee, Wisconsin",
+        "Note2": 27,
+        "Image": "Photograph of the Solomon Juneau statue in Milwaukee, circa 1890. Solomon Juneau, a French-Canadian fur trader, is recognized as Milwaukee's founder and first mayor. The city's modern history began in 1795 when fur trader Jacques Vieau established a post, later transferred to Juneau in 1818, making him the city's first permanent white resident and founder. Public domain image via Wikimedia Commons.",
+        "URL": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Solomon_Juneau_statue_in_Milwaukee_circa_1890.jpg",
+        "Note3": null,
+        "Note4": 1795.0,
+        "Note5": 200
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.3066,
+          38.9292
+        ]
+      },
+      "properties": {
+        "Settlement": "Portage des Sioux",
+        "Alt_Location": "Portage Des Sioux, Missouri",
+        "Note2": 28,
+        "Image": null,
+        "URL": null,
+        "Note3": null,
+        "Note4": null,
+        "Note5": 200
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.6681,
+          42.9634
+        ]
+      },
+      "properties": {
+        "Settlement": "Grand Rapids",
+        "Alt_Location": "Grand Rapids, Michigan",
+        "Note2": 29,
+        "Image": "A sketch of Grand Rapids in 1831, showing the Baptist mission on the west side of the river and Louis Campau's trading post at the center right. Louis Campau, a fur trader and founder of Grand Rapids, established the post, which spurred the area's early development. Public domain image via Wikimedia Commons.",
+        "URL": "https://upload.wikimedia.org/wikipedia/commons/2/23/Grand_Rapids_1831.jpg",
+        "Note3": null,
+        "Note4": 1826.0,
+        "Note5": 150
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.252,
+          41.6764
+        ]
+      },
+      "properties": {
+        "Settlement": "South Bend",
+        "Alt_Location": "South Bend, Indiana",
+        "Note2": 30,
+        "Image": "Page from Centennial History and Handbook of Indiana, featuring the founding of the University of Notre Dame in 1842, published in 1915 by George S. Cottman and Max R. Hyman. Digitized by the Internet Archive with sponsorship from the Allen County Public Library Genealogy Center. Public domain image via Wikimedia Commons.",
+        "URL": "https://upload.wikimedia.org/wikipedia/commons/6/61/Centennial_history_and_handbook_of_Indiana_-_the_story_of_the_state_from_its_beginning_to_the_close_of_the_civil_war%2C_and_a_general_survey_of_progress_to_the_present_time_%281915%29_%2814576093338%29.jpg",
+        "Note3": null,
+        "Note4": 1823.0,
+        "Note5": 150
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.6646,
+          42.5006
+        ]
+      },
+      "properties": {
+        "Settlement": "Dubuque",
+        "Alt_Location": "Dubuque, Iowa",
+        "Note2": 31,
+        "Image": null,
+        "URL": null,
+        "Note3": null,
+        "Note4": null,
+        "Note5": 150
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.2542,
+          41.8298
+        ]
+      },
+      "properties": {
+        "Settlement": "Ft. St. Joseph/Niles",
+        "Alt_Location": "Niles, Michigan",
+        "Note2": 32,
+        "Image": "Photograph of the Fort St. Joseph monument, rear view, with a man standing to the right. Taken on December 19, 1920. Courtesy of the National Park Service, Little Bighorn Battlefield National Monument, LIBI_00312_13377. Unknown photographer.",
+        "URL": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Fort_St_Joseph_Marker%2C_Rear_View_%28a62aa9ad0ef34a63a7a8f3f9e1b8aa94%29.tif/lossy-page1-752px-Fort_St_Joseph_Marker%2C_Rear_View_%28a62aa9ad0ef34a63a7a8f3f9e1b8aa94%29.tif.jpg",
+        "Note3": null,
+        "Note4": 1680.0,
+        "Note5": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.3565,
+          40.7545
+        ]
+      },
+      "properties": {
+        "Settlement": "Logansport",
+        "Alt_Location": "Logansport, Indiana",
+        "Note2": 33,
+        "Image": null,
+        "URL": null,
+        "Note3": null,
+        "Note4": 1826.0,
+        "Note5": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.5776,
+          41.5236
+        ]
+      },
+      "properties": {
+        "Settlement": "Davenport",
+        "Alt_Location": "Davenport, Iowa",
+        "Note2": 34,
+        "Image": null,
+        "URL": null,
+        "Note3": null,
+        "Note4": null,
+        "Note5": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.7304,
+          37.6261
+        ]
+      },
+      "properties": {
+        "Settlement": "Apple Creek",
+        "Alt_Location": "Apple Creek, Missouri",
+        "Note2": 35,
+        "Image": null,
+        "URL": null,
+        "Note3": null,
+        "Note4": null,
+        "Note5": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.9081,
+          40.4259
+        ]
+      },
+      "properties": {
+        "Settlement": "Ft. Ouiatenon",
+        "Alt_Location": "West Lafayette, Indiana",
+        "Note2": 36,
+        "Image": "The historical marker at Fort Ouiatenon in Tippecanoe County, Indiana, photographed on January 28, 2007. The marker details the fort's establishment in 1717 by French Canada, its role in countering British expansion, and its eventual destruction by American soldiers in 1791. Public domain image via Wikimedia Commons.",
+        "URL": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Fort_Ouiatenon_marker.png",
+        "Note3": null,
+        "Note4": 1717.0,
+        "Note5": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.09,
+          44.9537
+        ]
+      },
+      "properties": {
+        "Settlement": "St. Paul",
+        "Alt_Location": "St. Paul, Minnesota",
+        "Note2": 37,
+        "Image": null,
+        "URL": null,
+        "Note3": null,
+        "Note4": null,
+        "Note5": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.15891308,
+          38.08782194
+        ]
+      },
+      "properties": {
+        "Settlement": "Fort de Chartres",
+        "Alt_Location": "Fort de Chartres, Missouri",
+        "Note2": 38,
+        "Image": "1930s photograph of reconstructed building at Fort de Chartres State Park",
+        "URL": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Fort_de_Chartres%2C_Fort_de_Chartres_State_Park%2C_Prairie_du_Rocher%2C_Randolph_County%2C_IL_HABS_ILL%2C79-PRARO.V%2C1-4.tif/lossy-page1-748px-Fort_de_Chartres%2C_Fort_de_Chartres_State_Park%2C_Prairie_du_Rocher%2C_Randolph_County%2C_IL_HABS_ILL%2C79-PRARO.V%2C1-4.tif.jpg?20140717003708",
+        "Note3": null,
+        "Note4": null,
+        "Note5": 5
+      }
+    }
+  ]
+}
