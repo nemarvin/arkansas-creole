@@ -1,0 +1,203 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 1,
+        "name": "Francois Imbeau",
+        "summary": "Quarter section beginning opposite the upper end of Wright Daniel’s farm, near Little Rock.",
+        "note": "Article 7 named this tract first. This point marks an approximate mid-tract location on the south side of the Arkansas River.",
+        "layer": "Article 7 grantees",
+        "approximate": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.2445,
+          34.7446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 2,
+        "name": "Joseph Duchassin",
+        "summary": "Quarter section immediately downriver from the tract granted to Francois Imbeau.",
+        "note": "Article 7 named this tract second. This point marks an approximate mid-tract location on the south side of the Arkansas River.",
+        "layer": "Article 7 grantees",
+        "approximate": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.2295,
+          34.7422
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 3,
+        "name": "Saracen (Sarassin)",
+        "summary": "80-acre tract including his improvement, opposite Vaugine’s; explicitly identified in the treaty as a “half breed Quapaw.”",
+        "note": "Saracen is also listed among the treaty signatories. This point marks an approximate mid-tract location.",
+        "layer": "Article 7 grantees",
+        "approximate": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.00428007,
+          34.23114168
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 4,
+        "name": "Batiste Socié",
+        "summary": "80-acre tract adjoining Saracen’s grant.",
+        "note": "Approximate mid-tract location based on the sequence in Article 7.",
+        "layer": "Article 7 grantees",
+        "approximate": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.95928462375,
+          34.245061857500005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 5,
+        "name": "Joseph Bonne",
+        "summary": "80-acre tract adjoining the grant to Batiste Socié.",
+        "note": "Approximate mid-tract location based on the sequence in Article 7.",
+        "layer": "Article 7 grantees",
+        "approximate": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.9142891775,
+          34.253482035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 6,
+        "name": "Baptiste Bonne",
+        "summary": "80-acre tract adjoining the grant to Joseph Bonne.",
+        "note": "Approximate mid-tract location based on the sequence in Article 7.",
+        "layer": "Article 7 grantees",
+        "approximate": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.86929373125,
+          34.2694022125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 7,
+        "name": "Lewis Bartelmi (Louis Barthélémi)",
+        "summary": "80-acre tract adjoining the grant to Baptiste Bonne.",
+        "note": "Approximate mid-tract location based on the sequence in Article 7.",
+        "layer": "Article 7 grantees",
+        "approximate": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.824298285,
+          34.277822390000004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 8,
+        "name": "Antoine Duchassin",
+        "summary": "80-acre tract adjoining the grant to Lewis Bartelmi.",
+        "note": "Approximate mid-tract location based on the sequence in Article 7.",
+        "layer": "Article 7 grantees",
+        "approximate": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.77930283875,
+          34.2922425675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 9,
+        "name": "Baptiste Imbeau",
+        "summary": "80-acre tract adjoining the grant to Antoine Duchassin.",
+        "note": "Approximate mid-tract location based on the sequence in Article 7.",
+        "layer": "Article 7 grantees",
+        "approximate": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.7343073925,
+          34.301662745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 10,
+        "name": "Francois Coussot",
+        "summary": "80-acre tract adjoining the grant to Baptiste Imbeau.",
+        "note": "The treaty text prints “Coupot,” but this project follows the corrected reading “Coussot.” Approximate mid-tract location.",
+        "layer": "Article 7 grantees",
+        "approximate": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.68931194625,
+          34.31558292249999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 11,
+        "name": "Joseph Valliere",
+        "summary": "80-acre tract adjoining the grant to Francois Coussot.",
+        "note": "Approximate mid-tract location based on the sequence in Article 7.",
+        "layer": "Article 7 grantees",
+        "approximate": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.6443165,
+          34.3265031
+        ]
+      }
+    }
+  ]
+}
