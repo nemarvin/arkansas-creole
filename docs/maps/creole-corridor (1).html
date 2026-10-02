@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Creole Corridor</title>
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIINfQ3ynHTC8SS0bKcMZ+YGBL8gZs2uL0s="
+    crossorigin=""
+  >
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: #f7f4ee;
+      color: #2b2b2b;
+    }
+
+    #map {
+      width: 100%;
+      height: 100%;
+      min-height: 520px;
+    }
+
+    .leaflet-popup-content-wrapper,
+    .leaflet-popup-tip {
+      background: #fffdf9;
+    }
+
+    .leaflet-popup-content {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 15px;
+      line-height: 1.45;
+      margin: 14px 16px;
+    }
+
+    .popup-title {
+      margin: 0 0 .3rem;
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: #6f263d;
+    }
+
+    .popup-location {
+      margin: 0;
+    }
+
+    .map-note {
+      position: absolute;
+      z-index: 1000;
+      left: 12px;
+      bottom: 12px;
+      max-width: 270px;
+      padding: 8px 10px;
+      border-radius: 4px;
+      background: rgba(255, 253, 249, .92);
+      box-shadow: 0 1px 5px rgba(0,0,0,.28);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+
+    .reset-view {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 14px;
+      background: #fffdf9;
+      border: 0;
+      cursor: pointer;
+      padding: 6px 9px;
+    }
+
+    @media (max-width: 700px) {
+      #map { min-height: 460px; }
+      .map-note { max-width: 210px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="map" role="application" aria-label="Interactive map of settlements in the Creole Corridor"></div>
+  <div class="map-note">
+    Click a point for its historical settlement name and present-day location.
+  </div>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin="">
+  </script>
+
+  <script>
+    const map = L.map("map", {
+      scrollWheelZoom: false
+    });
+
+    L.tileLayer(
+      "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+      {
+        maxZoom: 19,
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }
+    ).addTo(map);
+
+    function esc(value) {
+      if (value === null || value === undefined) return "";
+      return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function popupHTML(feature) {
+      const p = feature.properties || {};
+      const settlement = esc(p.Settlement || "Unnamed settlement");
+      const modern = esc(p.Alt_Location || "");
+
+      return `
+        <div class="popup-title">${settlement}</div>
+        ${modern ? `<p class="popup-location">${modern}</p>` : ""}
+      `;
+    }
+
+    fetch("../data/creole-corridor.geojson")
+      .then(response => {
+        if (!response.ok) throw new Error("Could not load GeoJSON.");
+        return response.json();
+      })
+      .then(data => {
+        const layer = L.geoJSON(data, {
+          pointToLayer: function(feature, latlng) {
+            const isArkansasPost =
+              (feature.properties?.Settlement || "").trim() === "Arkansas Post";
+
+            return L.circleMarker(latlng, {
+              radius: isArkansasPost ? 8 : 6,
+              weight: isArkansasPost ? 2.5 : 1.5,
+              fillOpacity: 0.78
+            });
+          },
+          onEachFeature: function(feature, layer) {
+            layer.bindPopup(popupHTML(feature));
+          }
+        }).addTo(map);
+
+        const bounds = layer.getBounds();
+        map.fitBounds(bounds, { padding: [28, 28] });
+
+        const ResetControl = L.Control.extend({
+          options: { position: "topleft" },
+          onAdd: function() {
+            const container = L.DomUtil.create("div", "leaflet-bar");
+            const button = L.DomUtil.create("button", "reset-view", container);
+            button.type = "button";
+            button.textContent = "Reset view";
+            button.title = "Show the full Creole Corridor";
+            L.DomEvent.disableClickPropagation(container);
+            L.DomEvent.on(button, "click", function() {
+              map.fitBounds(bounds, { padding: [28, 28] });
+            });
+            return container;
+          }
+        });
+
+        map.addControl(new ResetControl());
+      })
+      .catch(error => {
+        document.getElementById("map").innerHTML =
+          "<p style='padding:1rem'>The map data could not be loaded.</p>";
+        console.error(error);
+      });
+  </script>
+</body>
+</html>
