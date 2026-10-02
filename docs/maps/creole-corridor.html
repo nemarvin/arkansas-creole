@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Creole Corridor</title>
+
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+
+  <style>
+    /* Critical Leaflet positioning rules, kept inline for reliability on GitHub Pages. */
+    .leaflet-pane,
+    .leaflet-tile,
+    .leaflet-marker-icon,
+    .leaflet-marker-shadow,
+    .leaflet-tile-container,
+    .leaflet-pane > svg,
+    .leaflet-pane > canvas,
+    .leaflet-zoom-box,
+    .leaflet-image-layer,
+    .leaflet-layer {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .leaflet-container {
+      overflow: hidden;
+      -webkit-tap-highlight-color: transparent;
+      background: #efefed;
+      outline-offset: 1px;
+    }
+
+    .leaflet-container .leaflet-overlay-pane svg,
+    .leaflet-container .leaflet-marker-pane img,
+    .leaflet-container .leaflet-shadow-pane img,
+    .leaflet-container .leaflet-tile-pane img,
+    .leaflet-container img.leaflet-image-layer {
+      max-width: none !important;
+      max-height: none !important;
+    }
+
+    .leaflet-pane { z-index: 400; }
+    .leaflet-tile-pane { z-index: 200; }
+    .leaflet-overlay-pane { z-index: 400; }
+    .leaflet-shadow-pane { z-index: 500; }
+    .leaflet-marker-pane { z-index: 600; }
+    .leaflet-tooltip-pane { z-index: 650; }
+    .leaflet-popup-pane { z-index: 700; }
+
+    .leaflet-control {
+      position: relative;
+      z-index: 800;
+      pointer-events: auto;
+    }
+
+    .leaflet-top,
+    .leaflet-bottom {
+      position: absolute;
+      z-index: 1000;
+      pointer-events: none;
+    }
+
+    .leaflet-top { top: 0; }
+    .leaflet-right { right: 0; }
+    .leaflet-bottom { bottom: 0; }
+    .leaflet-left { left: 0; }
+    .leaflet-control { float: left; clear: both; }
+    .leaflet-right .leaflet-control { float: right; }
+    .leaflet-top .leaflet-control { margin-top: 10px; }
+    .leaflet-bottom .leaflet-control { margin-bottom: 10px; }
+    .leaflet-left .leaflet-control { margin-left: 10px; }
+    .leaflet-right .leaflet-control { margin-right: 10px; }
+
+    .leaflet-control-zoom a,
+    .leaflet-bar a,
+    .leaflet-bar button {
+      display: block;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      text-decoration: none;
+      background: #ffffff;
+      color: #252525;
+      border-bottom: 1px solid #ccc;
+      cursor: pointer;
+    }
+
+    .leaflet-bar {
+      box-shadow: 0 1px 5px rgba(0,0,0,.25);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .leaflet-control-attribution {
+      background: rgba(255,255,255,.82);
+      margin: 0;
+      padding: 0 5px;
+      color: #555;
+      font: 10px/1.5 Arial, Helvetica, sans-serif;
+    }
+
+    :root {
+      --panel-bg: #2b2b2b;
+      --panel-card: #303030;
+      --panel-rule: #454545;
+      --panel-text: #e9e9e9;
+      --panel-muted: #b9b9b9;
+      --accent: #29a9e0;
+      --page-bg: #efefed;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      background: var(--page-bg);
+      color: #222;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .map-shell {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 360px;
+      width: 100%;
+      height: 100%;
+      min-height: 560px;
+      background: var(--page-bg);
+    }
+
+    .map-wrap {
+      position: relative;
+      min-width: 0;
+      min-height: 0;
+    }
+
+    #map {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      background: #efefed;
+    }
+
+    /* Quiet the OSM basemap so the historical points remain visually dominant. */
+    .leaflet-tile-pane {
+      filter: grayscale(1) saturate(.15) brightness(1.08) contrast(.86);
+      opacity: .82;
+    }
+
+    .map-heading {
+      position: absolute;
+      z-index: 900;
+      top: 12px;
+      left: 52px;
+      padding: 8px 11px 9px;
+      background: rgba(255,255,255,.90);
+      box-shadow: 0 1px 5px rgba(0,0,0,.18);
+      border-radius: 3px;
+      pointer-events: none;
+    }
+
+    .map-heading strong {
+      display: block;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 17px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .map-heading span {
+      display: block;
+      margin-top: 2px;
+      font-size: 11px;
+      color: #666;
+    }
+
+    .details-panel {
+      position: relative;
+      z-index: 1200;
+      height: 100%;
+      overflow-y: auto;
+      background: var(--panel-bg);
+      color: var(--panel-text);
+      border-left: 1px solid #1f1f1f;
+    }
+
+    .details-header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 52px;
+      padding: 0 14px;
+      background: #292929;
+      border-bottom: 1px solid #444;
+    }
+
+    .details-header strong {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .details-close {
+      border: 0;
+      background: transparent;
+      color: #bbb;
+      font-size: 23px;
+      line-height: 1;
+      cursor: pointer;
+      padding: 6px;
+    }
+
+    .details-close:hover,
+    .details-close:focus {
+      color: #fff;
+    }
+
+    .details-body {
+      padding: 16px 16px 22px;
+    }
+
+    .details-card {
+      background: var(--panel-card);
+      border: 1px solid #343434;
+      padding: 0 0 16px;
+    }
+
+    .details-title-block {
+      padding: 0 6px 13px;
+    }
+
+    .details-title {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 23px;
+      line-height: 1.15;
+      font-weight: 400;
+      color: #f0f0f0;
+    }
+
+    .details-subtitle {
+      margin: 5px 0 0;
+      font-size: 12px;
+      line-height: 1.4;
+      color: #c7c7c7;
+    }
+
+    .details-place {
+      margin: 4px 0 0;
+      font-size: 12px;
+      color: #929292;
+    }
+
+    .details-image-wrap {
+      margin: 0 6px;
+      background: #222;
+    }
+
+    .details-image {
+      display: block;
+      width: 100%;
+      max-height: 390px;
+      object-fit: contain;
+      background: #222;
+    }
+
+    .details-caption {
+      margin: 10px 6px 0;
+      font-size: 12.5px;
+      line-height: 1.48;
+      color: #c8c8c8;
+    }
+
+    .details-meta {
+      margin: 15px 6px 0;
+      padding-top: 13px;
+      border-top: 1px solid var(--panel-rule);
+      font-size: 12px;
+      line-height: 1.5;
+      color: #bebebe;
+    }
+
+    .details-meta em {
+      color: #d2d2d2;
+    }
+
+    .details-placeholder {
+      padding: 12px 6px 0;
+      color: #bcbcbc;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .reset-view {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      width: auto !important;
+      min-width: 44px;
+      height: 30px !important;
+      line-height: 1 !important;
+      padding: 0 8px !important;
+      border: 0;
+      background: #fff;
+      cursor: pointer;
+    }
+
+    .leaflet-tooltip.creole-label {
+      background: rgba(255,255,255,.94);
+      border: 1px solid rgba(0,0,0,.15);
+      box-shadow: none;
+      color: #333;
+      font: 11px/1.2 Arial, Helvetica, sans-serif;
+      padding: 3px 5px;
+    }
+
+    .leaflet-tooltip-top:before {
+      border-top-color: rgba(255,255,255,.94);
+    }
+
+
+    .river-label {
+      color: #5d7f91;
+      font: 11px/1.1 Georgia, "Times New Roman", serif;
+      text-shadow:
+        -1px -1px 0 rgba(255,255,255,.9),
+         1px -1px 0 rgba(255,255,255,.9),
+        -1px  1px 0 rgba(255,255,255,.9),
+         1px  1px 0 rgba(255,255,255,.9);
+      white-space: nowrap;
+      pointer-events: none;
+    }
+
+    .river-label-icon {
+      background: transparent;
+      border: 0;
+    }
+
+    @media (max-width: 820px) {
+      html, body {
+        overflow: auto;
+      }
+
+      .map-shell {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(430px, 56vh) auto;
+        min-height: 100%;
+        height: auto;
+      }
+
+      .map-wrap {
+        min-height: 430px;
+      }
+
+      .details-panel {
+        height: auto;
+        max-height: none;
+        border-left: 0;
+        border-top: 1px solid #1f1f1f;
+      }
+
+      .details-header {
+        position: relative;
+      }
+
+      .details-close {
+        display: none;
+      }
+
+      .details-image {
+        max-height: 440px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="map-shell">
+    <div class="map-wrap">
+      <div id="map" aria-label="Interactive map of settlements in the Creole Corridor"></div>
+
+      <div class="map-heading">
+        <strong>The Creole Corridor</strong>
+        <span>Click a settlement to explore its history. Major rivers shown from Natural Earth.</span>
+      </div>
+    </div>
+
+    <aside class="details-panel" id="detailsPanel" aria-live="polite">
+      <div class="details-header">
+        <strong>Details</strong>
+        <button class="details-close" id="detailsClose" type="button"
+                aria-label="Clear selected settlement">×</button>
+      </div>
+
+      <div class="details-body">
+        <div class="details-card">
+          <div id="detailsContent" class="details-placeholder">
+            Select a point on the map to view information about a settlement along the Creole Corridor.
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <script>
+    const map = L.map("map", {
+      scrollWheelZoom: false,
+      zoomControl: true
+    });
+
+    L.tileLayer(
+      "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+      {
+        maxZoom: 19,
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }
+    ).addTo(map);
+
+
+    let riversLayer = null;
+
+    function riverWeight(rank) {
+      const r = Number(rank);
+      if (r <= 1) return 2.8;
+      if (r === 2) return 2.4;
+      if (r === 3) return 2.0;
+      if (r === 4) return 1.6;
+      return 1.25;
+    }
+
+    // Add Natural Earth rivers underneath the settlement points.
+    fetch("../data/north-america-major-rivers.geojson", { cache: "no-store" })
+      .then(response => {
+        if (!response.ok) throw new Error(`Could not load rivers: ${response.status}`);
+        return response.json();
+      })
+      .then(riverData => {
+        riversLayer = L.geoJSON(riverData, {
+          style: function(feature) {
+            return {
+              color: "#79a9bf",
+              weight: riverWeight(feature.properties?.scalerank),
+              opacity: .78,
+              lineCap: "round",
+              lineJoin: "round",
+              interactive: false
+            };
+          }
+        }).addTo(map);
+
+        // Keep waterways behind settlement symbols.
+        riversLayer.bringToBack();
+
+        // Add a few restrained labels for waterways central to the corridor.
+        const labelNames = new Set([
+          "Mississippi", "Missouri", "Ohio", "Arkansas", "Saint Lawrence", "Tennessee"
+        ]);
+
+        riverData.features.forEach(feature => {
+          const name = feature.properties?.name_en || feature.properties?.name;
+          if (!labelNames.has(name) || !feature.geometry) return;
+
+          // Find a representative midpoint from the longest line component.
+          let coords = feature.geometry.coordinates;
+          if (feature.geometry.type === "MultiLineString") {
+            coords = coords.reduce((a, b) => (a.length >= b.length ? a : b), []);
+          }
+          if (!Array.isArray(coords) || coords.length < 2) return;
+
+          const mid = coords[Math.floor(coords.length / 2)];
+          if (!Array.isArray(mid) || mid.length < 2) return;
+
+          L.marker([mid[1], mid[0]], {
+            interactive: false,
+            icon: L.divIcon({
+              className: "river-label-icon",
+              html: `<span class="river-label">${name}</span>`,
+              iconSize: [100, 16],
+              iconAnchor: [50, 8]
+            })
+          }).addTo(map);
+        });
+      })
+      .catch(error => console.warn("River layer could not be loaded:", error));
+
+    const detailsContent = document.getElementById("detailsContent");
+    const detailsClose = document.getElementById("detailsClose");
+
+    function esc(value) {
+      if (value === null || value === undefined) return "";
+      return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function safeURL(value) {
+      if (!value) return "";
+      try {
+        const url = new URL(String(value));
+        if (url.protocol === "http:" || url.protocol === "https:") {
+          return url.href;
+        }
+      } catch (e) {}
+      return "";
+    }
+
+    function clearDetails() {
+      detailsContent.className = "details-placeholder";
+      detailsContent.innerHTML =
+        "Select a point on the map to view information about a settlement along the Creole Corridor.";
+    }
+
+    function showDetails(feature) {
+      const p = feature.properties || {};
+
+      const settlement = esc(p.Settlement || "Unnamed settlement");
+      const location = esc(p.Alt_Location || "");
+      const caption = esc(p.Image || "");
+      const imageURL = safeURL(p.URL || "");
+      const founded =
+        p.Note4 !== null && p.Note4 !== undefined && p.Note4 !== ""
+          ? esc(Math.round(Number(p.Note4)))
+          : "";
+
+      detailsContent.className = "";
+      detailsContent.innerHTML = `
+        <div class="details-title-block">
+          <h2 class="details-title">${settlement}</h2>
+          <p class="details-subtitle">Settlement Along the Creole Corridor</p>
+          ${location ? `<p class="details-place">${location}</p>` : ""}
+        </div>
+
+        ${imageURL ? `
+          <div class="details-image-wrap">
+            <img class="details-image"
+                 src="${esc(imageURL)}"
+                 alt=""
+                 loading="lazy"
+                 onerror="this.parentElement.style.display='none'">
+          </div>
+        ` : ""}
+
+        ${caption ? `<p class="details-caption">${caption}</p>` : ""}
+
+        <div class="details-meta">
+          ${founded ? `<div><strong>Established:</strong> ${founded}</div>` : ""}
+          <div style="margin-top:${founded ? "10px" : "0"}">
+            Settlement data source: Jay Gitlin,
+            <em>The Bourgeois Frontier: French Towns, French Traders, and American Expansion</em>
+            (New Haven: Yale University Press, 2010), xv.<br><br>River data: Natural Earth, 1:50m Rivers + Lake Centerlines (public domain).
+          </div>
+        </div>
+      `;
+    }
+
+    detailsClose.addEventListener("click", clearDetails);
+
+    fetch("../data/creole-corridor.geojson", { cache: "no-store" })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`Could not load GeoJSON: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then(data => {
+        const layer = L.geoJSON(data, {
+          pointToLayer: function(feature, latlng) {
+            const isArkansasPost =
+              (feature.properties?.Settlement || "").trim() === "Arkansas Post";
+
+            return L.circleMarker(latlng, {
+              radius: isArkansasPost ? 6.5 : 4.5,
+              weight: isArkansasPost ? 1.5 : 1,
+              color: "#138dbd",
+              fillColor: "#29a9e0",
+              fillOpacity: .95
+            });
+          },
+
+          onEachFeature: function(feature, marker) {
+            marker.on("click", function() {
+              showDetails(feature);
+            });
+
+            marker.bindTooltip(
+              esc(feature.properties?.Settlement || ""),
+              {
+                direction: "top",
+                offset: [0, -5],
+                opacity: .96,
+                className: "creole-label"
+              }
+            );
+          }
+        }).addTo(map);
+
+        const bounds = layer.getBounds();
+
+        if (bounds.isValid()) {
+          map.fitBounds(bounds, {
+            padding: [35, 35],
+            maxZoom: 5
+          });
+        } else {
+          map.setView([38.0, -91.0], 4);
+        }
+
+        const ResetControl = L.Control.extend({
+          options: { position: "topleft" },
+
+          onAdd: function() {
+            const container = L.DomUtil.create("div", "leaflet-bar");
+            const button = L.DomUtil.create("button", "reset-view", container);
+
+            button.type = "button";
+            button.textContent = "Reset";
+            button.title = "Show the full Creole Corridor";
+
+            L.DomEvent.disableClickPropagation(container);
+
+            L.DomEvent.on(button, "click", function() {
+              map.fitBounds(bounds, {
+                padding: [35, 35],
+                maxZoom: 5
+              });
+              clearDetails();
+            });
+
+            return container;
+          }
+        });
+
+        map.addControl(new ResetControl());
+
+        // Show Detroit initially so the standalone map does not open with an empty panel.
+        const detroit = data.features.find(
+          f => (f.properties?.Settlement || "").trim().toLowerCase() === "detroit"
+        );
+        if (detroit) {
+          showDetails(detroit);
+        }
+
+        setTimeout(() => map.invalidateSize(), 250);
+      })
+      .catch(error => {
+        detailsContent.className = "details-placeholder";
+        detailsContent.innerHTML =
+          "The map data could not be loaded. Check that <code>docs/data/creole-corridor.geojson</code> exists.";
+        console.error(error);
+      });
+  </script>
+</body>
+</html>
