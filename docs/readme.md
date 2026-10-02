@@ -1200,11 +1200,6 @@ Finally, another myth: France is often portrayed as having had a less violent im
 
 In other words, Creole Arkansas—and the broader Creole Corridor of which it was a part—was far from the tranquil, idyllic landscape evoked by the romantic river scenes of George Caleb Bingham. It was a world forged in violence from its very beginnings.
 
-<figure>
-  <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/Do2IZEmV6Cijk8uT2EzOM.jpeg" alt="" loading="lazy" decoding="async">
-  <figcaption>Detail of "Fur Traders Descending the Missouri" (1845), focusing on the central figures.</figcaption>
-</figure>
-
 <a id="middle-ground-native-ground"></a>
 ### Middle Ground, Native Ground
 
@@ -1235,7 +1230,7 @@ American settler colonialism brought rapid and disruptive changes to Arkansas Cr
 
 <figure>
   <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/XHZeKOBRL8u1uQLpu8hMa.jpg" alt="" loading="lazy" decoding="async">
-  <figcaption><em><strong>Background image: </strong></em><em>George Caleb Bingham’s 1845 painting Fur Traders Descending the Missouri (Metropolitan Museum of Art) depicts voyageurs returning with trade goods, including a rare black fox. Originally titled "French-Trader, Half-breed Son," the work has, since its 1935 exhibition at the Met, captivated American audiences and reinforced enduring stereotypes of the French voyageur as “in tune with wild nature” and apart from “civilization” (Korhauser and Mahon 2014).</em></figcaption>
+  <figcaption><em><strong> image: </strong></em><em>George Caleb Bingham’s 1845 painting Fur Traders Descending the Missouri (Metropolitan Museum of Art) depicts voyageurs returning with trade goods, including a rare black fox. Originally titled "French-Trader, Half-breed Son," the work has, since its 1935 exhibition at the Met, captivated American audiences and reinforced enduring stereotypes of the French voyageur as “in tune with wild nature” and apart from “civilization” (Korhauser and Mahon 2014).</em></figcaption>
 </figure>
 
 [↑ Back to Contents](#contents)
