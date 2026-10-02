@@ -5,36 +5,230 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The Creole Corridor</title>
 
- <link
-  rel="stylesheet"
-  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
->
+  <!-- Standard Leaflet stylesheet. -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
 
   <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      background: #f7f4ee;
-      color: #2b2b2b;
+    /*
+      Critical Leaflet layout rules are repeated here deliberately.
+      This makes the map render correctly even if the external Leaflet
+      stylesheet is blocked, delayed, or cached incorrectly.
+    */
+    .leaflet-pane,
+    .leaflet-tile,
+    .leaflet-marker-icon,
+    .leaflet-marker-shadow,
+    .leaflet-tile-container,
+    .leaflet-pane > svg,
+    .leaflet-pane > canvas,
+    .leaflet-zoom-box,
+    .leaflet-image-layer,
+    .leaflet-layer {
+      position: absolute;
+      left: 0;
+      top: 0;
     }
 
-    #map {
-      width: 100%;
-      height: 100%;
-      min-height: 520px;
+    .leaflet-container {
+      overflow: hidden;
+      -webkit-tap-highlight-color: transparent;
+      background: #ddd;
+      outline-offset: 1px;
+    }
+
+    .leaflet-tile,
+    .leaflet-marker-icon,
+    .leaflet-marker-shadow {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+
+    .leaflet-tile {
+      visibility: hidden;
+      filter: inherit;
+    }
+
+    .leaflet-tile-loaded {
+      visibility: inherit;
+    }
+
+    .leaflet-marker-icon,
+    .leaflet-marker-shadow {
+      display: block;
+    }
+
+    .leaflet-container .leaflet-overlay-pane svg,
+    .leaflet-container .leaflet-marker-pane img,
+    .leaflet-container .leaflet-shadow-pane img,
+    .leaflet-container .leaflet-tile-pane img,
+    .leaflet-container img.leaflet-image-layer {
+      max-width: none !important;
+      max-height: none !important;
+    }
+
+    .leaflet-container.leaflet-touch-zoom {
+      touch-action: pan-x pan-y;
+    }
+
+    .leaflet-container.leaflet-touch-drag {
+      touch-action: none;
+      touch-action: pinch-zoom;
+    }
+
+    .leaflet-container.leaflet-touch-drag.leaflet-touch-zoom {
+      touch-action: none;
+    }
+
+    .leaflet-pane { z-index: 400; }
+    .leaflet-tile-pane { z-index: 200; }
+    .leaflet-overlay-pane { z-index: 400; }
+    .leaflet-shadow-pane { z-index: 500; }
+    .leaflet-marker-pane { z-index: 600; }
+    .leaflet-tooltip-pane { z-index: 650; }
+    .leaflet-popup-pane { z-index: 700; }
+
+    .leaflet-map-pane canvas { z-index: 100; }
+    .leaflet-map-pane svg { z-index: 200; }
+
+    .leaflet-control {
+      position: relative;
+      z-index: 800;
+      pointer-events: auto;
+    }
+
+    .leaflet-top,
+    .leaflet-bottom {
+      position: absolute;
+      z-index: 1000;
+      pointer-events: none;
+    }
+
+    .leaflet-top { top: 0; }
+    .leaflet-right { right: 0; }
+    .leaflet-bottom { bottom: 0; }
+    .leaflet-left { left: 0; }
+
+    .leaflet-control {
+      float: left;
+      clear: both;
+    }
+
+    .leaflet-right .leaflet-control { float: right; }
+    .leaflet-top .leaflet-control { margin-top: 10px; }
+    .leaflet-bottom .leaflet-control { margin-bottom: 10px; }
+    .leaflet-left .leaflet-control { margin-left: 10px; }
+    .leaflet-right .leaflet-control { margin-right: 10px; }
+
+    .leaflet-control-zoom a,
+    .leaflet-bar a,
+    .leaflet-bar button {
+      display: block;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      text-decoration: none;
+      background: #fff;
+      color: #222;
+      border-bottom: 1px solid #ccc;
+      cursor: pointer;
+    }
+
+    .leaflet-bar {
+      box-shadow: 0 1px 5px rgba(0,0,0,.35);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .leaflet-popup {
+      position: absolute;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .leaflet-popup-content-wrapper {
+      padding: 1px;
+      text-align: left;
+      border-radius: 10px;
+      box-shadow: 0 3px 14px rgba(0,0,0,.3);
+    }
+
+    .leaflet-popup-content {
+      margin: 13px 19px;
+      line-height: 1.4;
+    }
+
+    .leaflet-popup-tip-container {
+      width: 40px;
+      height: 20px;
+      position: absolute;
+      left: 50%;
+      margin-top: -1px;
+      margin-left: -20px;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .leaflet-popup-tip {
+      width: 17px;
+      height: 17px;
+      padding: 1px;
+      margin: -10px auto 0;
+      transform: rotate(45deg);
+      box-shadow: 3px 3px 14px rgba(0,0,0,.2);
     }
 
     .leaflet-popup-content-wrapper,
     .leaflet-popup-tip {
       background: #fffdf9;
+      color: #2b2b2b;
+    }
+
+    .leaflet-popup-close-button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: none;
+      text-align: center;
+      width: 24px;
+      height: 24px;
+      font: 16px/24px Tahoma, Verdana, sans-serif;
+      color: #757575;
+      text-decoration: none;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    .leaflet-control-attribution {
+      background: rgba(255,255,255,.85);
+      margin: 0;
+      padding: 0 5px;
+      color: #333;
+      font: 11px/1.5 Arial, Helvetica, sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: #f7f4ee;
+      color: #2b2b2b;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    #map {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      min-height: 520px;
     }
 
     .leaflet-popup-content {
       font-family: Georgia, "Times New Roman", serif;
       font-size: 15px;
-      line-height: 1.45;
-      margin: 14px 16px;
     }
 
     .popup-title {
@@ -56,41 +250,51 @@
       max-width: 270px;
       padding: 8px 10px;
       border-radius: 4px;
-      background: rgba(255, 253, 249, .92);
+      background: rgba(255, 253, 249, .94);
       box-shadow: 0 1px 5px rgba(0,0,0,.28);
       font-size: 12px;
       line-height: 1.35;
+      pointer-events: none;
     }
 
     .reset-view {
       font-family: Georgia, "Times New Roman", serif;
-      font-size: 14px;
-      background: #fffdf9;
+      font-size: 13px;
+      width: auto !important;
+      height: 30px !important;
+      line-height: 1 !important;
+      padding: 0 8px !important;
       border: 0;
+      background: #fffdf9;
       cursor: pointer;
-      padding: 6px 9px;
     }
 
     @media (max-width: 700px) {
-      #map { min-height: 460px; }
-      .map-note { max-width: 210px; }
+      .map-note {
+        max-width: 210px;
+        font-size: 11px;
+      }
     }
   </style>
 </head>
 
 <body>
-  <div id="map" role="application" aria-label="Interactive map of settlements in the Creole Corridor"></div>
+  <div id="map" aria-label="Interactive map of settlements in the Creole Corridor"></div>
+
   <div class="map-note">
     Click a point for its historical settlement name and present-day location.
   </div>
 
- <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <script>
     const map = L.map("map", {
-      scrollWheelZoom: false
+      scrollWheelZoom: false,
+      zoomControl: true
     });
 
     L.tileLayer(
-      "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+      "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
       {
         maxZoom: 19,
         attribution:
@@ -119,9 +323,11 @@
       `;
     }
 
-    fetch("../data/creole-corridor.geojson")
+    fetch("../data/creole-corridor.geojson", { cache: "no-store" })
       .then(response => {
-        if (!response.ok) throw new Error("Could not load GeoJSON.");
+        if (!response.ok) {
+          throw new Error(`Could not load GeoJSON: ${response.status}`);
+        }
         return response.json();
       })
       .then(data => {
@@ -133,38 +339,63 @@
             return L.circleMarker(latlng, {
               radius: isArkansasPost ? 8 : 6,
               weight: isArkansasPost ? 2.5 : 1.5,
-              fillOpacity: 0.78
+              color: "#6f263d",
+              fillColor: "#8a2f47",
+              fillOpacity: 0.82
             });
           },
+
           onEachFeature: function(feature, layer) {
             layer.bindPopup(popupHTML(feature));
           }
         }).addTo(map);
 
         const bounds = layer.getBounds();
-        map.fitBounds(bounds, { padding: [28, 28] });
+
+        if (bounds.isValid()) {
+          map.fitBounds(bounds, {
+            padding: [30, 30],
+            maxZoom: 5
+          });
+        } else {
+          map.setView([38.0, -91.0], 4);
+        }
 
         const ResetControl = L.Control.extend({
           options: { position: "topleft" },
+
           onAdd: function() {
             const container = L.DomUtil.create("div", "leaflet-bar");
             const button = L.DomUtil.create("button", "reset-view", container);
+
             button.type = "button";
-            button.textContent = "Reset view";
+            button.textContent = "Reset";
             button.title = "Show the full Creole Corridor";
+
             L.DomEvent.disableClickPropagation(container);
             L.DomEvent.on(button, "click", function() {
-              map.fitBounds(bounds, { padding: [28, 28] });
+              map.fitBounds(bounds, {
+                padding: [30, 30],
+                maxZoom: 5
+              });
             });
+
             return container;
           }
         });
 
         map.addControl(new ResetControl());
+
+        // Useful if this page is later placed inside an iframe.
+        setTimeout(() => map.invalidateSize(), 250);
       })
       .catch(error => {
-        document.getElementById("map").innerHTML =
-          "<p style='padding:1rem'>The map data could not be loaded.</p>";
+        const box = document.createElement("div");
+        box.style.cssText =
+          "position:absolute;inset:0;display:grid;place-items:center;padding:2rem;font-family:Georgia,serif;";
+        box.innerHTML =
+          "<p>The map data could not be loaded. Check that <code>docs/data/creole-corridor.geojson</code> exists.</p>";
+        document.body.appendChild(box);
         console.error(error);
       });
   </script>
