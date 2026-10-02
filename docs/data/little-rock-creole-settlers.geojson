@@ -1,0 +1,243 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.26660775,
+          34.74933982
+        ]
+      },
+      "properties": {
+        "Homestead": null,
+        "Type": "Landmark",
+        "Note_Short": "Le Petit Rocher",
+        "Note_Long": "The Little Rock, the south-bank outcrop around which Ross orients her reconstruction of pre-1814 settlement and land claims.",
+        "Sources": "Margaret Smith Ross, “Squatters Rights: Some Pulaski County Settlers Prior to 1814,” Pulaski County Historical Review 4, no. 2 (June 1956): 17–27."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.21881386,
+          34.75009253
+        ]
+      },
+      "properties": {
+        "Homestead": "Barthélemy",
+        "Type": "Homestead",
+        "Note_Short": "Joseph Bartholomew",
+        "Note_Long": "Held a 640-acre claim on the north bank, about three miles below Little Rock, based on Spanish-period possession, habitation, and cultivation; Nicholas Rightor surveyed the tract.",
+        "Sources": "Margaret Smith Ross, “Squatters Rights: Some Pulaski County Settlers Prior to 1814,” Pulaski County Historical Review 4, no. 2 (June 1956): 17–27."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.20604397,
+          34.74669973
+        ]
+      },
+      "properties": {
+        "Homestead": "Imbeau",
+        "Type": "Homestead",
+        "Note_Short": "Francis Imbeau (later Wright Daniel)",
+        "Note_Long": "Francis Imbeau moved to this north-bank homestead, about four miles below Little Rock, after leaving his first south-bank home. In 1816 Wright Daniel took over the site in exchange for Daniel’s grist mill.",
+        "Sources": "Margaret Smith Ross, “Squatters Rights: Some Pulaski County Settlers Prior to 1814,” Pulaski County Historical Review 4, no. 2 (June 1956): 17–27."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.19518573,
+          34.74142177
+        ]
+      },
+      "properties": {
+        "Homestead": "Imbeau/Lefevre",
+        "Type": "Homestead",
+        "Note_Short": "John Baptiste Imbeau, Sr., later, Peter Lefevre Jr.",
+        "Note_Long": "Imbeau’s second Little Rock-area home, on the north side about three or four miles below the Rock. He sold an undivided half interest to William Russell in 1814; Peter Lefevre Jr. later occupied the eastern part of the claim.",
+        "Sources": "Margaret Smith Ross, “Squatters Rights: Some Pulaski County Settlers Prior to 1814,” Pulaski County Historical Review 4, no. 2 (June 1956): 17–27."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.19013895,
+          34.73928535
+        ]
+      },
+      "properties": {
+        "Homestead": "Coussot",
+        "Type": "Homestead",
+        "Note_Short": "Francis Coussatt",
+        "Note_Long": "A Spanish-period settlement occupied by at least 1793. Ross notes conflicting deed descriptions: one places it about six miles below the Rock, another about eight to ten miles below, both on the north side of the Arkansas River.",
+        "Sources": "Margaret Smith Ross, “Squatters Rights: Some Pulaski County Settlers Prior to 1814,” Pulaski County Historical Review 4, no. 2 (June 1956): 17–27."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.18218644,
+          34.73369271
+        ]
+      },
+      "properties": {
+        "Homestead": "Duchassin",
+        "Type": "Homestead",
+        "Note_Short": "Joseph Duchassin",
+        "Note_Long": "A French-Quapaw trader. Ross notes that the location of his 750-arpent claim is not given in the surviving record, but places him here in her reconstruction; he also occupied Old Imbeau’s improvement for a time before 1814.",
+        "Sources": "Margaret Smith Ross, “Squatters Rights: Some Pulaski County Settlers Prior to 1814,” Pulaski County Historical Review 4, no. 2 (June 1956): 17–27."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.17629852,
+          34.72866529
+        ]
+      },
+      "properties": {
+        "Homestead": "Coussot/Simms",
+        "Type": "Claim",
+        "Note_Short": "Pierre \"Caddy\" Coussatt",
+        "Note_Long": "Coussatt held this downriver tract as representative of the heirs of William D. Simms: the west fractional half of Section 12 and southeast fractional quarter of Section 11, T1N R11W. Ross describes it as a few miles downriver from his own south-bank pre-emption.",
+        "Sources": "Margaret Smith Ross, “Squatters Rights: Some Pulaski County Settlers Prior to 1814,” Pulaski County Historical Review 4, no. 2 (June 1956): 17–27."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.3,
+          34.77
+        ]
+      },
+      "properties": {
+        "Homestead": "Daniel",
+        "Type": "Homestead",
+        "Note_Short": "Wright Daniel",
+        "Note_Long": "Daniel’s earlier home stood at the foot of Big Rock Mountain on the north bank, in fractional Section 33, T2N R12W; early postal records called the place “Danielsville, on Big Rock.” In 1816 he moved about four miles downriver to Francis Imbeau’s former north-bank homestead.",
+        "Sources": "Margaret Smith Ross, “Squatters Rights: Some Pulaski County Settlers Prior to 1814,” Pulaski County Historical Review 4, no. 2 (June 1956): 17–27."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.2597,
+          34.7481
+        ]
+      },
+      "properties": {
+        "Homestead": "Imbeau/Leshee",
+        "Type": "Homestead",
+        "Note_Short": "J.B. Imbeau, Sr., Jos. Duchassin, Jos. Leshee",
+        "Note_Long": "Old Imbeau’s original south-bank improvement in the NE fractional quarter of Section 2, T1N R12W, just east of Little Rock. Joseph Leshee occupied it for one to three years after Imbeau, followed by Joseph Duchassin for one, two, or more years before 1814.",
+        "Sources": "Margaret Smith Ross, “Squatters Rights: Some Pulaski County Settlers Prior to 1814,” Pulaski County Historical Review 4, no. 2 (June 1956): 17–27."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.2537,
+          34.747
+        ]
+      },
+      "properties": {
+        "Homestead": "Imbeau",
+        "Type": "Homestead",
+        "Note_Short": "Martin Imbeau",
+        "Note_Long": "In 1810–11 Martin Imbeau settled, cultivated, and improved land on the south side about three-quarters of a mile below Little Rock. He deeded the improvement to Thomas W. Newton on July 14, 1824.",
+        "Sources": "Margaret Smith Ross, “Squatters Rights: Some Pulaski County Settlers Prior to 1814,” Pulaski County Historical Review 4, no. 2 (June 1956): 17–27."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.2408,
+          34.7447
+        ]
+      },
+      "properties": {
+        "Homestead": "Imbeau/Daniel",
+        "Type": "Mill",
+        "Note_Short": "Wright Daniel's mill, Francis Imbeau",
+        "Note_Long": "Wright Daniel built a grist mill here in 1815 in the SE quarter of Section 2, T1N R12W. Ross wrote in 1956 that the small stream powering it was remembered locally as “Mill Creek.” Francis Imbeau took possession in 1816 and remained until March 1825.",
+        "Sources": "Margaret Smith Ross, “Squatters Rights: Some Pulaski County Settlers Prior to 1814,” Pulaski County Historical Review 4, no. 2 (June 1956): 17–27."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.22776102,
+          34.74237052
+        ]
+      },
+      "properties": {
+        "Homestead": "Barthélemy",
+        "Type": "Homestead",
+        "Note_Short": "Lewis Bartholomew",
+        "Note_Long": "Established a south-bank home about 1800. The deeds place it about three miles below Little Rock, while William Russell described it as roughly two miles below; it lay in the same quarter section as Caddy Coussatt’s improvement.",
+        "Sources": "Margaret Smith Ross, “Squatters Rights: Some Pulaski County Settlers Prior to 1814,” Pulaski County Historical Review 4, no. 2 (June 1956): 17–27."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.22175287,
+          34.74208841
+        ]
+      },
+      "properties": {
+        "Homestead": "Coussot",
+        "Type": "Homestead",
+        "Note_Short": "Pierre \"Caddy\" Coussatt",
+        "Note_Long": "Before April 12, 1814, Coussatt settled the east fractional half of Section 1, T1N R12W, adjoining the south bank. He sold the claim to William Russell in 1821 and described it as his only pre-emption on the Arkansas River.",
+        "Sources": "Margaret Smith Ross, “Squatters Rights: Some Pulaski County Settlers Prior to 1814,” Pulaski County Historical Review 4, no. 2 (June 1956): 17–27."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.20514191,
+          34.73988019
+        ]
+      },
+      "properties": {
+        "Homestead": "Imbeau",
+        "Type": "Homestead",
+        "Note_Short": "Francis Imbeau",
+        "Note_Long": "Francis Imbeau’s first of three Little Rock-area homes: a small south-bank patch about two miles below the Rock, in the SW fractional quarter of Section 6, T1N R11W. He lived here from 1803 to 1808.",
+        "Sources": "Margaret Smith Ross, “Squatters Rights: Some Pulaski County Settlers Prior to 1814,” Pulaski County Historical Review 4, no. 2 (June 1956): 17–27."
+      }
+    }
+  ]
+}
