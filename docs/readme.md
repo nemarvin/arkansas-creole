@@ -1416,7 +1416,7 @@ With all the mystique surrounding the mountain, it’s tempting to dismiss the m
   <figcaption>Petit Jean Grave Site in 2019 (Author's Photo).</figcaption>
 </figure>
 
-Historian <strong>Morris</strong> Arnold has proposed what is arguably the most plausible theory about the figure behind the name. Arnold locates an explicit mention of a “Petit Jean” in a French document describing an Osage attack on a French hunting party along the Arkansas River in the 1730s, upriver from Arkansas Post (Arnold 1994, ).
+Historian Morris Arnold has proposed what is arguably the most plausible theory about the figure behind the name. Arnold locates an explicit mention of a “Petit Jean” in a French document describing an Osage attack on a French hunting party along the Arkansas River in the 1730s, upriver from Arkansas Post (Arnold 1994, ).
 
 As Arnold notes, “Petit Jean” (French for “Little John”) was a popular nickname among eighteenth-century French soldiers and settlers, and multiple individuals bearing this name appear in documentary records across the region. Still, the "Petit Jean" of the 1730s stands out as the most likely candidate for the river and mountain’s namesake, due to striking parallels between the archival references and oral traditions that surfaced nearly a century later.
 
