@@ -1995,7 +1995,7 @@ Bohnert, Dyan. “Mary John (?-1857).” In <em>Encyclopedia of Arkansas</em>. L
 
 Branner, John C. “Some Old French Place Names in the State of Arkansas.” <em>The Arkansas Historical Quarterly</em> 19, no. 3 (1899) 1960: 191–206.
 
-Buck, Kate. “Big Rock.” <em>Encyclopedia of Arkansas</em>. Central Arkansas Library System. Last updated January 29, 2024. Accessed August 29, 2025. <a href="https://encyclopediaofarkansas.net/entries/big-rock-5492/?utm_source=chatgpt.com">https://encyclopediaofarkansas.net/entries/big-rock-5492/</a>
+Buck, Kate. “Big Rock.” <em>Encyclopedia of Arkansas</em>. Central Arkansas Library System. Last updated January 29, 2024. Accessed August 29, 2025. <a href="https://encyclopediaofarkansas.net/entries/big-rock-5492/">https://encyclopediaofarkansas.net/entries/big-rock-5492/</a>
 
 Burton, Helen Sophie, and F. Todd Smith. <em>Colonial Natchitoches: A Creole Community on the Louisiana-Texas Frontier</em>. Texas A&amp;M University Press, 2008.
 
