@@ -1067,7 +1067,7 @@ html[data-reader-theme="dark"] .reader-toc-toggle {
       <ul>
         <li><a href="#mapping-survival-strategies">Spanish Land Grants</a></li>
         <li><a href="#lines-of-dispossession-us-quapaw-treaties">Lines of Quapaw Dispossession</a></li>
-        <li><a href="#a-creole-carve-out">A Mixed-Ancestry Creole Carve-Out</a></li>
+        <li><a href="#a-creole-carve-out">A Mixed-Ancestry Carve-Out</a></li>
         <li><a href="#joining-indian-removal-arkansass-m-tis-creoles-and-the-treaty-of-1833">Joining Indian Removal: Arkansas's Métis Creoles and the Treaty of 1833</a></li>
         <li><a href="#the-villemonts-of-chicot-county">The Villemonts of Chicot County</a></li>
         <li><a href="#northeast-arkansas">Northeast Arkansas</a></li>
@@ -1747,7 +1747,7 @@ Signed at St. Louis on August 24, 1818, the treaty later designated “Cession 9
 ...But little more than five years after signing the Treaty of 1818, the United States took even that. On November 15, 1824, under a new treaty (“Cession 121”), the Quapaw were pressured into ceding all claims in Arkansas, retaining only an 80-acre parcel at Saracen’s village. They agreed to relocate to Caddo lands near the Red River by early 1826 — a move that proved disastrous and prompted many to return within a year.
 
 <a id="a-creole-carve-out"></a>
-### A Mixed-Ancestry Creole Carve-Out
+### A Mixed-Ancestry Carve-Out
 
 The seventh article of the 1824 treaty between the United States and the Quapaw Nation featured a unique provision: it allocated land—or confirmed existing land claims—along the Arkansas River, within what had been the Quapaw reserve since 1818, to eleven parties. The justification? The individuals named—all Arkansas Creoles with French surnames—were described as “Indians by descent.” This designation enabled them to remain amid the forced removal of the Quapaw and the anticipated influx of Anglo-American settlers.
 
