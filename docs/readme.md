@@ -1068,7 +1068,7 @@ html[data-reader-theme="dark"] .reader-toc-toggle {
         <li><a href="#mapping-survival-strategies">Spanish Land Grants</a></li>
         <li><a href="#lines-of-dispossession-us-quapaw-treaties">Lines of Quapaw Dispossession</a></li>
         <li><a href="#a-creole-carve-out">A Mixed-Ancestry Carve-Out</a></li>
-        <li><a href="#joining-indian-removal-arkansass-m-tis-creoles-and-the-treaty-of-1833">Joining Indian Removal: Arkansas's Métis Creoles and the Treaty of 1833</a></li>
+        <li><a href="#joining-indian-removal-arkansass-m-tis-creoles-and-the-treaty-of-1833">Joining Indian Removal</a></li>
         <li><a href="#the-villemonts-of-chicot-county">The Villemonts of Chicot County</a></li>
         <li><a href="#northeast-arkansas">Northeast Arkansas</a></li>
         <li><a href="#st-marys-church-anchor-of-a-community">St. Mary’s Church: Anchor of a Community</a></li>
@@ -1836,7 +1836,7 @@ Those familiar with Southeast Arkansas will recognize some of these names. They 
 </figure>
 
 <a id="joining-indian-removal-arkansass-m-tis-creoles-and-the-treaty-of-1833"></a>
-### Joining Indian Removal: Arkansas's Métis Creoles and the Treaty of 1833
+### Joining Indian Removal
 
 <blockquote><em>“The United States hereby agree to convey to the Quapaw Indians the hundred and fifty sections of land west of the State line of Missouri and between the lands of the Senecas and Shawnees, not heretofore assigned to any other tribe of Indians… expressly designed to be in lieu of their location on Red River and to carry into effect the Treaty of 1824, in order to provide a permanent home for their nation.” </em></blockquote>
 
