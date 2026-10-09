@@ -1263,7 +1263,7 @@ These twentieth-century projects, which we cannot remove from their broader cont
 
 <figure>
   <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/ZELU4qjTgHt4q7LogEquz.jpg" alt="" loading="lazy" decoding="async">
-  <figcaption><em><strong>Image:</strong></em><em> </em><em>“Photograph of the La Petite Roche Sign,” undated, Downtown Little Rock Partnership records, 1984–2020 (UALR.MS.0294), University of Arkansas at Little Rock Center for Arkansas History and Culture.</em></figcaption>
+  <figcaption>“Photograph of the La Petite Roche Sign,” undated, Downtown Little Rock Partnership records, 1984–2020 (UALR.MS.0294), University of Arkansas at Little Rock Center for Arkansas History and Culture.</figcaption>
 </figure>
 
 <a id="le-petit-rocher"></a>
