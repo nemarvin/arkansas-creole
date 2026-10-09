@@ -1090,7 +1090,7 @@ html[data-reader-theme="dark"] .reader-toc-toggle {
 
 <figure>
   <img
-    src="docs/images/mtnebo.webp"
+    src="images/mtnebo.webp"
     alt="View south from Mount Nebo toward the Petit Jean River valley in Arkansas"
     loading="lazy"
     decoding="async"
