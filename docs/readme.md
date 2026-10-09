@@ -1039,7 +1039,7 @@ html[data-reader-theme="dark"] .reader-toc-toggle {
     </li>
     <li><a href="#breaking-down-myths">Breaking Down Myths</a>
       <ul>
-        <li><a href="#middle-ground-native-ground">Middle Ground, Native Ground</a></li>
+        <li><a href="#like-brothers">“Like Brothers”</a></li>
       </ul>
     </li>
     <li><a href="#la-petite-roche">"La Petite Roche"</a>
@@ -1210,8 +1210,8 @@ Finally, another myth: France is often portrayed as having had a less violent im
 
 In other words, Creole Arkansas—and the broader Creole Corridor of which it was a part—was far from the tranquil, idyllic landscape evoked by the romantic river scenes of George Caleb Bingham. It was a world forged in violence from its very beginnings.
 
-<a id="middle-ground-native-ground"></a>
-### Middle Ground, Native Ground
+<a id="like-brothers"></a>
+### “Like Brothers”
 
 <p>French-speaking settlers and their descendants in the region forged a lasting partnership with the Quapaw (<em>Okáxpa</em>) Nation, whom the French called <em>Arkansas</em>, whose sovereignty they recognized, and on whose support they relied for survival and prosperity. A Dhegiha-Siouan-speaking people, the Quapaw traced their origins to the medieval metropolis of Cahokia (across the Mississippi from the present-day site of St. Louis, Missouri). They had established themselves in the lower Arkansas Valley and adjoining parts of the Mississippi Delta before 1600 and became the dominant group in that region before the arrival of French explorers in the late seventeenth century (Bandy 2020). According to an oral tradition recorded in 1827 by George Izard, the second U.S. territorial governor of Arkansas, a group of their ancestors had faced dwindling game near their villages along the St. Francis River (Little Muddy River, or <em>Ny-Tachoutteh-jinka</em>) and headed down the Mississippi (<em>Ny-Tonka</em>), eventually entering "this river, which we call Ny-jitteh," or Red River, now known as the Arkansas. There they drove out an Illini group that had been settling in the area and were "left entire masters of this country." There followed, Izard added, "constant intercourse for nearly a century with the colonists" (Izard 1827c).</p>
 
@@ -2039,6 +2039,8 @@ DuVal, Kathleen. <em>The Native Ground: Indians and Colonists in the Heart of th
 
 ———. “Indian Intermarriage and Métissage in Colonial Louisiana.” <em>The William and Mary Quarterly</em> 65, no. 2 (2008): 267–304.
 
+———. <em>Native Nations: A Millennium in North America</em>. New York: Random House, 2024.
+
 Edwards, Jay Dearborn, and Nicolas Kariouk Pecquet du Bellay de Verton. <em>A Creole Lexicon: Architecture, Landscape, People</em>. Baton Rouge: Louisiana State University Press, 2004.
 
 Ekberg, Carl J., Abraham P. Nasatir, and Bernard K. Schram. <em>Colonial Ste. Genevieve: An Adventure on the Mississippi Frontier</em>. 2nd edition. Carbondale: Southern Illinois University Press, 2014.
@@ -2217,7 +2219,11 @@ Vaugine de Nuisement, Etienne. <em>Journal de Vaugine de Nuisement (ca 1765) :
 
 #### American Philosophical Society
 
-<li>George Izard, “31. Izard, George to the American Philosophical Society,” January 10, 1827, American Philosophical Society, American Indian Vocabulary Collection, Mss.497.V85, <a href="https://diglib.amphilsoc.org/islandora/object/text%3A310681">https://diglib.amphilsoc.org/islandora/object/text%3A310681</a></li><li>George Izard, “34. Vocabulary of the Quapaw Indians,” January 10, 1827, American Philosophical Society, American Indian Vocabulary Collection, Mss.497.V85,<a href="https://diglib.amphilsoc.org/islandora/object/34-vocabulary-quapaw-indians"> https://diglib.amphilsoc.org/islandora/object/34-vocabulary-quapaw-indians</a></li>
+<ul>
+<li>George Izard, “31. Izard, George to the American Philosophical Society,” January 10, 1827, American Philosophical Society, American Indian Vocabulary Collection, Mss.497.V85, <a href="https://diglib.amphilsoc.org/islandora/object/text%3A310681">https://diglib.amphilsoc.org/islandora/object/text%3A310681</a></li>
+<li>Izard, George. 1827c. “33. Notes Respecting the Arkansas Territory’s Aboriginal Inhabitants, the Quapaw Indians.” January 10, 1827. Manuscript, 9 pp. American Philosophical Society Historical and Literary Committee, American Indian Vocabulary Collection, Mss.497.V85, item 33. American Philosophical Society Library &amp; Museum. <a href="https://diglib.amphilsoc.org/islandora/object/text%3A310684">https://diglib.amphilsoc.org/islandora/object/text%3A310684</a>.</li>
+<li>George Izard, “34. Vocabulary of the Quapaw Indians,” January 10, 1827, American Philosophical Society, American Indian Vocabulary Collection, Mss.497.V85,<a href="https://diglib.amphilsoc.org/islandora/object/34-vocabulary-quapaw-indians"> https://diglib.amphilsoc.org/islandora/object/34-vocabulary-quapaw-indians</a></li>
+</ul>
 
 #### Archives nationales d’outre-mer (ANOM)
 
