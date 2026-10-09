@@ -1119,20 +1119,7 @@ So why do we know so little about these Creoles of Arkansas and the world they m
 
 —<em> A Creole Lexicon </em>(LSU Press, 2004)
 
-What is a "Creole"? What is an "Arkansas Creole"? In their historical dictionary of Louisiana vocabulary, <em>A Creole Lexicon</em>, scholars Glenn R. Edwards, Jay Dearborn Edwards, and Nicolas Kariouk Pecquet du Bellay de Verton show how the meaning of the term "Creole" evolved over time. In the 15th through 18th centuries, the term generally referred to people born in European colonies—places like Louisiana, Brazil, the West Indies, or France's Indian Ocean colonies—who descended from European or African settlers. In Upper Louisiana, the term was often used more narrowly to describe white descendants of French colonists, a meaning that lingered well into the twentieth century—even as far north as Canada, where it still described residents of the Great Lakes region.
-
-But "Creole" could also carry broader cultural meanings. Over time, it came to include descendants of those early Creoles as well as people who had assimilated into Creole communities. In Louisiana and its neighboring regions, including what is now Arkansas, that might mean someone of French, Spanish, African, or Indigenous ancestry—or any mix thereof—so long as they were a part of the region’s French-speaking world.
-
-This project uses "Arkansas Creoles" as a category of analysis—in other words, it wasn’t necessarily a term the community used to describe itself. Many would likely have identified simply as French. When they spoke of their home, they often used a broader term drawn from the French name for the river—and for the Indigenous nation who lived at its confluence with the Mississippi: the Arkansas country (<em>pays aux Arcs</em>) (Schroeder 2007, 168). Anglo-American settlers, and before them Spanish authorities, often used some version of the word "Creole"—or simply "French"—to describe these individuals and communities. In this context, Arkansas Creoles refers to people who were born in Arkansas—or who lived, labored, or settled here—and who were primarily French-speaking or part of the region’s French-speaking communities in the eighteenth and nineteenth centuries.
-
-French-speaking settlers and their descendants in the region forged a lasting partnership with the Quapaw (<em>Okáxpa</em>) Nation, whom the French called <em>Arkansas</em>, whose sovereignty they recognized, and whose support they relied on for both prosperity and survival—especially in the early years of settlement. Most Arkansas Creoles were of European background, but many also had Indigenous members in their family trees. A smaller number were of African descent.
-
-Mixed ancestry extended into the highest ranks of colonial Arkansas society. The wife of Arkansas Post commandant Jean-François Tisserant de Montcharvaux, a nobleman from France, was the granddaughter of Marie Rouensa-8canic8e, the daughter of a Kaskaskia chief who converted to Catholicism (Ekberg and Pregaldin 2007, 216).
-
-<figure>
-  <img src="images/emeraldpark_3.png" alt="View of the Arkansas River from Big Rock toward Pinnacle Mountain" loading="lazy" decoding="async">
-  <figcaption>View of the Arkansas River, looking from Big Rock toward Pinnacle Mountain (once called <em>la mamelle</em> in French)—two landmarks of river navigation well known to Arkansas Creoles; Big Rock, the first major outcrop on the river, lies 121 miles above its confluence with the Mississippi, and in 1722 French explorer Jean-Baptiste Bénard de La Harpe ascended the bluff, naming it <em>le rocher français</em> (“French Rock”) in honor of the king of France (Buck 2024); to the Quapaw (Ogahpah), the river was <em>ni zhi-te</em> (“red river”), a name echoed nearly a century later, in 1827, by Baptiste Imbeau—an Arkansas Creole of French and Lipan Apache ancestry who presented himself, and was recognized by both U.S. and Quapaw officials, as a “French Quapaw”; George Izard, second territorial governor of Arkansas, conducted his interviews on Quapaw language and customs entirely in French and noted in his report to the American Philosophical Society that local interpreters were “exclusively French Creoles or half-breeds” (Arnold 2016; Bandy 2020; Izard 1827a).</figcaption>
-</figure>
+[Placeholder]
 
 [↑ Back to Contents](#contents)
 
