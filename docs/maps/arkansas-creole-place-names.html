@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arkansas Créole Place Names</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+
+  <style>
+    /* Critical Leaflet positioning rules kept inline for GitHub Pages reliability. */
+    .leaflet-pane,.leaflet-tile,.leaflet-marker-icon,.leaflet-marker-shadow,
+    .leaflet-tile-container,.leaflet-pane>svg,.leaflet-pane>canvas,.leaflet-zoom-box,
+    .leaflet-image-layer,.leaflet-layer {
+      position:absolute; left:0; top:0;
+    }
+    .leaflet-container {
+      overflow:hidden; -webkit-tap-highlight-color:transparent; outline-offset:1px;
+      background:#ead9dc;
+    }
+    .leaflet-container .leaflet-overlay-pane svg,
+    .leaflet-container .leaflet-marker-pane img,
+    .leaflet-container .leaflet-shadow-pane img,
+    .leaflet-container .leaflet-tile-pane img,
+    .leaflet-container img.leaflet-image-layer {
+      max-width:none!important; max-height:none!important;
+    }
+    .leaflet-pane{z-index:400}.leaflet-tile-pane{z-index:200}.leaflet-overlay-pane{z-index:400}
+    .leaflet-shadow-pane{z-index:500}.leaflet-marker-pane{z-index:600}.leaflet-tooltip-pane{z-index:650}
+    .leaflet-popup-pane{z-index:700}
+    .leaflet-control{position:relative;z-index:800;pointer-events:auto}
+    .leaflet-top,.leaflet-bottom{position:absolute;z-index:1000;pointer-events:none}
+    .leaflet-top{top:0}.leaflet-right{right:0}.leaflet-bottom{bottom:0}.leaflet-left{left:0}
+    .leaflet-control{float:left;clear:both}.leaflet-right .leaflet-control{float:right}
+    .leaflet-top .leaflet-control{margin-top:10px}.leaflet-bottom .leaflet-control{margin-bottom:10px}
+    .leaflet-left .leaflet-control{margin-left:10px}.leaflet-right .leaflet-control{margin-right:10px}
+    .leaflet-control-zoom a,.leaflet-bar a,.leaflet-bar button{
+      display:block;width:30px;height:30px;line-height:30px;text-align:center;text-decoration:none;
+      background:#fff;color:#252525;border-bottom:1px solid #ccc;cursor:pointer
+    }
+    .leaflet-bar{box-shadow:0 1px 5px rgba(0,0,0,.25);border-radius:3px;overflow:hidden}
+    .leaflet-control-attribution{
+      background:rgba(255,255,255,.84);margin:0;padding:0 5px;color:#555;
+      font:10px/1.5 Arial,Helvetica,sans-serif
+    }
+
+    :root {
+      --panel-bg:#292929;
+      --panel-card:#303030;
+      --panel-rule:#454545;
+      --panel-text:#ededed;
+      --panel-muted:#bdbdbd;
+      --accent:#1fc7cf;
+      --accent-dark:#0f969d;
+      --river:#78a9d0;
+      --map-pink:#e7cbd1;
+    }
+
+    * { box-sizing:border-box; }
+    html,body {
+      width:100%; height:100%; margin:0; overflow:hidden;
+      font-family:Arial,Helvetica,sans-serif; background:#202020;
+    }
+
+    .shell {
+      display:grid;
+      grid-template-columns:minmax(0,1fr) 365px;
+      width:100%; height:100%; min-height:600px;
+    }
+
+    .map-wrap { position:relative; min-width:0; min-height:0; background:var(--map-pink); }
+    #map { position:absolute; inset:0; width:100%; height:100%; background:var(--map-pink); }
+
+    /* Keep OSM only as a faint locational scaffold; the DEQ streams do the visual work. */
+    .leaflet-tile-pane {
+      filter:grayscale(1) sepia(.15) brightness(1.12) contrast(.68);
+      opacity:.25;
+    }
+
+    .map-title {
+      position:absolute; z-index:900; top:12px; left:52px;
+      padding:8px 11px 9px; border-radius:3px;
+      background:rgba(255,255,255,.92); box-shadow:0 1px 5px rgba(0,0,0,.18);
+      pointer-events:none;
+    }
+    .map-title strong {
+      display:block; font:600 17px/1.2 Georgia,"Times New Roman",serif; color:#333;
+    }
+    .map-title span { display:block; margin-top:2px; font-size:11px; color:#666; }
+
+    .toolbar {
+      position:absolute; z-index:950; left:12px; bottom:18px;
+      display:flex; flex-wrap:wrap; gap:6px; max-width:min(780px,calc(100% - 24px));
+      padding:8px; border-radius:5px;
+      background:rgba(40,40,40,.92); color:#eee;
+      box-shadow:0 1px 7px rgba(0,0,0,.3);
+    }
+
+    .toolbar label, .toolbar button, .toolbar input {
+      font:12px/1.2 Arial,Helvetica,sans-serif;
+    }
+
+    .toolbar label {
+      display:flex; align-items:center; gap:4px; white-space:nowrap;
+    }
+
+    .toolbar input[type="search"] {
+      width:180px; min-width:120px; padding:6px 8px;
+      border:1px solid #777; border-radius:3px; background:#fff; color:#222;
+    }
+
+    .toolbar button {
+      padding:6px 8px; border:1px solid #666; border-radius:3px;
+      background:#404040; color:#fff; cursor:pointer;
+    }
+    .toolbar button:hover, .toolbar button:focus { background:#555; }
+
+    .details {
+      position:relative; z-index:1200; height:100%; overflow-y:auto;
+      background:var(--panel-bg); color:var(--panel-text);
+      border-left:1px solid #1d1d1d;
+    }
+
+    .details-header {
+      position:sticky; top:0; z-index:10; min-height:52px;
+      display:flex; align-items:center; justify-content:space-between;
+      padding:0 14px; background:#292929; border-bottom:1px solid #444;
+    }
+    .details-header strong { font-size:14px; font-weight:600; }
+    .details-close {
+      border:0; background:transparent; color:#bbb; font-size:23px;
+      cursor:pointer; padding:6px;
+    }
+
+    .details-body { padding:16px 16px 24px; }
+    .details-card { background:var(--panel-card); border:1px solid #363636; padding:14px; }
+
+    .type-kicker {
+      margin:0 0 16px; color:#dedede; font-size:13px; font-weight:600;
+    }
+
+    .details-title {
+      margin:0; font:400 21px/1.25 Georgia,"Times New Roman",serif; color:#f0f0f0;
+    }
+
+    .details-location {
+      margin:7px 0 0; font-size:12px; line-height:1.45; color:#aaa;
+    }
+
+    .details-image {
+      display:block; width:100%; max-height:310px; object-fit:contain;
+      margin:18px 0 0; background:#222;
+    }
+
+    .photo-credit {
+      margin:5px 0 0; font-size:11px; color:#a9a9a9;
+    }
+
+    .details-note {
+      margin:16px 0 0; font-size:13px; line-height:1.52; color:#d0d0d0;
+    }
+
+    .details-reference {
+      margin:17px 0 0; padding-top:15px; border-top:1px solid var(--panel-rule);
+      font-size:12px; line-height:1.48; color:#c3c3c3;
+    }
+
+    .details-extra {
+      margin:13px 0 0; font-size:11.5px; line-height:1.45; color:#aaa;
+    }
+
+    .placeholder {
+      font-size:13px; line-height:1.55; color:#bbb;
+    }
+
+    .place-label {
+      background:rgba(255,255,255,.82);
+      border:0; box-shadow:none;
+      color:#343434; font:10px/1.1 Arial,Helvetica,sans-serif;
+      padding:1px 3px; white-space:nowrap;
+      text-shadow:0 1px 0 #fff;
+    }
+    .leaflet-tooltip-top:before { border-top-color:rgba(255,255,255,.82); }
+
+    .search-results {
+      display:none; position:absolute; z-index:980;
+      left:12px; bottom:68px; width:300px; max-height:260px; overflow:auto;
+      background:#fff; color:#222; border-radius:4px; box-shadow:0 2px 10px rgba(0,0,0,.3);
+    }
+    .search-results.open { display:block; }
+    .search-result {
+      display:block; width:100%; padding:8px 10px; border:0; border-bottom:1px solid #ddd;
+      text-align:left; background:#fff; cursor:pointer;
+    }
+    .search-result:hover { background:#f1f1f1; }
+    .search-result strong { display:block; font-size:12px; }
+    .search-result span { display:block; margin-top:2px; font-size:11px; color:#666; }
+
+    @media (max-width:850px) {
+      html,body { overflow:auto; }
+      .shell {
+        grid-template-columns:1fr;
+        grid-template-rows:minmax(480px,60vh) auto;
+        height:auto; min-height:100%;
+      }
+      .map-wrap { min-height:480px; }
+      .details { height:auto; border-left:0; border-top:1px solid #1d1d1d; }
+      .details-header { position:relative; }
+      .details-close { display:none; }
+      .toolbar { bottom:10px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="shell">
+    <div class="map-wrap">
+      <div id="map" aria-label="Interactive map of Arkansas Créole place names"></div>
+
+      <div class="map-title">
+        <strong>Arkansas Créole Place Names</strong>
+        <span>French, Creole, and Indigenous traces in the Arkansas landscape</span>
+      </div>
+
+      <div id="searchResults" class="search-results"></div>
+
+      <div class="toolbar" aria-label="Map controls">
+        <input id="searchBox" type="search" placeholder="Search place names…" aria-label="Search place names">
+        <label><input type="checkbox" class="typeFilter" value="Water Feature" checked> Water</label>
+        <label><input type="checkbox" class="typeFilter" value="Settlement" checked> Settlements</label>
+        <label><input type="checkbox" class="typeFilter" value="Mountain" checked> Mountains</label>
+        <label><input id="labelToggle" type="checkbox" checked> Labels</label>
+        <button id="nameMode" type="button">Labels: current names</button>
+        <button id="resetBtn" type="button">Reset</button>
+      </div>
+    </div>
+
+    <aside class="details" aria-live="polite">
+      <div class="details-header">
+        <strong>Details</strong>
+        <button id="detailsClose" class="details-close" type="button" aria-label="Clear selection">×</button>
+      </div>
+      <div class="details-body">
+        <div class="details-card" id="detailsContent">
+          <div class="placeholder">
+            Select a place on the map to explore its current name, French or Creole root, historical context, and sources.
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <script>
+    const map = L.map("map", {
+      scrollWheelZoom:false,
+      zoomControl:true
+    });
+
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom:19,
+      attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    const details = document.getElementById("detailsContent");
+    const searchBox = document.getElementById("searchBox");
+    const searchResults = document.getElementById("searchResults");
+    const labelToggle = document.getElementById("labelToggle");
+    const nameModeBtn = document.getElementById("nameMode");
+
+    let allData = null;
+    let pointLayer = null;
+    let labelMode = "current";
+    let selectedMarker = null;
+    let currentBounds = null;
+
+    function esc(value) {
+      if (value === null || value === undefined) return "";
+      return String(value)
+        .replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;")
+        .replaceAll('"',"&quot;").replaceAll("'","&#039;");
+    }
+
+    function safeURL(value) {
+      if (!value) return "";
+      try {
+        const url = new URL(String(value));
+        return ["http:","https:"].includes(url.protocol) ? url.href : "";
+      } catch(e) { return ""; }
+    }
+
+    function labelText(p) {
+      if (labelMode === "historic" && p["French/Creole Root"]) return p["French/Creole Root"];
+      return p["Place Name"] || "";
+    }
+
+    function pointStyle(feature) {
+      const type = feature.properties?.Type || "";
+      let radius = 5;
+      if (type === "Settlement") radius = 5.5;
+      if (type === "Mountain") radius = 5.5;
+
+      return {
+        radius,
+        weight:1,
+        color:"#0d9197",
+        fillColor:"#1fc7cf",
+        fillOpacity:.94
+      };
+    }
+
+    function showDetails(feature, marker) {
+      if (selectedMarker) selectedMarker.setStyle(pointStyle(selectedMarker.feature));
+      selectedMarker = marker;
+      marker.setStyle({
+        ...pointStyle(feature),
+        radius:9,
+        weight:2.5,
+        color:"#0a7e83",
+        fillColor:"#31dce3",
+        fillOpacity:.95
+      });
+
+      const p = feature.properties || {};
+      const current = esc(p["Place Name"] || "");
+      const root = esc(p["French/Creole Root"] || "");
+      const title = root ? `${current} // ${root}` : current;
+      const note = esc(p.Note || "");
+      const ref = esc(p.Reference || "");
+      const type = esc(p.Type || "");
+      const extra = esc(p["Additional Note"] || "");
+      const loc = esc(p["Location Note"] || "");
+      const date = esc(p["Approximate Date First Recorded"] || "");
+      const origin = esc(p["Origin of Settler Named By/For"] || "");
+      const originNote = esc(p["Origin Note"] || "");
+      const photo = safeURL(p.Photo || "");
+      const credit = esc(p["Photo Credit"] || "");
+
+      details.innerHTML = `
+        <p class="type-kicker">${type || "Place"}</p>
+        <h2 class="details-title">${title}</h2>
+        ${loc ? `<p class="details-location">${loc}</p>` : ""}
+        ${photo ? `<img class="details-image" src="${esc(photo)}" alt="" loading="lazy"
+                       onerror="this.style.display='none'">` : ""}
+        ${credit ? `<p class="photo-credit">${credit}</p>` : ""}
+        ${note ? `<p class="details-note">${note}</p>` : ""}
+        ${ref ? `<div class="details-reference"><strong>Reference(s):</strong> ${ref}</div>` : ""}
+        ${(date || extra || origin || originNote) ? `
+          <div class="details-extra">
+            ${date ? `<div><strong>First recorded:</strong> ${date}</div>` : ""}
+            ${extra ? `<div><strong>Feature:</strong> ${extra}</div>` : ""}
+            ${origin ? `<div><strong>Name origin:</strong> ${origin}</div>` : ""}
+            ${originNote ? `<div>${originNote}</div>` : ""}
+          </div>
+        ` : ""}
+      `;
+    }
+
+    function clearDetails() {
+      if (selectedMarker) {
+        selectedMarker.setStyle(pointStyle(selectedMarker.feature));
+        selectedMarker = null;
+      }
+      details.innerHTML = `
+        <div class="placeholder">
+          Select a place on the map to explore its current name, French or Creole root, historical context, and sources.
+        </div>
+      `;
+    }
+
+    function activeTypes() {
+      return new Set(
+        [...document.querySelectorAll(".typeFilter:checked")].map(el => el.value)
+      );
+    }
+
+    function renderPoints() {
+      if (!allData) return;
+
+      if (pointLayer) map.removeLayer(pointLayer);
+
+      const allowed = activeTypes();
+      const filtered = {
+        type:"FeatureCollection",
+        features:allData.features.filter(f => allowed.has(f.properties?.Type))
+      };
+
+      pointLayer = L.geoJSON(filtered, {
+        pointToLayer:(feature,latlng) => {
+          const marker = L.circleMarker(latlng, pointStyle(feature));
+          marker.feature = feature;
+          return marker;
+        },
+        onEachFeature:(feature,marker) => {
+          marker.on("click", () => showDetails(feature, marker));
+          marker.bindTooltip(esc(labelText(feature.properties)), {
+            permanent:labelToggle.checked,
+            direction:"top",
+            offset:[0,-5],
+            className:"place-label",
+            opacity:.92
+          });
+        }
+      }).addTo(map);
+
+      pointLayer.bringToFront();
+    }
+
+    function updateLabels() {
+      renderPoints();
+    }
+
+    function doSearch(query) {
+      query = query.trim().toLowerCase();
+      if (!query || !allData) {
+        searchResults.classList.remove("open");
+        searchResults.innerHTML = "";
+        return;
+      }
+
+      const matches = allData.features.filter(f => {
+        const p = f.properties || {};
+        return String(p["Place Name"] || "").toLowerCase().includes(query) ||
+               String(p["French/Creole Root"] || "").toLowerCase().includes(query);
+      }).slice(0,12);
+
+      if (!matches.length) {
+        searchResults.innerHTML = `<div style="padding:10px;font-size:12px">No matches.</div>`;
+        searchResults.classList.add("open");
+        return;
+      }
+
+      searchResults.innerHTML = matches.map((f,i) => {
+        const p = f.properties || {};
+        return `<button class="search-result" data-i="${i}">
+          <strong>${esc(p["Place Name"] || "")}</strong>
+          <span>${esc(p["French/Creole Root"] || p.Type || "")}</span>
+        </button>`;
+      }).join("");
+      searchResults.classList.add("open");
+
+      [...searchResults.querySelectorAll(".search-result")].forEach(btn => {
+        btn.addEventListener("click", () => {
+          const f = matches[Number(btn.dataset.i)];
+          const coords = f.geometry.coordinates;
+          map.setView([coords[1],coords[0]], 11);
+
+          // Find the visible marker representing the feature.
+          let found = null;
+          pointLayer.eachLayer(layer => {
+            if (layer.feature?.properties?.["Place Name"] === f.properties?.["Place Name"]) found = layer;
+          });
+          if (found) showDetails(f, found);
+          searchResults.classList.remove("open");
+        });
+      });
+    }
+
+    // Pale blue DEQ stream network.
+    fetch("../data/arkansas-deq-streams.geojson", {cache:"no-store"})
+      .then(r => {
+        if (!r.ok) throw new Error(`Streams: ${r.status}`);
+        return r.json();
+      })
+      .then(streamData => {
+        const streamLayer = L.geoJSON(streamData, {
+          style:{
+            color:"#73a8d0",
+            weight:1.15,
+            opacity:.58,
+            lineCap:"round",
+            lineJoin:"round",
+            interactive:false
+          }
+        }).addTo(map);
+        streamLayer.bringToFront();
+      })
+      .catch(err => console.warn("Streams could not be loaded:", err));
+
+    fetch("../data/arkansas-creole-place-names.geojson", {cache:"no-store"})
+      .then(r => {
+        if (!r.ok) throw new Error(`Places: ${r.status}`);
+        return r.json();
+      })
+      .then(data => {
+        allData = data;
+        renderPoints();
+
+        currentBounds = pointLayer.getBounds();
+        if (currentBounds.isValid()) {
+          map.fitBounds(currentBounds, {padding:[35,35], maxZoom:7});
+        } else {
+          map.setView([34.9,-92.3],7);
+        }
+
+        // Open with White River selected in the side panel while preserving
+        // the full-state opening view, like Detroit on the Creole Corridor map.
+        const whiteRiver = data.features.find(
+          f => (f.properties?.["Place Name"] || "").trim().toLowerCase() === "white river"
+        );
+        if (whiteRiver) {
+          let whiteRiverMarker = null;
+          pointLayer.eachLayer(layer => {
+            if (layer.feature === whiteRiver) whiteRiverMarker = layer;
+          });
+          if (whiteRiverMarker) showDetails(whiteRiver, whiteRiverMarker);
+        }
+
+        setTimeout(() => {
+          if (pointLayer) pointLayer.bringToFront();
+          map.invalidateSize();
+        },250);
+      })
+      .catch(err => {
+        details.innerHTML = `<div class="placeholder">
+          The place-name data could not be loaded. Check that
+          <code>docs/data/arkansas-creole-place-names.geojson</code> exists.
+        </div>`;
+        console.error(err);
+      });
+
+    document.querySelectorAll(".typeFilter").forEach(el => {
+      el.addEventListener("change", renderPoints);
+    });
+
+    labelToggle.addEventListener("change", updateLabels);
+
+    nameModeBtn.addEventListener("click", () => {
+      labelMode = labelMode === "current" ? "historic" : "current";
+      nameModeBtn.textContent =
+        labelMode === "current" ? "Labels: current names" : "Labels: French/Creole roots";
+      updateLabels();
+    });
+
+    searchBox.addEventListener("input", () => doSearch(searchBox.value));
+
+    document.getElementById("detailsClose").addEventListener("click", clearDetails);
+
+    document.getElementById("resetBtn").addEventListener("click", () => {
+      if (currentBounds?.isValid()) map.fitBounds(currentBounds, {padding:[35,35], maxZoom:7});
+      clearDetails();
+      searchBox.value = "";
+      searchResults.classList.remove("open");
+    });
+
+    map.on("click", () => searchResults.classList.remove("open"));
+  </script>
+</body>
+</html>
