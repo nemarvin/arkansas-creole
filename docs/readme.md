@@ -1089,8 +1089,15 @@ html[data-reader-theme="dark"] .reader-toc-toggle {
 </section>
 
 <figure>
-  <img src="images/mtnebo.webp" alt=" A lone tree stands on a cliff overlooking a vast valley on the south-facing side of Mount Nebo in Mount Nebo State Park, Dardanelle, Arkansas." loading="lazy" decoding="async">
-  <figcaption>View from Mount Nebo State Park, Arkansas. Image from the original <em>Arkansas Créole</em> StoryMap.</figcaption>
+  <img
+    src="docs/images/mtnebo.webp"
+    alt="View south from Mount Nebo toward the Petit Jean River valley in Arkansas"
+    loading="lazy"
+    decoding="async"
+  >
+  <figcaption>
+    <strong>Image:</strong> View south from Mount Nebo State Park, Arkansas, toward the Petit Jean River valley.
+  </figcaption>
 </figure>
 
 <blockquote><em>"We live among countless landscapes of memory in this country. They convey both remembrance and omission[.] … Layers upon layers of names and meanings lie beneath the official surface."</em></blockquote>
