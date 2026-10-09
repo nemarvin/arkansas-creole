@@ -1096,7 +1096,7 @@ html[data-reader-theme="dark"] .reader-toc-toggle {
     decoding="async"
   >
   <figcaption>
-    <strong>Image:</strong> View south from Mount Nebo State Park, Arkansas, toward the Petit Jean River valley.
+    View south from Mount Nebo State Park, Arkansas, toward the Petit Jean River valley.
   </figcaption>
 </figure>
 
