@@ -1089,7 +1089,7 @@ html[data-reader-theme="dark"] .reader-toc-toggle {
 </section>
 
 <figure>
-  <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/5LM96J-UGeR_DhHBhw0z3.jpeg" alt=" A lone tree stands on a cliff overlooking a vast valley on the south-facing side of Mount Nebo in Mount Nebo State Park, Dardanelle, Arkansas." loading="lazy" decoding="async">
+  <img src="images/mtnebo.webp" alt=" A lone tree stands on a cliff overlooking a vast valley on the south-facing side of Mount Nebo in Mount Nebo State Park, Dardanelle, Arkansas." loading="lazy" decoding="async">
   <figcaption>View from Mount Nebo State Park, Arkansas. Image from the original <em>Arkansas Créole</em> StoryMap.</figcaption>
 </figure>
 
