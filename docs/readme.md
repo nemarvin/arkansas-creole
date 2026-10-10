@@ -1125,6 +1125,17 @@ So why do we know so little about these Creoles of Arkansas and the world they m
 
 Arkansas was an integral part of what historian Jay Gitlin has called the “Creole Corridor”—a constellation of interconnected French-speaking posts and settlements stretching from the St. Lawrence Valley through the Great Lakes and down the Mississippi River (Gitlin 2010). Mobility was key to the making and maintaining of this "French river world" in the heart of North America (Teasdale and Villerbu 2015; Wegmann and Englebert 2020).
 
+Although there were perhaps never more than a thousand subjects of the Spanish empire in what is now the state of Arkansas prior to U.S. annexation, many more moved through the region, traveling along the network of settlements that historians have called the “Creole Corridor.” This corridor stretched from New Orleans to the Canadian Maritimes—and extended outward in all directions. While not as densely settled as the Illinois Country establishments to the north (Ekberg, Nasatir, and Schram 2014; White 2012; Heerman 2018; Gitlin, Morrissey, and Kastor 2021)—which extended into the Ozark Mountains (Schroeder 2016)—or the plantation zones of the Cane and Red Rivers to the south (Burton and Smith 2008; Mills et al. 2013), Arkansas served as a crucial linchpin connecting these French-speaking regions. For many years, the Arkansas Post was the only major settlement between Upper Louisiana and Lower Louisiana, the linchpin of <em>la Louisiane<em> (Arnold 2017).
+
+<figure class="interactive-map">
+  <iframe src="maps/creole-corridor.html"
+          title="Interactive map of the Creole Corridor"
+          loading="lazy"
+          allowfullscreen></iframe>
+  <figcaption>Interactive map of settlements along the Creole Corridor. Click a point to open the details panel.</figcaption>
+</figure>
+
+
 <p>What is a "Creole"? What is an "Arkansas Creole"? In their historical dictionary of Louisiana vocabulary, <em>A Creole Lexicon</em>, scholars Glenn R. Edwards, Jay Dearborn Edwards, and Nicolas Kariouk Pecquet du Bellay de Verton show how the meaning of the term "Creole" evolved over time. In the fifteenth through eighteenth centuries, the term generally referred to people born in European colonies—places like Louisiana, Brazil, the West Indies, or France's Indian Ocean colonies—who descended from European or African settlers. In Upper Louisiana, the term was often used more narrowly to describe white descendants of French colonists, a meaning that lingered well into the twentieth century—even as far north as Canada, where it still described residents of the Great Lakes region.</p>
 
 <blockquote><em>"</em><em><strong>Creole</strong></em><em> (En; adj); </em><em><strong>Créole</strong></em><em> (Fr n, m/f; adj); </em><em><strong>Kreyol, Kreol</strong></em><em> (FC n, m/f; adj); </em><em><strong>Criollo</strong></em><em> (Sp n, m/f; adj); </em><em><strong>Crioulo</strong></em><em> (P n, m/f; adj)... From L[atin] adj. 'Something bred or raised.' </em></blockquote>
@@ -1135,15 +1146,6 @@ Arkansas was an integral part of what historian Jay Gitlin has called the “Cre
 
 <p>This project uses "Arkansas Creoles" as a category of analysis—in other words, it wasn't necessarily a term the community used to describe itself. Many would likely have identified simply as French. When they spoke of their home, they often used a broader term drawn from the French name for the river—and for the Indigenous nation who lived at its confluence with the Mississippi: the Arkansas country (<em>pays aux Arcs</em>) (Schroeder 2007, 168). Anglo-American settlers, and before them Spanish authorities, often used some version of the word "Creole"—or simply "French"—to describe these individuals and communities. In this context, Arkansas Creoles refers to people who were born in Arkansas—or who lived, labored, or settled here—and who were primarily French-speaking or part of the region's French-speaking communities in the eighteenth and nineteenth centuries.</p>
 
-Although there were perhaps never more than a thousand subjects of the Spanish empire in what is now the state of Arkansas prior to U.S. annexation, many more moved through the region, traveling along the network of settlements that historians have called the “Creole Corridor.” This corridor stretched from New Orleans to the Canadian Maritimes—and extended outward in all directions. While not as densely settled as the Illinois Country establishments to the north (Ekberg, Nasatir, and Schram 2014; White 2012; Heerman 2018; Gitlin, Morrissey, and Kastor 2021)—which extended into the Ozark Mountains (Schroeder 2016)—or the plantation zones of the Cane and Red Rivers to the south (Burton and Smith 2008; Mills et al. 2013), Arkansas served as a crucial linchpin connecting these French-speaking regions. For many years, the Arkansas Post was the only major settlement between Upper Louisiana and Lower Louisiana, the linchpin of <em>la Louisiane<em> (Arnold 2017).
-
-<figure class="interactive-map">
-  <iframe src="maps/creole-corridor.html"
-          title="Interactive map of the Creole Corridor"
-          loading="lazy"
-          allowfullscreen></iframe>
-  <figcaption>Interactive map of settlements along the Creole Corridor. Click a point to open the details panel.</figcaption>
-</figure>
 
 [↑ Back to Contents](#contents)
 
