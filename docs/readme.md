@@ -1311,7 +1311,7 @@ Despite the wave of Anglo-American (and other) migrants unleashed by the Louisia
 
 <figure>
   <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/Ei2ZCTxuPCjUpUyse4uJq.png" alt="" loading="lazy" decoding="async">
-  <figcaption><em><strong>Above</strong></em><em>: Extract from an 1832 letter, in French, by Father Saulnier, communicating Fr. Martin's 1830 "census" of Arkansas Catholics (Saulnier 1832).  </em><em><strong>Image:</strong></em><em> Downtown Little Rock and Arkansas River bridges, as seen from Knoop Park, 2025. Author’s photo.</em></figcaption>
+  <figcaption><em><strong>Above</strong></em><em>: Extract from an 1832 letter, in French, by Father Saulnier, communicating Fr. Martin's 1830 "census" of Arkansas Catholics (Saulnier 1832).  </em><em><strong>Below:</strong></em><em> Downtown Little Rock and Arkansas River bridges, as seen from Knoop Park, 2025. Author’s photo.</em></figcaption>
 </figure>
 
 <figure>
