@@ -646,12 +646,12 @@
 
         map.addControl(new ResetControl());
 
-        // Show Detroit initially so the standalone map does not open with an empty panel.
-        const detroit = data.features.find(
-          f => (f.properties?.Settlement || "").trim().toLowerCase() === "detroit"
+        // Show St. Louis initially so the standalone map opens on a central corridor settlement.
+        const stLouis = data.features.find(
+          f => (f.properties?.Settlement || "").trim().toLowerCase() === "st. louis"
         );
-        if (detroit) {
-          showDetails(detroit);
+        if (stLouis) {
+          showDetails(stLouis);
         }
 
         setTimeout(() => map.invalidateSize(), 250);
