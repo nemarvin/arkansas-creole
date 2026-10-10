@@ -1028,9 +1028,6 @@ html[data-reader-theme="dark"] .reader-toc-toggle {
       </ul>
     </li>
     <li><a href="#the-creole-corridor">The Creole Corridor</a>
-      <ul>
-        <li><a href="#linchpin-of-la-louisiane">Linchpin of <em>La Louisiane</em></a></li>
-      </ul>
     </li>
     <li><a href="#landscapes-of-erasure">Landscapes of Erasure</a>
       <ul>
@@ -1137,9 +1134,6 @@ Arkansas was an integral part of what historian Jay Gitlin has called the “Cre
 <p>But "Creole" could also carry broader cultural meanings. Over time, it came to include descendants of those early Creoles as well as people who had assimilated into Creole communities. In Louisiana and its neighboring regions, including what is now Arkansas, that might mean someone of French, Spanish, African, or Indigenous ancestry—or any mix thereof—so long as they were a part of the region's French-speaking world.</p>
 
 <p>This project uses "Arkansas Creoles" as a category of analysis—in other words, it wasn't necessarily a term the community used to describe itself. Many would likely have identified simply as French. When they spoke of their home, they often used a broader term drawn from the French name for the river—and for the Indigenous nation who lived at its confluence with the Mississippi: the Arkansas country (<em>pays aux Arcs</em>) (Schroeder 2007, 168). Anglo-American settlers, and before them Spanish authorities, often used some version of the word "Creole"—or simply "French"—to describe these individuals and communities. In this context, Arkansas Creoles refers to people who were born in Arkansas—or who lived, labored, or settled here—and who were primarily French-speaking or part of the region's French-speaking communities in the eighteenth and nineteenth centuries.</p>
-
-<a id="linchpin-of-la-louisiane"></a>
-### Linchpin of <em>La Louisiane</em>
 
 Although there were perhaps never more than a thousand subjects of the Spanish empire in what is now the state of Arkansas prior to U.S. annexation, many more moved through the region, traveling along the network of settlements that historians have called the “Creole Corridor.” This corridor stretched from New Orleans to the Canadian Maritimes—and extended outward in all directions.
 
