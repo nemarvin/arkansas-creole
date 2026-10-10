@@ -134,6 +134,7 @@ html[data-reader-theme="dark"] body {
 .markdown-body > blockquote,
 .markdown-body > h2,
 .markdown-body > h3,
+.markdown-body > h4,
 .markdown-body > pre,
 .markdown-body > table,
 .markdown-body > .footnotes {
@@ -400,6 +401,28 @@ html[data-reader-theme="dark"] body {
   font-size: 1.4rem;
   font-weight: 600;
   line-height: 1.32;
+}
+
+.markdown-body h4 {
+  max-width: var(--reader-measure);
+  margin: 2rem auto 0.85rem;
+  color: var(--text);
+  font-family: var(--reader-font);
+  font-size: 1.08rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.markdown-body .bib-entry {
+  max-width: var(--reader-measure);
+  margin: 0 auto 0.9rem;
+  padding-left: 1.4em;
+  text-indent: -1.4em;
+}
+
+.markdown-body .archive-list {
+  max-width: var(--reader-measure);
+  margin: 0 auto 1.25rem;
 }
 
 /* Contents page. */
@@ -1077,11 +1100,11 @@ html[data-reader-theme="dark"] .reader-toc-toggle {
         <li><a href="#secondary-sources">Secondary Sources</a></li>
         <li><a href="#published-primary-sources">Published Primary Sources</a></li>
         <li><a href="#archival-collections">Archival Collections</a></li>
-        <li><a href="#acknowledgements">Acknowledgements</a></li>
-        <li><a href="#community-sourcing">Community Sourcing</a></li>
-        <li><a href="#process-and-ethics">Process and Ethics</a></li>
       </ul>
     </li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+    <li><a href="#community-sourcing">Community Sourcing</a></li>
+    <li><a href="#process-and-ethics">Process and Ethics</a></li>
   </ul>
 </section>
 
@@ -1713,7 +1736,7 @@ Others, as we will see—compelled by kinship ties, opportunity, or sheer necess
 
 Enslaved Arkansas Creoles pursued survival strategies of their own. While the institution of slavery continued to expand during the American period, a few individuals who had been enslaved in the world of Creole Arkansas—such as Marie Jeanne of New Orleans and Arkansas Post—were able to secure their freedom through the old Spanish-colonial institution of self-purchase and build lives of dignity and relative prosperity as business owners under the new regime.
 
-French continued to be used in Arkansas much as it always had—through spoken language and epistolary correspondence (Vaugine de Nuisement 2005. Unlike New Orleans, however, Arkansas lacked an established print culture prior to the American regime, and local institutions did little to support one. Outsiders often assumed that Arkansas Creoles were illiterate or unenterprising—newspapers, one observer claimed, were “almost unknown” to them. Yet evidence suggests otherwise: some families, such as the Villemonts, subscribed to William Woodruff’s <em>Arkansas Gazette</em>, the first newspaper in the territory. Still, the paper did not cater to its French-speaking readership, offering only a single political advertisement in French. To sustain their language and cultural expression, French speakers in Arkansas had to rely on connections to others in the broader Creole Corridor and on a few Francophone newcomers who arrived during the early American period.
+French continued to be used in Arkansas much as it always had—through spoken language and epistolary correspondence (Vaugine de Nuisement 2005). Unlike New Orleans, however, Arkansas lacked an established print culture prior to the American regime, and local institutions did little to support one. Outsiders often assumed that Arkansas Creoles were illiterate or unenterprising—newspapers, one observer claimed, were “almost unknown” to them. Yet evidence suggests otherwise: some families, such as the Villemonts, subscribed to William Woodruff’s <em>Arkansas Gazette</em>, the first newspaper in the territory. Still, the paper did not cater to its French-speaking readership, offering only a single political advertisement in French. To sustain their language and cultural expression, French speakers in Arkansas had to rely on connections to others in the broader Creole Corridor and on a few Francophone newcomers who arrived during the early American period.
 
 <figure>
   <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/_pfb-vmCKeDq92JicvxwT.png" alt="" loading="lazy" decoding="async">
@@ -1972,247 +1995,249 @@ Most references to French-speaking Black Arkansans appear not in church records 
 <a id="secondary-sources"></a>
 ### Secondary Sources
 
-Allsopp, Fred W. <em>"Picturesque Nomenclature... An Exploration of How Some of the Peculiar Names of Arkansas Towns and Counties Originated."Arkansas Gazette</em>, July 18, 1937. <a href="https://www.geology.arkansas.gov/docs/pdf/publication/usgs_grants/written_media/miscellaneous_media/MiscMedia_PlaceNames.pdf">https://www.geology.arkansas.gov/docs/pdf/publication/usgs_grants/written_media/miscellaneous_media/MiscMedia_PlaceNames.pdf</a>.
+<p class="bib-entry">Allsopp, Fred W. “Picturesque Nomenclature... An Exploration of How Some of the Peculiar Names of Arkansas Towns and Counties Originated.” <em>Arkansas Gazette</em>, July 18, 1937. <a href="https://www.geology.arkansas.gov/docs/pdf/publication/usgs_grants/written_media/miscellaneous_media/MiscMedia_PlaceNames.pdf">https://www.geology.arkansas.gov/docs/pdf/publication/usgs_grants/written_media/miscellaneous_media/MiscMedia_PlaceNames.pdf</a>.</p>
 
-Arnold, Morris S. <em>Unequal Laws unto a Savage Race: European Legal Traditions in Arkansas, 1686-1836</em>. Fayetteville: University of Arkansas Press, 1986.
+<p class="bib-entry">Arnold, Morris S. <em>Unequal Laws unto a Savage Race: European Legal Traditions in Arkansas, 1686-1836</em>. Fayetteville: University of Arkansas Press, 1986.</p>
 
-———. <em>Colonial Arkansas, 1686-1804: A Social and Cultural History</em>. Fayetteville: University of Arkansas Press, 1993.
+<p class="bib-entry">———. <em>Colonial Arkansas, 1686-1804: A Social and Cultural History</em>. Fayetteville: University of Arkansas Press, 1993.</p>
 
-———. <em>The Rumble of a Distant Drum: The Quapaws and Old World Newcomers, 1673-1804</em>. Fayetteville: University of Arkansas Press, 2000.
+<p class="bib-entry">———. <em>The Rumble of a Distant Drum: The Quapaws and Old World Newcomers, 1673-1804</em>. Fayetteville: University of Arkansas Press, 2000.</p>
 
-———. “Eighteenth-Century Arkansas Illustrated.” <em>The Arkansas Historical Quarterly</em> 53, no. 2 (1994): 119. Accessed March 6, 2024.
+<p class="bib-entry">———. “Eighteenth-Century Arkansas Illustrated.” <em>The Arkansas Historical Quarterly</em> 53, no. 2 (1994): 119. Accessed March 6, 2024.</p>
 
-———.  “Barthélémy Dit Charlot, a Colonial Arkansas Métis and Voyageur.” <em>The Arkansas Historical Quarterly</em> 74, no. 1 (2015): 1–17.
+<p class="bib-entry">———.  “Barthélémy Dit Charlot, a Colonial Arkansas Métis and Voyageur.” <em>The Arkansas Historical Quarterly</em> 74, no. 1 (2015): 1–17.</p>
 
-———. “François Ménard, a Colonial Arkansas ‘Marchand’ and ‘Habitant.’” <em>The Arkansas Historical Quarterly</em> 74, no. 4 (2015): 303–326.
+<p class="bib-entry">———. “François Ménard, a Colonial Arkansas ‘Marchand’ and ‘Habitant.’” <em>The Arkansas Historical Quarterly</em> 74, no. 4 (2015): 303–326.</p>
 
-———. “The Métis People of Eighteenth-and Nineteenth-Century Arkansas.” <em>Louisiana History: The Journal of the Louisiana Historical Association</em> 57, no. 3 (2016): 261–296.
+<p class="bib-entry">———. “The Métis People of Eighteenth-and Nineteenth-Century Arkansas.” <em>Louisiana History: The Journal of the Louisiana Historical Association</em> 57, no. 3 (2016): 261–296.</p>
 
-———. “Colonial Arkansas Women.” <em>The Arkansas Historical Quarterly</em> 76, no. 1 (2017): 1–22.
+<p class="bib-entry">———. “Colonial Arkansas Women.” <em>The Arkansas Historical Quarterly</em> 76, no. 1 (2017): 1–22.</p>
 
-———. <em> The Arkansas Post of Louisiana</em>. Fayetteville: University of Arkansas Press, 2017.
+<p class="bib-entry">———. <em> The Arkansas Post of Louisiana</em>. Fayetteville: University of Arkansas Press, 2017.</p>
 
-Babb, Winston Chandler. <em>French Refugees from Saint Domingue to the Southern United States, 1791-1810</em>. Charlottesville: University of Virginia, 1979.
+<p class="bib-entry">Babb, Winston Chandler. <em>French Refugees from Saint Domingue to the Southern United States, 1791-1810</em>. Charlottesville: University of Virginia, 1979.</p>
 
-Bandy, Everett. “Who Was Saracen?” Informational Paper. Quapaw Nation (Oklahoma), n.d. Accessed August 3, 2025. https://www.quapawtribe.com/598/Saracen.
+<p class="bib-entry">Bandy, Everett. “Who Was Saracen?” Informational Paper. Quapaw Nation (Oklahoma), n.d. Accessed August 3, 2025. https://www.quapawtribe.com/598/Saracen.</p>
 
-———. <em> </em>“O-Ga-Xpa Ma-Zho<sup>n</sup>: Quapaw Country.” Informational Paper. Quapaw Nation (Oklahoma), 2020. <a href="https://www.quapawtribe.com/DocumentCenter/View/9804/Quapaw-Country">https://www.quapawtribe.com/DocumentCenter/View/9804/Quapaw-Country</a>.
+<p class="bib-entry">———. “O-Ga-Xpa Ma-Zho<sup>n</sup>: Quapaw Country.” Informational Paper. Quapaw Nation (Oklahoma), 2020. <a href="https://www.quapawtribe.com/DocumentCenter/View/9804/Quapaw-Country">https://www.quapawtribe.com/DocumentCenter/View/9804/Quapaw-Country</a>.</p>
 
-Bearss, Edwin C, and Lenard E Brown. <em>Arkansas Post National Memorial: Structural History[,] Post of Arkansas, 1804-1863 and Civil War Troop Movement Maps[,] January, 1863</em>. National Parks Service: Washington, D.C., April 1971.
+<p class="bib-entry">Bearss, Edwin C, and Lenard E Brown. <em>Arkansas Post National Memorial: Structural History[,] Post of Arkansas, 1804-1863 and Civil War Troop Movement Maps[,] January, 1863</em>. National Parks Service: Washington, D.C., April 1971.</p>
 
-Beaupré, Andrew R. “The Posts along the Arkansas: A Brief Introduction to French Settlement in the Arkansas River Valley.” <em>Le Journal: The Center for French Colonial Studies</em> 40, no. 1 (2024): 4–12.
+<p class="bib-entry">Beaupré, Andrew R. “The Posts along the Arkansas: A Brief Introduction to French Settlement in the Arkansas River Valley.” <em>Le Journal: The Center for French Colonial Studies</em> 40, no. 1 (2024): 4–12.</p>
 
-Blaetz, Robin. <em>Visions of the Maid: Joan of Arc in American Film and Culture</em>. Cultural Frames, Framing Culture. Charlottesville: University Press of Virginia, 2001.
+<p class="bib-entry">Blaetz, Robin. <em>Visions of the Maid: Joan of Arc in American Film and Culture</em>. Cultural Frames, Framing Culture. Charlottesville: University Press of Virginia, 2001.</p>
 
-Blaufarb, Rafe. <em>Bonapartists in the Borderlands: French Exiles and Refugees on the Gulf Coast, 1815-1835</em>. Reprint Edition. University of Alabama Press, 2016.
+<p class="bib-entry">Blaufarb, Rafe. <em>Bonapartists in the Borderlands: French Exiles and Refugees on the Gulf Coast, 1815-1835</em>. Reprint Edition. University of Alabama Press, 2016.</p>
 
-Bohnert, Dyan. “Mary John (?-1857).” In <em>Encyclopedia of Arkansas</em>. Little Rock, Arkansas: Central Arkansas Library System, 2023. <a href="https://encyclopediaofarkansas.net/entries/mary-john-4367">https://encyclopediaofarkansas.net/entries/mary-john-4367</a>.
+<p class="bib-entry">Bohnert, Dyan. “Mary John (?-1857).” In <em>Encyclopedia of Arkansas</em>. Little Rock, Arkansas: Central Arkansas Library System, 2023. <a href="https://encyclopediaofarkansas.net/entries/mary-john-4367">https://encyclopediaofarkansas.net/entries/mary-john-4367</a>.</p>
 
-Branner, John C. “Some Old French Place Names in the State of Arkansas.” <em>The Arkansas Historical Quarterly</em> 19, no. 3 (1899) 1960: 191–206.
+<p class="bib-entry">Branner, John C. “Some Old French Place Names in the State of Arkansas.” <em>The Arkansas Historical Quarterly</em> 19, no. 3 (1899) 1960: 191–206.</p>
 
-Buck, Kate. “Big Rock.” <em>Encyclopedia of Arkansas</em>. Central Arkansas Library System. Last updated January 29, 2024. Accessed August 29, 2025. <a href="https://encyclopediaofarkansas.net/entries/big-rock-5492/">https://encyclopediaofarkansas.net/entries/big-rock-5492/</a>
+<p class="bib-entry">Buck, Kate. “Big Rock.” <em>Encyclopedia of Arkansas</em>. Central Arkansas Library System. Last updated January 29, 2024. Accessed August 29, 2025. <a href="https://encyclopediaofarkansas.net/entries/big-rock-5492/">https://encyclopediaofarkansas.net/entries/big-rock-5492/</a></p>
 
-Burton, Helen Sophie, and F. Todd Smith. <em>Colonial Natchitoches: A Creole Community on the Louisiana-Texas Frontier</em>. Texas A&amp;M University Press, 2008.
+<p class="bib-entry">Burton, Helen Sophie, and F. Todd Smith. <em>Colonial Natchitoches: A Creole Community on the Louisiana-Texas Frontier</em>. Texas A&amp;M University Press, 2008.</p>
 
-Catton, Theodore. <em>A Many-Storied Place: Historic Resource Study, Arkansas Post National Memorial, Arkansas</em>. Washington, D.C.: National Park Service, 2017. <a href="https://npshistory.com/publications/arpo/hrs.pdf">https://npshistory.com/publications/arpo/hrs.pdf</a>.
+<p class="bib-entry">Catton, Theodore. <em>A Many-Storied Place: Historic Resource Study, Arkansas Post National Memorial, Arkansas</em>. Washington, D.C.: National Park Service, 2017. <a href="https://npshistory.com/publications/arpo/hrs.pdf">https://npshistory.com/publications/arpo/hrs.pdf</a>.</p>
 
-DeArmond-Huskey, Rebecca. <em>Bartholomew’s Song: A Bayou History</em>. Bowie, Maryland: Heritage Books, 2001
+<p class="bib-entry">DeArmond-Huskey, Rebecca. <em>Bartholomew’s Song: A Bayou History</em>. Bowie, Maryland: Heritage Books, 2001.</p>
 
-DeJean, Joan. <em>Mutinous Women: How French Convicts Became Founding Mothers of the Gulf Coast</em>. New York: Basic Books, 2022.
+<p class="bib-entry">DeJean, Joan. <em>Mutinous Women: How French Convicts Became Founding Mothers of the Gulf Coast</em>. New York: Basic Books, 2022.</p>
 
-Deloria, Professor Philip J. <em>Playing Indian</em>. First Edition. New Haven: Yale University Press, 1998.
+<p class="bib-entry">Deloria, Professor Philip J. <em>Playing Indian</em>. First Edition. New Haven: Yale University Press, 1998.</p>
 
-Dickinson, Samuel Dorris. “Colonial Arkansas Place Names.” <em>The Arkansas Historical Quarterly</em> 48, no. 2 (1989): 137–68.
+<p class="bib-entry">Dickinson, Samuel Dorris. “Colonial Arkansas Place Names.” <em>The Arkansas Historical Quarterly</em> 48, no. 2 (1989): 137–68.</p>
 
-Din, Gilbert C., and Abraham Phineas Nasatir. <em>The Imperial Osages: Spanish-Indian Diplomacy in the Mississippi Valley</em>. Norman: University of Oklahoma Press, 1983.
+<p class="bib-entry">Din, Gilbert C., and Abraham Phineas Nasatir. <em>The Imperial Osages: Spanish-Indian Diplomacy in the Mississippi Valley</em>. Norman: University of Oklahoma Press, 1983.</p>
 
-Dubuisson, Ann. “François Sarazin: Interpreter at Arkansas Post during the Chickasaw Wars.” <em>The Arkansas Historical Quarterly</em> 71, no. 3 (2012): 243–63.
+<p class="bib-entry">Dubuisson, Ann. “François Sarazin: Interpreter at Arkansas Post during the Chickasaw Wars.” <em>The Arkansas Historical Quarterly</em> 71, no. 3 (2012): 243–63.</p>
 
-DuVal, Kathleen. <em>The Native Ground: Indians and Colonists in the Heart of the Continent</em>. Philadelphia: University of Pennsylvania Press, 2007.
+<p class="bib-entry">DuVal, Kathleen. <em>The Native Ground: Indians and Colonists in the Heart of the Continent</em>. Philadelphia: University of Pennsylvania Press, 2007.</p>
 
-———. “Indian Intermarriage and Métissage in Colonial Louisiana.” <em>The William and Mary Quarterly</em> 65, no. 2 (2008): 267–304.
+<p class="bib-entry">———. “Indian Intermarriage and Métissage in Colonial Louisiana.” <em>The William and Mary Quarterly</em> 65, no. 2 (2008): 267–304.</p>
 
-———. <em>Native Nations: A Millennium in North America</em>. New York: Random House, 2024.
+<p class="bib-entry">———. <em>Native Nations: A Millennium in North America</em>. New York: Random House, 2024.</p>
 
-Edwards, Jay Dearborn, and Nicolas Kariouk Pecquet du Bellay de Verton. <em>A Creole Lexicon: Architecture, Landscape, People</em>. Baton Rouge: Louisiana State University Press, 2004.
+<p class="bib-entry">Edwards, Jay Dearborn, and Nicolas Kariouk Pecquet du Bellay de Verton. <em>A Creole Lexicon: Architecture, Landscape, People</em>. Baton Rouge: Louisiana State University Press, 2004.</p>
 
-Ekberg, Carl J., Abraham P. Nasatir, and Bernard K. Schram. <em>Colonial Ste. Genevieve: An Adventure on the Mississippi Frontier</em>. 2nd edition. Carbondale: Southern Illinois University Press, 2014.
+<p class="bib-entry">Ekberg, Carl J., Abraham P. Nasatir, and Bernard K. Schram. <em>Colonial Ste. Genevieve: An Adventure on the Mississippi Frontier</em>. 2nd edition. Carbondale: Southern Illinois University Press, 2014.</p>
 
-Ekberg, Carl J., and Anton J. Pregaldin. “Marie Rouensa-8canic8e and the Foundations of French Illinois.” In <em>Native Women’s History in Eastern North America before 1900</em>, edited by Rebecca Kugel and Lucy Eldersveld Murphy, 203–33. Lincoln, Neb.: University of Nebraska Press, 2007.
+<p class="bib-entry">Ekberg, Carl J., and Anton J. Pregaldin. “Marie Rouensa-8canic8e and the Foundations of French Illinois.” In <em>Native Women’s History in Eastern North America before 1900</em>, edited by Rebecca Kugel and Lucy Eldersveld Murphy, 203–33. Lincoln, Neb.: University of Nebraska Press, 2007.</p>
 
-Ellis, Elizabeth N. <em>The Great Power of Small Nations</em>. Philadelphia: University of Pennsylvania Press, 2023.
+<p class="bib-entry">Ellis, Elizabeth N. <em>The Great Power of Small Nations</em>. Philadelphia: University of Pennsylvania Press, 2023.</p>
 
-Evans, Tessa. "Adding Relief to Maps: French and Indigenous Cartography at the Arkansas Post." <em>H-France Salon, </em>Volume 16 (2024): 1.
+<p class="bib-entry">Evans, Tessa. "Adding Relief to Maps: French and Indigenous Cartography at the Arkansas Post." <em>H-France Salon, </em>Volume 16 (2024): 1.</p>
 
-Filhol, Emmanuel. “Bohémiens condamnés aux galères à l’époque du Roi-Soleil (1677 à 1715).” <em>Criminocorpus. Revue d’Histoire de la justice, des crimes et des peines</em>, June 2, 2020.
+<p class="bib-entry">Filhol, Emmanuel. “Bohémiens condamnés aux galères à l’époque du Roi-Soleil (1677 à 1715).” <em>Criminocorpus. Revue d’Histoire de la justice, des crimes et des peines</em>, June 2, 2020.</p>
 
-Jones, Linda C. “Nicolas Foucault and the Quapaws.” <em>The Arkansas Historical Quarterly</em> 75, no. 1 (2016): 4–26.
+<p class="bib-entry">Fraser, Angus. <em>The Gypsies</em>. 2nd edition. Oxford, UK ; Cambridge, USA: Wiley-Blackwell, 1995.</p>
 
-Fraser, Angus. <em>The Gypsies</em>. 2nd edition. Oxford, UK ; Cambridge, USA: Wiley-Blackwell, 1995.
+<p class="bib-entry">García-Fernández, C., N. Font-Porterias, V. Kučinskas, E. Sukarova-Stefanovska, H. Pamjav, H. Makukh, B. Dobon, et al. “Sex-Biased Patterns Shaped the Genetic History of Roma.” <em>Scientific Reports</em> 10, no. 1 (September 2, 2020): 14464.</p>
 
-García-Fernández, C., N. Font-Porterias, V. Kučinskas, E. Sukarova-Stefanovska, H. Pamjav, H. Makukh, B. Dobon, et al. “Sex-Biased Patterns Shaped the Genetic History of Roma.” <em>Scientific Reports</em> 10, no. 1 (September 2, 2020): 14464.
+<p class="bib-entry">Gitlin, Jay. <em>The Bourgeois Frontier: French Towns, French Traders, and American Expansion</em>. New Haven: Yale University Press, 2010.</p>
 
-Gitlin, Jay. <em>The Bourgeois Frontier: French Towns, French Traders, and American Expansion</em>. New Haven: Yale University Press, 2010.
+<p class="bib-entry">Gitlin, Jay, Robert Michael Morrissey, and Peter J. Kastor, eds. <em>French St. Louis: Landscape, Contexts, and Legacy</em>. Lincoln: University of Nebraska Press, 2021.</p>
 
-Gitlin, Jay, Robert Michael Morrissey, and Peter J. Kastor, eds. <em>French St. Louis: Landscape, Contexts, and Legacy</em>. Lincoln: University of Nebraska Press, 2021.
+<p class="bib-entry">Gosnell, Jonathan K. <em>Franco-America in the Making: The Creole Nation Within</em>. Lincoln ; London: University of Nebraska Press, 2018.</p>
 
-Gosnell, Jonathan K. <em>Franco-America in the Making: The Creole Nation Within</em>. Lincoln ; London: University of Nebraska Press, 2018.
+<p class="bib-entry">Hall, Gwendolyn Midlo. <em>Africans in Colonial Louisiana: The Development of Afro-Creole Culture in the Eighteenth Century</em>. Baton Rouge: Louisiana State University Press, 1995.</p>
 
-Hall, Gwendolyn Midlo. <em>Africans in Colonial Louisiana: The Development of Afro-Creole Culture in the Eighteenth Century</em>. Baton Rouge: Louisiana State University Press, 1995.
+<p class="bib-entry">Hancock, Ian F. <em>We Are the Romani People</em>. Hatfield: University of Hertfordshire Press, 2002.</p>
 
-Hancock, Ian F. <em>We Are the Romani People</em>. Hatfield: University of Hertfordshire Press, 2002.
+<p class="bib-entry">Havard, Gilles, and Cécile Vidal. <em>Histoire de l’Amérique française</em>. Paris: Flammarion, 2008.</p>
 
-Havard, Gilles, and Cécile Vidal. <em>Histoire de l’Amérique française</em>. Paris: Flammarion, 2008.
+<p class="bib-entry">Havard, Gilles. <em>L’Amérique fantôme: Les aventuriers francophones du Nouveau Monde</em>. Paris: Flammarion, 2019.</p>
 
-Havard, Gilles. <em>L’Amérique fantôme: Les aventuriers francophones du Nouveau Monde</em>. Paris: Flammarion, 2019.
+<p class="bib-entry">Hayes, Derek. <em>Historical Atlas of the American West</em>. Berkeley: University of California Press, 2009.</p>
 
-Hayes, Derek. <em>Historical Atlas of the American West</em>. Berkeley: University of California Press, 2009.
+<p class="bib-entry">Heerman, M. Scott. <em>The Alchemy of Slavery: Human Bondage and Emancipation in the Illinois Country, 1730-1865</em>. Philadelphia: University of Pennsylvania Press, 2018.</p>
 
-Heerman, M. Scott. <em>The Alchemy of Slavery: Human Bondage and Emancipation in the Illinois Country, 1730-1865</em>. Philadeblphia: University of Pennsylvania Press, 2018.
+<p class="bib-entry">Higgins, Donald. “Petit Jean Mountain.” <em>The Encyclopedia of Arkansas History and Culture</em>. Butler Center for Arkansas Studies. 2011. Last updated April 19, 2025. Accessed September 1, 2025. <a href="https://encyclopediaofarkansas.net/entries/petit-jean-mountain-6317/">https://encyclopediaofarkansas.net/entries/petit-jean-mountain-6317/</a>.</p>
 
-Higgins, Donald. “Petit Jean Mountain.” <em>The Encyclopedia of Arkansas History and Culture</em>. Butler Center for Arkansas Studies. 2011. Last updated April 19, 2025. Accessed September 1, 2025. <a href="https://encyclopediaofarkansas.net/entries/petit-jean-mountain-6317/">https://encyclopediaofarkansas.net/entries/petit-jean-mountain-6317/</a>.
+<p class="bib-entry">———.2019. “Point Remove Creek and the Cherokees, Part 2: The Point Remove Creek Landmark.” <em>Petit Jean Country Headlight</em> 142 (33) (October 16): 1–2.</p>
 
-———.2019. “Point Remove Creek and the Cherokees, Part 2: The Point Remove Creek Landmark.” <em>Petit Jean Country Headlight</em> 142 (33) (October 16): 1–2.
+<p class="bib-entry">Holweck, F. G. “The Arkansas Mission Under Rosati.” <em>St. Louis Catholic Historical Review</em> 1, no. 4–5 (October 1919): 243–67.</p>
 
-Holweck, F. G. “The Arkansas Mission Under Rosati.” <em>St. Louis Catholic Historical Review</em> 1, no. 4–5 (October 1919): 243–67.
+<p class="bib-entry">Hyde, Anne F. <em>Empires, Nations, and Families: A History of the North American West, 1800-1860</em>. Lincoln: University of Nebraska Press, 2011.</p>
 
-Hyde, Anne F. <em>Empires, Nations, and Families: A History of the North American West, 1800-1860</em>. Lincoln: University of Nebraska Press, 2011.
+<p class="bib-entry">Jones, Kelly Houston. <em>A Weary Land: Slavery on the Ground in Arkansas</em>. Athens: University of Georgia Press, 2021.</p>
 
-Jones, Kelly Houston. <em>A Weary Land: Slavery on the Ground in Arkansas</em>. Athens: University of Georgia Press, 2021.
+<p class="bib-entry">Jones, Linda C. “Nicolas Foucault and the Quapaws.” <em>The Arkansas Historical Quarterly</em> 75, no. 1 (2016): 4–26.</p>
 
-Kirk, John A. <em>Winthrop Rockefeller: From New Yorker to Arkansawyer, 1912-1956</em>. Fayetteville: The University of Arkansas Press, 2022.
+<p class="bib-entry">Kirk, John A. <em>Winthrop Rockefeller: From New Yorker to Arkansawyer, 1912-1956</em>. Fayetteville: The University of Arkansas Press, 2022.</p>
 
-Kornhauser, Elizabeth Mankin, and Dorothy Mahon. “Technical Brilliance Revealed: Bingham’s Fur Traders Descending the Missouri.” In <em>Navigating the West: George Caleb Bingham &amp; The River</em>, 135–56. New Haven: Yale University Press, 2014.
+<p class="bib-entry">Kornhauser, Elizabeth Mankin, and Dorothy Mahon. “Technical Brilliance Revealed: Bingham’s Fur Traders Descending the Missouri.” In <em>Navigating the West: George Caleb Bingham &amp; The River</em>, 135–56. New Haven: Yale University Press, 2014.</p>
 
-Kurlandski, Jerry. “Jean Baptiste Janis, Pts. 1 and 2.” <em>Adventures in Genealogy</em>, September 20, 2025. <a href="https://www.genealogy.jkurlandski.com/aubuchon/jeanBaptisteJanis1.html">https://www.genealogy.jkurlandski.com/aubuchon/jeanBaptisteJanis1.html</a>.
+<p class="bib-entry">Kurlandski, Jerry. “Jean Baptiste Janis, Pts. 1 and 2.” <em>Adventures in Genealogy</em>, September 20, 2025. <a href="https://www.genealogy.jkurlandski.com/aubuchon/jeanBaptisteJanis1.html">https://www.genealogy.jkurlandski.com/aubuchon/jeanBaptisteJanis1.html</a>.</p>
 
-Lambert, Eleanor R. <em>In the Palm of His Hand: The History of St. Joseph’s Catholic Church, Pine Bluff, Arkansas, 1838-1984</em>. Little Rock, Ark: August House, 1985.
+<p class="bib-entry">Lambert, Eleanor R. <em>In the Palm of His Hand: The History of St. Joseph’s Catholic Church, Pine Bluff, Arkansas, 1838-1984</em>. Little Rock, Ark: August House, 1985.</p>
 
-Lankford, George E., and Jeannie Whayne. “Almost ‘Illinark’: The French Presence in Northeast Arkansas.” In <em>Cultural Encounters in the Early South: Indians and Europeans in Arkansas</em>, 88–111. Fayetteville: University of Arkansas Press, 1995.
+<p class="bib-entry">Lankford, George E., and Jeannie Whayne. “Almost ‘Illinark’: The French Presence in Northeast Arkansas.” In <em>Cultural Encounters in the Early South: Indians and Europeans in Arkansas</em>, 88–111. Fayetteville: University of Arkansas Press, 1995.</p>
 
-Lawrence County Historical Society.<em> De Mun and Company: French Connections and the Founding of Lawrence County </em>(Research Presentation). Pocahontas, AR: Arkansas Historical Association / Lawrence County Historical Society, 2017.
+<p class="bib-entry">Lawrence County Historical Society.<em> De Mun and Company: French Connections and the Founding of Lawrence County </em>(Research Presentation). Pocahontas, AR: Arkansas Historical Association / Lawrence County Historical Society, 2017.</p>
 
-Marrero, Karen L. <em>Detroit’s Hidden Channels: The Power of French-Indigenous Families in the Eighteenth Century</em>. Winnipeg: University of Manitoba Press, 2020.
+<p class="bib-entry">Marrero, Karen L. <em>Detroit’s Hidden Channels: The Power of French-Indigenous Families in the Eighteenth Century</em>. Winnipeg: University of Manitoba Press, 2020.</p>
 
-Marvin, Nathan. “‘A Thousand Prejudices’: French Habitants and Catholic Missionaries in the Making of the Old Northwest, 1795-1805.” In <em>Une Amérique française, 1760-1860: dynamiques du corridor créole</em>, edited by Guillaume Teasdale and Tangi Villerbu, 113–40. Paris: Les Indes savantes, 2015.
+<p class="bib-entry">Marvin, Nathan. “‘A Thousand Prejudices’: French Habitants and Catholic Missionaries in the Making of the Old Northwest, 1795-1805.” In <em>Une Amérique française, 1760-1860: dynamiques du corridor créole</em>, edited by Guillaume Teasdale and Tangi Villerbu, 113–40. Paris: Les Indes savantes, 2015.</p>
 
-Matache, Margareta. “Dear Gadjo (Non-Romani) Scholars….” <em>FXB Center for Health &amp; Human Rights | Harvard University</em> (blog), June 19, 2017. <a href="https://fxb.harvard.edu/2017/06/19/dear-gadje-non-romani-scholars/">https://fxb.harvard.edu/2017/06/19/dear-gadje-non-romani-scholars/</a>.
+<p class="bib-entry">Matache, Margareta. “Dear Gadjo (Non-Romani) Scholars….” <em>FXB Center for Health &amp; Human Rights | Harvard University</em> (blog), June 19, 2017. <a href="https://fxb.harvard.edu/2017/06/19/dear-gadje-non-romani-scholars/">https://fxb.harvard.edu/2017/06/19/dear-gadje-non-romani-scholars/</a>.</p>
 
-McDermott, John Francis. “The French in the Mississippi Valley.” In <em>St. Louis Families from the French West Indies</em>, edited by Dorothy Garesché Holland, 41–58. Urbana: University of Illinois Press, 1965.
+<p class="bib-entry">McDermott, John Francis. “The French in the Mississippi Valley.” In <em>St. Louis Families from the French West Indies</em>, edited by Dorothy Garesché Holland, 41–58. Urbana: University of Illinois Press, 1965.</p>
 
-McGrew, DeAnn. "Origins of the Legend of Petit Jean." Undergraduate thesis, University of Central Arkansas, December 10, 1999. UCA Archives &amp; Special Collections, SMC 1202.
+<p class="bib-entry">McGrew, DeAnn. "Origins of the Legend of Petit Jean." Undergraduate thesis, University of Central Arkansas, December 10, 1999. UCA Archives &amp; Special Collections, SMC 1202.</p>
 
-McLeod, Walter E. “Early Lawrence County History.” <em>Arkansas Historical Quarterly</em> 3, no. 1 (Spring 1944): 37–52
+<p class="bib-entry">McLeod, Walter E. “Early Lawrence County History.” <em>Arkansas Historical Quarterly</em> 3, no. 1 (Spring 1944): 37–52.</p>
 
-Miles, Tiya. <em>The Dawn of Detroit: A Chronicle of Slavery and Freedom in the City of the Straits</em>. New York ; London: The New Press, 2017.
+<p class="bib-entry">Miles, Tiya. <em>The Dawn of Detroit: A Chronicle of Slavery and Freedom in the City of the Straits</em>. New York ; London: The New Press, 2017.</p>
 
-Mills, Elizabeth Shown. “Assimilation? Or Marginalization and Discrimination?: Romani Settlers of the Colonial Gulf (Christophe Clan).” Geneaological Resource. <em>Historic Pathways</em>, June 6, 2015. Accessed February 16, 2023. www.historicpathways.com.
+<p class="bib-entry">Mills, Elizabeth Shown. “Assimilation? Or Marginalization and Discrimination?: Romani Settlers of the Colonial Gulf (Christophe Clan).” Genealogical Resource. <em>Historic Pathways</em>, June 6, 2015. Accessed February 16, 2023. www.historicpathways.com.</p>
 
-Mills, Gary B., Elizabeth Shown Mills, and H. Sophie Burton. <em>The Forgotten People: Cane River’s Creoles of Color</em>. Revised edition edition. Baton Rouge: LSU Press, 2013
+<p class="bib-entry">Mills, Gary B., Elizabeth Shown Mills, and H. Sophie Burton. <em>The Forgotten People: Cane River’s Creoles of Color</em>. Revised edition. Baton Rouge: LSU Press, 2013.</p>
 
-Milson, Andrew J. <em>Arkansas Travelers: Geographies of Exploration and Perception, 1804-1834</em>. Fayetteville: The University of Arkansas Press, 2019.
+<p class="bib-entry">Milson, Andrew J. <em>Arkansas Travelers: Geographies of Exploration and Perception, 1804-1834</em>. Fayetteville: The University of Arkansas Press, 2019.</p>
 
-Morris, Robert Lee. “Ozark or Masserne.” <em>The Arkansas Historical Quarterly</em> 2, no. 1 (1943): 39–42.
+<p class="bib-entry">Morris, Robert Lee. “Ozark or Masserne.” <em>The Arkansas Historical Quarterly</em> 2, no. 1 (1943): 39–42.</p>
 
-Musco, Jonas, Paz Núñez-Regueiro, Everett Bandy, Ryan Spring, and Ian Thompson. “Back to the Sources. A Collaborative Research Project on the Indigenous Mississippi Valley and Southeast Based on 18th-Century French Maps (Musée Du Quai Branly-Jacques Chirac and the Choctaw, Miami, Peoria and Quapaw Nations).” <em>IdeAs. Idées d’Amériques</em>, no. 26 (October 2025). <a href="https://doi.org/10.4000/14v77">https://doi.org/10.4000/14v77</a>.
+<p class="bib-entry">Musco, Jonas, Paz Núñez-Regueiro, Everett Bandy, Ryan Spring, and Ian Thompson. “Back to the Sources. A Collaborative Research Project on the Indigenous Mississippi Valley and Southeast Based on 18th-Century French Maps (Musée Du Quai Branly-Jacques Chirac and the Choctaw, Miami, Peoria and Quapaw Nations).” <em>IdeAs. Idées d’Amériques</em>, no. 26 (October 2025). <a href="https://doi.org/10.4000/14v77">https://doi.org/10.4000/14v77</a>.</p>
 
-Núñez-Regueiro, Paz, Everett Bandy, George Ironstrack, Jonas Musco, Ian Thompson, and Céline Daher. 2025. “Matachées: Painted Hides, Indigenous Nations, and French Colonial Encounters along the Mississippi Valley.” <em>Gradhiva. Revue d’anthropologie et d’histoire des Arts</em>, no. 40 (November 2025). <a href="https://doi.org/10.4000/15620">https://doi.org/10.4000/15620</a>.
+<p class="bib-entry">Núñez-Regueiro, Paz, Everett Bandy, George Ironstrack, Jonas Musco, Ian Thompson, and Céline Daher. 2025. “Matachées: Painted Hides, Indigenous Nations, and French Colonial Encounters along the Mississippi Valley.” <em>Gradhiva. Revue d’anthropologie et d’histoire des Arts</em>, no. 40 (November 2025). <a href="https://doi.org/10.4000/15620">https://doi.org/10.4000/15620</a>.</p>
 
-Ostendorf, Ann. “Louisiana Bohemians: Community, Race, and Empire.” <em>Early American Studies: An Interdisciplinary Journal</em> 19, no. 4 (2021): 659–98.
+<p class="bib-entry">Ostendorf, Ann. “Louisiana Bohemians: Community, Race, and Empire.” <em>Early American Studies: An Interdisciplinary Journal</em> 19, no. 4 (2021): 659–98.</p>
 
-Owens, M. Lilliana. “Loretto Foundations in Louisiana and Arkansas.” <em>Louisiana History: The Journal of the Louisiana Historical Association</em> 2, no. 2 (1961): 202–29.
+<p class="bib-entry">Owens, M. Lilliana. “Loretto Foundations in Louisiana and Arkansas.” <em>Louisiana History: The Journal of the Louisiana Historical Association</em> 2, no. 2 (1961): 202–29.</p>
 
-Ross, Margaret Smith. “Squatters Rights: Some Pulaski County Settlers Prior to 1814.” <em>Pulaski County Historical Review</em> 4, no. 2 (June 1956): 17–27.
+<p class="bib-entry">Ross, Margaret Smith. “Squatters Rights: Some Pulaski County Settlers Prior to 1814.” <em>Pulaski County Historical Review</em> 4, no. 2 (June 1956): 17–27.</p>
 
-———. “Pulaski County Tax List for 1828.” <em>Pulaski County Historical Review</em> 5 (1957): 42–48.
+<p class="bib-entry">———. “Pulaski County Tax List for 1828.” <em>Pulaski County Historical Review</em> 5 (1957): 42–48.</p>
 
-———. <em>Arkansas Gazette: The Early Years, 1819-1866; a History</em>. Little Rock: Arkansas Gazette Foundation, 1969.
+<p class="bib-entry">———. <em>Arkansas Gazette: The Early Years, 1819-1866; a History</em>. Little Rock: Arkansas Gazette Foundation, 1969.</p>
 
-Savoy, Lauret. <em>Trace: Memory, History, Race, and the American Landscape</em>. Berkeley, California: Counterpoint, 2015.
+<p class="bib-entry">Savoy, Lauret. <em>Trace: Memory, History, Race, and the American Landscape</em>. Berkeley, California: Counterpoint, 2015.</p>
 
-Schroeder, Walter. “Ozark Highlands.” In <em>The American Midwest : An Interpretive Encyclopedia</em>, edited by Richard Sisson, Christian Zacher, and Andrew Cayton. Indiana University Press, 2007.
+<p class="bib-entry">Schroeder, Walter. “Ozark Highlands.” In <em>The American Midwest : An Interpretive Encyclopedia</em>, edited by Richard Sisson, Christian Zacher, and Andrew Cayton. Indiana University Press, 2007.</p>
 
-———. <em>Opening the Ozarks: A Historical Geography of Missouri’s Ste. Genevieve District, 1760-1830</em>. First edition. University of Missouri, 2016.
+<p class="bib-entry">———. <em>Opening the Ozarks: A Historical Geography of Missouri’s Ste. Genevieve District, 1760-1830</em>. First edition. University of Missouri, 2016.</p>
 
-Terrien, Yevan. “Baptiste and Marianne’s Balbásha’: Enslavement, Freedom, and Belonging in Early New Orleans, 1733–1748.” <em>Journal of American History</em> 110, no. 2 (September 1, 2023): 230–257.
+<p class="bib-entry">Terrien, Yevan. “Baptiste and Marianne’s Balbásha’: Enslavement, Freedom, and Belonging in Early New Orleans, 1733–1748.” <em>Journal of American History</em> 110, no. 2 (September 1, 2023): 230–257.</p>
 
-Thompson, Laura Hinderks. “Historical Translation of Antoine Barraque Manuscript.” <em>The Arkansas Historical Quarterly</em> 40, no. 3 (1981): 220.
+<p class="bib-entry">Thompson, Laura Hinderks. “Historical Translation of Antoine Barraque Manuscript.” <em>The Arkansas Historical Quarterly</em> 40, no. 3 (1981): 220.</p>
 
-Toudji, Sonia. “Intimate Frontiers: Indians, French and Africans in the Mississippi Valley.” PhD Dissertation, Université du Maine – Le Mans, 2011.
+<p class="bib-entry">Toudji, Sonia. “Intimate Frontiers: Indians, French and Africans in the Mississippi Valley.” PhD Dissertation, Université du Maine – Le Mans, 2011.</p>
 
-———. “‘The Happiest Consequences’: Sexual Unions and Frontier Survival at Arkansas Post.” <em>The Arkansas Historical Quarterly</em> 70, no. 1 (2011): 45–56.
+<p class="bib-entry">———. “‘The Happiest Consequences’: Sexual Unions and Frontier Survival at Arkansas Post.” <em>The Arkansas Historical Quarterly</em> 70, no. 1 (2011): 45–56.</p>
 
-———. “Change and continuity: French and Indian alliance in the Mississippi Valley after the Treaty of 1763.” In <em>Une Amérique française, 1760-1860: dynamiques du corridor créole</em>, edited by Guillaume Teasdale and Tangi Villerbu, 205–228. Paris: Les Indes savantes, 2015.
+<p class="bib-entry">———. “Change and continuity: French and Indian alliance in the Mississippi Valley after the Treaty of 1763.” In <em>Une Amérique française, 1760-1860: dynamiques du corridor créole</em>, edited by Guillaume Teasdale and Tangi Villerbu, 205–228. Paris: Les Indes savantes, 2015.</p>
 
-Trouillot, Michel-Rolph. <em>Silencing the Past: Power and the Production of History</em>. Beacon Press, 1997.
+<p class="bib-entry">Trouillot, Michel-Rolph. <em>Silencing the Past: Power and the Production of History</em>. Beacon Press, 1997.</p>
 
-Tsien, Jennifer. <em>Rumors of Revolution: Song, Sentiment, and Sedition in Colonial Louisiana</em>. Charlottesville: University of Virginia Press, 2023.
+<p class="bib-entry">Tsien, Jennifer. <em>Rumors of Revolution: Song, Sentiment, and Sedition in Colonial Louisiana</em>. Charlottesville: University of Virginia Press, 2023.</p>
 
-Usner, Daniel H. "Between Creoles and Yankees: The Discursive Representation of Colonial Louisiana in American History." In <em>French Colonial Louisiana and the Atlantic World</em>, edited by Bradley G. Bond, 1-22. Baton Rouge: Louisiana State University Press, 2005.
+<p class="bib-entry">Usner, Daniel H. "Between Creoles and Yankees: The Discursive Representation of Colonial Louisiana in American History." In <em>French Colonial Louisiana and the Atlantic World</em>, edited by Bradley G. Bond, 1-22. Baton Rouge: Louisiana State University Press, 2005.</p>
 
-Vidal, Cécile. <em>Caribbean New Orleans: Empire, Race, and the Making of a Slave Society</em>. Chapel Hill: Omohundro Institute and University of North Carolina Press, 2019.
+<p class="bib-entry">Vidal, Cécile. <em>Caribbean New Orleans: Empire, Race, and the Making of a Slave Society</em>. Chapel Hill: Omohundro Institute and University of North Carolina Press, 2019.</p>
 
-Villerbu, Tangi. “Structurer un territoire ecclésiastique : la géopolitique catholique entre Grands Lacs et Mississippi (1763-1803).” In <em>Vers un nouveau monde atlantique : Les traités de Paris, 1763-1783</em>, edited by Philippe Joutard, Didier Poton, and Laurent Veyssière, 211–19. Histoire. Rennes: Presses universitaires de Rennes, 2016.
+<p class="bib-entry">Villerbu, Tangi. “Structurer un territoire ecclésiastique : la géopolitique catholique entre Grands Lacs et Mississippi (1763-1803).” In <em>Vers un nouveau monde atlantique : Les traités de Paris, 1763-1783</em>, edited by Philippe Joutard, Didier Poton, and Laurent Veyssière, 211–19. Histoire. Rennes: Presses universitaires de Rennes, 2016.</p>
 
-Wegmann, Andrew N., and Robert Englebert, eds. <em>French Connections: Cultural Mobility in North America and the Atlantic World, 1600–1875</em>. Baton Rouge: Louisiana State University Press, 2020.
+<p class="bib-entry">Wegmann, Andrew N., and Robert Englebert, eds. <em>French Connections: Cultural Mobility in North America and the Atlantic World, 1600–1875</em>. Baton Rouge: Louisiana State University Press, 2020.</p>
 
-White, Richard. <em>The Middle Ground: Indians, Empires, and Republics in the Great Lakes Region, 1650-1815</em>. Anniversary edition. Cambridge: Cambridge University Press, 2010.
+<p class="bib-entry">White, Richard. <em>The Middle Ground: Indians, Empires, and Republics in the Great Lakes Region, 1650-1815</em>. Anniversary edition. Cambridge: Cambridge University Press, 2010.</p>
 
-White, Sophie. <em>Wild Frenchmen and Frenchified Indians: Material Culture and Race in Colonial Louisiana</em>. Philadelphia: University of Pennsylvania Press, 2012.
+<p class="bib-entry">White, Sophie. <em>Wild Frenchmen and Frenchified Indians: Material Culture and Race in Colonial Louisiana</em>. Philadelphia: University of Pennsylvania Press, 2012.</p>
 
-Williams, Marion Imbeau. "Imbeau Family History." Typed history of descendants of Jean Baptiste Imbeau. University of Arkansas Libraries, Colonial Arkansas Post Ancestry, Core Family Papers (MC 1380, Box 58, File 1).
+<p class="bib-entry">Williams, Marion Imbeau. "Imbeau Family History." Typed history of descendants of Jean Baptiste Imbeau. University of Arkansas Libraries, Colonial Arkansas Post Ancestry, Core Family Papers (MC 1380, Box 58, File 1).</p>
 
-Woods, James M. “‘To the Suburb of Hell’: Catholic Missionaries in Arkansas, 1803-1843.” <em>The Arkansas Historical Quarterly</em> 48, no. 3 (1989): 217–42.
+<p class="bib-entry">Woods, James M. “‘To the Suburb of Hell’: Catholic Missionaries in Arkansas, 1803-1843.” <em>The Arkansas Historical Quarterly</em> 48, no. 3 (1989): 217–42.</p>
 
-———. <em>Mission and Memory: A History of the Catholic Church in Arkansas</em>. Diocese of Little Rock, 1993.
+<p class="bib-entry">———. <em>Mission and Memory: A History of the Catholic Church in Arkansas</em>. Diocese of Little Rock, 1993.</p>
 
-Worthen, William B. "Little Rock (Geological Formation)." <em>Encyclopedia of Arkansas</em>. Updated September 2023. Accessed September 7, 2024. <a href="https://encyclopediaofarkansas.net/entries/little-rock-geological-formation-5251/">https://encyclopediaofarkansas.net/entries/little-rock-geological-formation-5251/</a>.
+<p class="bib-entry">Worthen, William B. "Little Rock (Geological Formation)." <em>Encyclopedia of Arkansas</em>. Updated September 2023. Accessed September 7, 2024. <a href="https://encyclopediaofarkansas.net/entries/little-rock-geological-formation-5251/">https://encyclopediaofarkansas.net/entries/little-rock-geological-formation-5251/</a>.</p>
 
 <a id="published-primary-sources"></a>
 ### Published Primary Sources
 
 #### Correspondence
 
-Lovely, William. [1813] 1949. “Notice of William Lovely to the Cherokee, July 20, 1813.” In <em>The Territorial Papers of the United States</em>, edited by Clarence Edwin Carter, 721. Vol. 14. Washington, DC: United States Government Printing Office.
+<p class="bib-entry">Lovely, William. [1813] 1949. “Notice of William Lovely to the Cherokee, July 20, 1813.” In <em>The Territorial Papers of the United States</em>, edited by Clarence Edwin Carter, 721. Vol. 14. Washington, DC: United States Government Printing Office.</p>
 
 #### Legal Documents
 
-Arkansas Supreme Court,<em> Arkansas Reports</em> (State of Arkansas, 1858), 520.
+<p class="bib-entry">Arkansas Supreme Court,<em> Arkansas Reports</em> (State of Arkansas, 1858), 520.</p>
 
-Carondelet, Baron de to Jean-Baptiste Janis, Huntington Library Manuscripts, HM 34002.
+<p class="bib-entry">Carondelet, Baron de to Jean-Baptiste Janis, Huntington Library Manuscripts, HM 34002.</p>
 
 #### Newspapers
 
-Arkansas Gazette. 1819–1991. <em>Arkansas Gazette</em>. Arkansas Post, Little Rock, AR.
+<p class="bib-entry">Arkansas Gazette. 1819–1991. <em>Arkansas Gazette</em>. Arkansas Post, Little Rock, AR.</p>
 
 #### Textbooks &amp; Early Studies
 
-Lucey, John Michael. “The Catholic Church in Arkansas.” In <em>Publications of the Arkansas Historical Association</em>, edited by John Hugh Reynolds, vol. 2. Fayetteville, AR, 1908.
+<p class="bib-entry">Lucey, John Michael. “The Catholic Church in Arkansas.” In <em>Publications of the Arkansas Historical Association</em>, edited by John Hugh Reynolds, vol. 2. Fayetteville, AR, 1908.</p>
 
-Reynolds, John Hugh. Makers of Arkansas History. Stories of the States. New York: Silver, Burdett and Company, 1905.
+<p class="bib-entry">Reynolds, John Hugh. Makers of Arkansas History. Stories of the States. New York: Silver, Burdett and Company, 1905.</p>
 
-Shinn, Josiah Hazen. <em>The History of Arkansas: A Text-book for Public Schools, High Schools, and Academies.</em> Little Rock: Wilson &amp; Webb Book &amp; Stationery Company, 1898.
+<p class="bib-entry">Shinn, Josiah Hazen. <em>The History of Arkansas: A Text-book for Public Schools, High Schools, and Academies.</em> Little Rock: Wilson &amp; Webb Book &amp; Stationery Company, 1898.</p>
 
 #### Travel Writing
 
-Berry, Trey, Pam Beasley, and Jeanne Clements, eds. <em>The Forgotten Expedition, 1804–1805: The Louisiana Purchase Journals of Dunbar and Hunter</em>. Reprint edition. LSU Press, 2014.
+<p class="bib-entry">Berry, Trey, Pam Beasley, and Jeanne Clements, eds. <em>The Forgotten Expedition, 1804–1805: The Louisiana Purchase Journals of Dunbar and Hunter</em>. Reprint edition. LSU Press, 2014.</p>
 
-Irving, Washington. <em>The Crayon Papers</em>. 2005. <a href="https://www.gutenberg.org/ebooks/7994">https://www.gutenberg.org/ebooks/7994</a>.
+<p class="bib-entry">Irving, Washington. <em>The Crayon Papers</em>. 2005. <a href="https://www.gutenberg.org/ebooks/7994">https://www.gutenberg.org/ebooks/7994</a>.</p>
 
-Nuttall, Thomas. <em>A Journal of Travels into the Arkansas Territory</em>. The Newberry Library. Philadelphia : T. H. Palmer, 1821. <a href="http://archive.org/details/GR_3055">http://archive.org/details/GR_3055</a>.
+<p class="bib-entry">Nuttall, Thomas. <em>A Journal of Travels into the Arkansas Territory</em>. The Newberry Library. Philadelphia : T. H. Palmer, 1821. <a href="http://archive.org/details/GR_3055">http://archive.org/details/GR_3055</a>.</p>
 
-Vaugine de Nuisement, Etienne. <em>Journal de Vaugine de Nuisement (ca 1765) : un témoignage sur la Louisiane du XVIIIe siècle.</em> Edited by Steve Canac-Marquis and Pierre Rézeau. Collection Langue française en Amérique du Nord. Presses de l’Université Laval, 2005.
+<p class="bib-entry">Vaugine de Nuisement, Etienne. <em>Journal de Vaugine de Nuisement (ca 1765) : un témoignage sur la Louisiane du XVIIIe siècle.</em> Edited by Steve Canac-Marquis and Pierre Rézeau. Collection Langue française en Amérique du Nord. Presses de l’Université Laval, 2005.</p>
 
 <a id="archival-collections"></a>
 ### Archival Collections
 
 #### Archdiocese of St. Louis
 
+<ul class="archive-list">
 <li>Fitzgerald, Edmund. Bishop Edmund Fitzgerald to the Archdiocese of St. Louis, March 25, 1892. ADMN/C2/P/002297.</li>
+</ul>
 
 #### American Philosophical Society
 
-<ul>
+<ul class="archive-list">
 <li>George Izard, “31. Izard, George to the American Philosophical Society,” January 10, 1827, American Philosophical Society, American Indian Vocabulary Collection, Mss.497.V85, <a href="https://diglib.amphilsoc.org/islandora/object/text%3A310681">https://diglib.amphilsoc.org/islandora/object/text%3A310681</a></li>
 <li>Izard, George. 1827c. “33. Notes Respecting the Arkansas Territory’s Aboriginal Inhabitants, the Quapaw Indians.” January 10, 1827. Manuscript, 9 pp. American Philosophical Society Historical and Literary Committee, American Indian Vocabulary Collection, Mss.497.V85, item 33. American Philosophical Society Library &amp; Museum. <a href="https://diglib.amphilsoc.org/islandora/object/text%3A310684">https://diglib.amphilsoc.org/islandora/object/text%3A310684</a>.</li>
 <li>George Izard, “34. Vocabulary of the Quapaw Indians,” January 10, 1827, American Philosophical Society, American Indian Vocabulary Collection, Mss.497.V85,<a href="https://diglib.amphilsoc.org/islandora/object/34-vocabulary-quapaw-indians"> https://diglib.amphilsoc.org/islandora/object/34-vocabulary-quapaw-indians</a></li>
@@ -2220,36 +2245,52 @@ Vaugine de Nuisement, Etienne. <em>Journal de Vaugine de Nuisement (ca 1765) :
 
 #### Archives nationales d’outre-mer (ANOM)
 
+<ul class="archive-list">
 <li>Series C13A (French Louisiana)</li>
+</ul>
 
 #### Arkansas State Archives
 
+<ul class="archive-list">
 <li>Vertical File 1526, St. Mary’s Church and School</li>
+</ul>
 
 #### Center for Arkansas History and Culture (UALR) &amp; Butler Center for Arkansas Studies (BC)
 
-<li>Thibault Family Materials (MSS.04.16)</li><li>Gibson Family Papers (BC.MSS.97.56), containing legal documents related to the Thibaults</li><li>Carol Mann Gannaway Eruren Papers (BC.MSS.13.29), containing materials on both families</li><li>Pulaski County/Little Rock Records Collection (UALR.0173), including court records (1844–1890)</li><li>Chester Ashley Papers (UALR.MS.0091), including court documents from the Little Rock region and information on land claims and property maps of early nineteenth-century Arkansas</li>
+<ul class="archive-list">
+<li>Thibault Family Materials (MSS.04.16)</li>
+<li>Gibson Family Papers (BC.MSS.97.56), containing legal documents related to the Thibaults</li>
+<li>Carol Mann Gannaway Eruren Papers (BC.MSS.13.29), containing materials on both families</li>
+<li>Pulaski County/Little Rock Records Collection (UALR.0173), including court records (1844–1890)</li>
+<li>Chester Ashley Papers (UALR.MS.0091), including court documents from the Little Rock region and information on land claims and property maps of early nineteenth-century Arkansas</li>
+</ul>
 
 #### University of Arkansas Libraries Special Collections
 
+<ul class="archive-list">
 <li>“Cantrelle Witnesses a Letter for Engagés.” March 10, 1746. Core Family Papers (MC 1380, Box 21, File 7). Colonial Arkansas Post Ancestry Collection. Special Collections, University of Arkansas Libraries.</li>
+</ul>
 
 #### UCA Archives &amp; Special Collections
 
-<li>McGrew, DeAnn. "Origins of the Legend of Petit Jean." SMC 1202.</li><li>Rankin, Lucille Clerget. "The Legend of Petit Jean Mountain." 1946. PAM-1776.</li><li>Hardison, T. W. "A Place Called Petit Jean: The Mountain and Man's Mark." 1955. PAM-1777</li>
+<ul class="archive-list">
+<li>McGrew, DeAnn. "Origins of the Legend of Petit Jean." SMC 1202.</li>
+<li>Rankin, Lucille Clerget. "The Legend of Petit Jean Mountain." 1946. PAM-1776.</li>
+<li>Hardison, T. W. "A Place Called Petit Jean: The Mountain and Man's Mark." 1955. PAM-1777.</li>
+</ul>
 
 <a id="acknowledgements"></a>
-### Acknowledgements
+## Acknowledgements
 
 I am immensely grateful to the following people for lending their support and expertise: Buzz Arnold, Andy Beaupré, Everett Bandy, Victoria Chandler, John Gill, Jay Gitlin, Kimberly Green, Austin Headlee, Barclay Key, Harrison Mitchell, Kristin Mann, Terry Rasco, Jim Ross, Curtis Smith, Cheryl Vassaur, and the staffs of the Arkansas State Archives, UCA Archives &amp; Special Collections, and Archives Nationales d'Outre-mer.
 
 <a id="community-sourcing"></a>
-### Community Sourcing
+## Community Sourcing
 
 This map is still very much a work-in-progress. I welcome suggestions, corrections, and alternative interpretations from folks who are much more familiar than I am with the history and geography of Arkansas. Please send to nemarvin [at] ualr.edu!
 
 <a id="process-and-ethics"></a>
-### Process and Ethics
+## Process and Ethics
 
 The following document lays out the decision-making that went into the design of this resource, as well as goals for the future.
 
