@@ -1,0 +1,139 @@
+{
+  "type": "FeatureCollection",
+  "name": "Quapaw_River_Labels_1818",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "ModernName": "Mississippi River",
+        "QuapawName": "Ni o-taⁿ-ka",
+        "Label1818": "Ni o-taⁿ-ka",
+        "rotation_deg": 64.2,
+        "placement": "manual",
+        "NameSource": "Everett Bandy, “O-Ga-Xpa Ma-Zhoⁿ: Quapaw Country” (2020), fig. 7",
+        "MapView": "1818"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.0185942763529,
+          34.0001146130522
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ModernName": "Missouri River",
+        "QuapawName": "Ni sho-te",
+        "Label1818": "Ni sho-te",
+        "rotation_deg": 10.5,
+        "placement": "manual",
+        "NameSource": "Everett Bandy, “O-Ga-Xpa Ma-Zhoⁿ: Quapaw Country” (2020), fig. 7",
+        "MapView": "1818"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.5726581140523,
+          39.2317439870461
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ModernName": "Arkansas River",
+        "QuapawName": "Ni zhi-te",
+        "Label1818": "Ni zhi-te",
+        "rotation_deg": -8.0,
+        "placement": "manual",
+        "NameSource": "Everett Bandy, “O-Ga-Xpa Ma-Zhoⁿ: Quapaw Country” (2020), fig. 7",
+        "MapView": "1818"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.6572252610394,
+          35.2915685529268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ModernName": "White River",
+        "QuapawName": "Ni wa-ska",
+        "Label1818": "Ni wa-ska",
+        "rotation_deg": -1.3,
+        "placement": "manual",
+        "NameSource": "Everett Bandy, “O-Ga-Xpa Ma-Zhoⁿ: Quapaw Country” (2020), fig. 7",
+        "MapView": "1818"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.8366826093459,
+          36.4575412687707
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ModernName": "Wichita River",
+        "QuapawName": "Wi-si-ta ni",
+        "Label1818": "Wi-si-ta ni",
+        "rotation_deg": 3.3,
+        "placement": "manual",
+        "NameSource": "Everett Bandy, “O-Ga-Xpa Ma-Zhoⁿ: Quapaw Country” (2020), fig. 7",
+        "MapView": "1818"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.7237197857336,
+          33.9042628680558
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ModernName": "Red River",
+        "QuapawName": "Ni zhi-te bda-da",
+        "Label1818": "Ni zhi-te bda-da",
+        "rotation_deg": -2.0,
+        "placement": "manual",
+        "NameSource": "Everett Bandy, “O-Ga-Xpa Ma-Zhoⁿ: Quapaw Country” (2020), fig. 7",
+        "MapView": "1818"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.398725797191,
+          33.554274074884
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ModernName": "St. Francis River",
+        "QuapawName": "Ni ta sho-te zhi-ka",
+        "Label1818": "Ni ta sho-te zhi-ka",
+        "rotation_deg": -32.1,
+        "placement": "manual",
+        "NameSource": "Everett Bandy, “O-Ga-Xpa Ma-Zhoⁿ: Quapaw Country” (2020), fig. 7",
+        "MapView": "1818"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1155846183245,
+          36.406244206651
+        ]
+      }
+    }
+  ]
+}
