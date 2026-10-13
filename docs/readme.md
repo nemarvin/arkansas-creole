@@ -1315,7 +1315,7 @@ Despite the wave of Anglo-American (and other) migrants unleashed by the Louisia
 </figure>
 
 <figure>
-  <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/zFRYVXIMq3BKJBzmhKxOV.jpg" alt="" loading="lazy" decoding="async">
+  <img src="images/knooploop.jpeg" alt="" loading="lazy" decoding="async">
 </figure>
 
 <a id="french-speaking-settlers-in-little-rock"></a>
