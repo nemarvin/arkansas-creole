@@ -42,6 +42,20 @@
   .layer-box select{width:100%;font-size:11px;margin-top:4px}
   .river-label{background:rgba(255,255,255,.86);border:0;box-shadow:none;color:#173f55;font:600 10px/1.1 Arial,sans-serif;padding:1px 3px;white-space:nowrap;text-shadow:0 1px 0 #fff}
   .river-label.priority{font-size:11px;color:#0c4969;background:rgba(255,255,255,.94)}
+  .quapaw-river-label{
+    display:inline-block;
+    color:#173f55;
+    font:italic 600 12px/1.05 Georgia,"Times New Roman",serif;
+    white-space:nowrap;
+    text-shadow:
+      -1px -1px 0 rgba(255,255,255,.96),
+       1px -1px 0 rgba(255,255,255,.96),
+      -1px  1px 0 rgba(255,255,255,.96),
+       1px  1px 0 rgba(255,255,255,.96),
+       0 0 4px rgba(255,255,255,.96);
+    transform-origin:center center;
+    pointer-events:none;
+  }
   .native-tooltip{background:#2f2635;color:#fff;border:0;box-shadow:0 1px 4px rgba(0,0,0,.3);font-size:11px}
   .native-tooltip .overlap-note{opacity:.78;font-weight:400}
   .native-overlap-popup .leaflet-popup-content{margin:12px 14px;line-height:1.35}
@@ -92,6 +106,7 @@
     <div class="legend">
       <div class="legend-row"><span class="swatch ceded"></span> Quapaw land ceded under pressure to the United States</div>
       <div class="legend-row"><span class="swatch granted"></span> Land assigned to Quapaw</div>
+      <div class="legend-row" id="quapawRiverLegend"><span class="swatch river"></span> Rivers labeled with Quapaw names (1818 view)</div>
     </div>
   </div>
 
@@ -106,7 +121,9 @@
         <strong>Native Lands:</strong> <a href="https://native-land.ca/" target="_blank" rel="noopener" style="color:inherit">Native-Land.ca</a>.
         Only territories overlapping present-day Arkansas are shown, clipped to the state boundary for display.
         These are community-informed representations rather than treaty boundaries.<br><br>
-        <strong>Waterways:</strong> Arkansas GIS Office Water Base Layer.<br><br>
+        <strong>1818 river geometry:</strong> North America Rivers open-data layer (project copy).<br>
+        <strong>Quapaw river names:</strong> Everett Bandy, <em>O-Ga-Xpa Ma-Zhoⁿ: Quapaw Country</em> (2020), fig. 7.<br><br>
+        <strong>1824 waterways:</strong> Arkansas GIS Office Water Base Layer.<br><br>
         <strong>Basemap:</strong> U.S. Geological Survey.
       </div>
     </div>
@@ -131,7 +148,8 @@ const stageCopy={
   "1818":{
     kicker:"Quapaw land ceded under pressure to the United States",
     title:"1818 — Cession 94",
-    copy:"This view shows the vast tract ceded by the Quapaw to the United States in 1818, leaving them with a much smaller territory along the Arkansas River."
+    copy:"This view shows the vast tract ceded by the Quapaw to the United States in 1818, leaving them with a much smaller territory along the Arkansas River.",
+    extra:`<p class="stage-note">Selected rivers are labeled with Quapaw names recorded by Everett Bandy. Hover over a river to see its modern English name.</p>`
   },
   "1824":{
     kicker:"Quapaw land ceded under pressure to the United States",
@@ -160,6 +178,7 @@ const stageCopy={
 
 let treatyData=null, treatyLayer=null, retainedOutline=null;
 let waterLayer=null, labelLayer=L.layerGroup().addTo(map), relatedSitesLayer=null;
+let quapaw1818RiverLayer=null, quapaw1818LabelLayer=L.layerGroup();
 let nativeLayer=null, nativeData=null, statesLayer=null, stateHaloLayer=null;
 let currentStage="1818";
 
@@ -202,15 +221,32 @@ function showTreaty(stage){
     retainedOutline=L.geoJSON(retained,{interactive:false,style:()=>styles.retained}).addTo(map);
   }
 
-  if(stage==="1824"){
+  // Stage-specific waterways.
+  if(stage==="1818"){
+    if(quapaw1818RiverLayer && !map.hasLayer(quapaw1818RiverLayer))quapaw1818RiverLayer.addTo(map);
+    if(!map.hasLayer(quapaw1818LabelLayer))quapaw1818LabelLayer.addTo(map);
+
+    if(waterLayer && map.hasLayer(waterLayer))map.removeLayer(waterLayer);
+    if(map.hasLayer(labelLayer))map.removeLayer(labelLayer);
+    if(relatedSitesLayer && map.hasLayer(relatedSitesLayer))map.removeLayer(relatedSitesLayer);
+  }else if(stage==="1824"){
+    if(quapaw1818RiverLayer && map.hasLayer(quapaw1818RiverLayer))map.removeLayer(quapaw1818RiverLayer);
+    if(map.hasLayer(quapaw1818LabelLayer))map.removeLayer(quapaw1818LabelLayer);
+
     if(waterLayer && !map.hasLayer(waterLayer))waterLayer.addTo(map);
-    labelLayer.addTo(map);
+    if(!map.hasLayer(labelLayer))labelLayer.addTo(map);
     if(relatedSitesLayer && !map.hasLayer(relatedSitesLayer))relatedSitesLayer.addTo(map);
   }else{
+    if(quapaw1818RiverLayer && map.hasLayer(quapaw1818RiverLayer))map.removeLayer(quapaw1818RiverLayer);
+    if(map.hasLayer(quapaw1818LabelLayer))map.removeLayer(quapaw1818LabelLayer);
+
     if(waterLayer && map.hasLayer(waterLayer))map.removeLayer(waterLayer);
     if(map.hasLayer(labelLayer))map.removeLayer(labelLayer);
     if(relatedSitesLayer && map.hasLayer(relatedSitesLayer))map.removeLayer(relatedSitesLayer);
   }
+
+  const quapawRiverLegend=document.getElementById("quapawRiverLegend");
+  if(quapawRiverLegend)quapawRiverLegend.style.display=stage==="1818"?"flex":"none";
 
 
   // Automatic stage-specific framing.
@@ -233,10 +269,12 @@ function showTreaty(stage){
   }
   treatyLayer.bringToFront();
   if(retainedOutline)retainedOutline.bringToFront();
+  if(quapaw1818RiverLayer && map.hasLayer(quapaw1818RiverLayer))quapaw1818RiverLayer.bringToFront();
   if(waterLayer && map.hasLayer(waterLayer))waterLayer.bringToFront();
   if(stateHaloLayer && map.hasLayer(stateHaloLayer))stateHaloLayer.bringToFront();
   if(statesLayer && map.hasLayer(statesLayer))statesLayer.bringToFront();
   if(relatedSitesLayer && map.hasLayer(relatedSitesLayer))relatedSitesLayer.bringToFront();
+  if(map.hasLayer(quapaw1818LabelLayer))quapaw1818LabelLayer.bringToFront();
 }
 
 function esc(v){
@@ -320,9 +358,11 @@ Promise.all([
   fetch("../data/quapaw-1824-waterways.geojson").then(r=>r.json()),
   fetch("../data/quapaw-1824-water-labels.geojson").then(r=>r.json()),
   fetch("../data/quapaw-1824-related-sites.geojson").then(r=>r.json()),
+  fetch("../data/quapaw-rivers-1818-7.geojson").then(r=>r.json()),
+  fetch("../data/quapaw-river-labels-1818.geojson").then(r=>r.json()),
   fetch("../data/native-land-arkansas-territories.geojson").then(r=>r.json()),
   fetch("../data/us-state-outlines.geojson").then(r=>r.json())
-]).then(([treaties,waters,labels,relatedSites,native,states])=>{
+]).then(([treaties,waters,labels,relatedSites,quapawRivers1818,quapawLabels1818,native,states])=>{
   treatyData=treaties;
 
   stateHaloLayer=L.geoJSON(states,{
@@ -334,6 +374,43 @@ Promise.all([
     interactive:false,
     style:{color:"#ffffff",weight:1.8,opacity:.96,fillOpacity:0}
   }).addTo(map);
+
+  quapaw1818RiverLayer=L.geoJSON(quapawRivers1818,{
+    interactive:true,
+    style:{
+      color:"#2f8fbf",
+      weight:2.1,
+      opacity:.9,
+      lineCap:"round",
+      lineJoin:"round"
+    },
+    onEachFeature:(f,l)=>{
+      const p=f.properties||{};
+      if(p.ModernName){
+        l.bindTooltip(esc(p.ModernName),{
+          sticky:true,
+          direction:"top",
+          className:"site-tooltip"
+        });
+      }
+    }
+  });
+
+  quapawLabels1818.features.forEach(f=>{
+    const p=f.properties||{};
+    const c=f.geometry?.coordinates;
+    if(!c || !p.Label1818)return;
+    const rotation=Number(p.rotation_deg)||0;
+    L.marker([c[1],c[0]],{
+      interactive:false,
+      icon:L.divIcon({
+        className:"",
+        html:`<div class="quapaw-river-label" style="transform:translate(-50%,-50%) rotate(${rotation}deg)">${esc(p.Label1818)}</div>`,
+        iconSize:null,
+        iconAnchor:[0,0]
+      })
+    }).addTo(quapaw1818LabelLayer);
+  });
 
   waterLayer=L.geoJSON(waters,{
     style:f=>{
@@ -433,7 +510,7 @@ Promise.all([
   showTreaty("1818");
 }).catch(err=>{
   document.getElementById("stageCard").innerHTML=
-    `<p class="stage-copy">Map data could not be loaded. Check that all six GeoJSON files are in <code>docs/data/</code>.</p>`;
+    `<p class="stage-copy">Map data could not be loaded. Check that all eight GeoJSON files are in <code>docs/data/</code>.</p>`;
   console.error(err);
 });
 
@@ -450,10 +527,12 @@ document.getElementById("nativeToggle").addEventListener("change",e=>{
   else if(nativeLayer && map.hasLayer(nativeLayer))map.removeLayer(nativeLayer);
   if(treatyLayer)treatyLayer.bringToFront();
   if(retainedOutline)retainedOutline.bringToFront();
+  if(quapaw1818RiverLayer && map.hasLayer(quapaw1818RiverLayer))quapaw1818RiverLayer.bringToFront();
   if(waterLayer && map.hasLayer(waterLayer))waterLayer.bringToFront();
   if(stateHaloLayer && map.hasLayer(stateHaloLayer))stateHaloLayer.bringToFront();
   if(statesLayer && map.hasLayer(statesLayer))statesLayer.bringToFront();
   if(relatedSitesLayer && map.hasLayer(relatedSitesLayer))relatedSitesLayer.bringToFront();
+  if(map.hasLayer(quapaw1818LabelLayer))quapaw1818LabelLayer.bringToFront();
 });
 
 document.getElementById("stateToggle").addEventListener("change",e=>{
@@ -462,10 +541,12 @@ document.getElementById("stateToggle").addEventListener("change",e=>{
     statesLayer.addTo(map);
     if(treatyLayer)treatyLayer.bringToFront();
     if(retainedOutline)retainedOutline.bringToFront();
+    if(quapaw1818RiverLayer && map.hasLayer(quapaw1818RiverLayer))quapaw1818RiverLayer.bringToFront();
     if(waterLayer && map.hasLayer(waterLayer))waterLayer.bringToFront();
     stateHaloLayer.bringToFront();
     statesLayer.bringToFront();
     if(relatedSitesLayer && map.hasLayer(relatedSitesLayer))relatedSitesLayer.bringToFront();
+    if(map.hasLayer(quapaw1818LabelLayer))quapaw1818LabelLayer.bringToFront();
   }else{
     if(stateHaloLayer && map.hasLayer(stateHaloLayer))map.removeLayer(stateHaloLayer);
     if(statesLayer && map.hasLayer(statesLayer))map.removeLayer(statesLayer);
