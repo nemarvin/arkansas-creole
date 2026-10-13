@@ -1297,7 +1297,7 @@ The site of the modern city of Little Rock sits at a natural narrowing bend of t
 
 <figure>
   <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/1VKe-Uytk9AxzWo1c3TGI.png" alt="" loading="lazy" decoding="async">
-  <figcaption>Detail from a map published in Philadelphia in 1810, based on Zebulon Pike’s explorations along the Arkansas River, identifies a cluster of “French Hunters” near the present-day site of Little Rock (<a href="https://www.raremaps.com/gallery/detail/83485/the-first-part-of-captn-pikes-chart-of-the-internal-part-o-pike">RareMaps.com listing</a>)</figcaption>
+  <figcaption>Detail from a map published in Philadelphia in 1810, based on Zebulon Pike’s explorations along the Arkansas River, identifies a cluster of “French hunting camps” near the present-day site of Little Rock (<a href="https://www.raremaps.com/gallery/detail/83485/the-first-part-of-captn-pikes-chart-of-the-internal-part-o-pike">RareMaps.com listing</a>)</figcaption>
 </figure>
 
 French speakers referred to the smaller outcrop of rock—situated opposite the larger formation that La Harpe had called <em>le rocher français</em> (“the French Rock”)—as <em>le petit rocher</em>. This is not to be confused with <em>La Petite Roche</em>, the phrase widely used in contemporary signage, which is in fact a mid-20th-century invention (Worthen 2023). <em>Le petit rocher</em>, rendered in English as “the Little Rock,” was the name used for the landmark that marked the western boundary of the Quapaw reserve in the 1818 treaty.
