@@ -171,6 +171,12 @@
 
     let allData=null,pointLayer=null,selectedMarker=null;
 
+    // Default opening: John Baptiste Imbeau, Sr. / Peter Lefevre Jr.
+    // One full zoom level out from the previously approved 13.5 framing.
+    const DEFAULT_FEATURE_TITLE="John Baptiste Imbeau, Sr., later, Peter Lefevre Jr.";
+    const DEFAULT_VIEW=[34.74142177,-92.19518573];
+    const DEFAULT_ZOOM=12.5;
+
     function esc(v){
       if(v===null||v===undefined)return"";
       return String(v).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;")
@@ -289,6 +295,18 @@
       pointLayer.bringToFront();
     }
 
+    function markerForFeature(feature){
+      if(!pointLayer || !feature)return null;
+      let found=null;
+      pointLayer.eachLayer(layer=>{
+        if(layer.feature?.properties?.Note_Short===feature.properties?.Note_Short &&
+           layer.feature?.properties?.Homestead===feature.properties?.Homestead){
+          found=layer;
+        }
+      });
+      return found;
+    }
+
     function doSearch(q){
       q=q.trim().toLowerCase();
       if(!q||!allData){
@@ -344,10 +362,21 @@
         allData=data;
         renderPoints();
 
-        // Fixed opening view matching the approved Little Rock framing.
-        map.setView([34.748,-92.235],13.5);
+        // Open on the Imbeau/Lefevre homestead shown in the approved screenshot,
+        // one zoom level farther out than the previous 13.5 opening.
+        const defaultFeature=allData.features.find(
+          f=>f.properties?.Note_Short===DEFAULT_FEATURE_TITLE
+        );
+        map.setView(DEFAULT_VIEW,DEFAULT_ZOOM);
 
-        setTimeout(()=>{if(pointLayer)pointLayer.bringToFront();map.invalidateSize()},250);
+        setTimeout(()=>{
+          if(pointLayer)pointLayer.bringToFront();
+          map.invalidateSize();
+          if(defaultFeature){
+            const marker=markerForFeature(defaultFeature);
+            if(marker)showDetails(defaultFeature,marker);
+          }
+        },250);
       })
       .catch(err=>{
         details.innerHTML=`<div class="placeholder">
@@ -363,7 +392,7 @@
     document.getElementById("detailsClose").addEventListener("click",clearDetails);
 
     document.getElementById("resetBtn").addEventListener("click",()=>{
-      map.setView([34.748,-92.235],13.5);
+      map.setView(DEFAULT_VIEW,DEFAULT_ZOOM);
       clearDetails();
       searchBox.value="";
       searchResults.classList.remove("open");
