@@ -1249,7 +1249,7 @@ Evidence of these close ties abounds in both the documentary and visual record. 
 One figure even appears with a bow and arrow, joining a Quapaw war party. The French village, placed at the margins of the composition, is clearly peripheral to the central military action. The scene presents the French not as dominant colonizers, but as dependents—under the protection, rather than in control, of their Quapaw neighbors (Arnold 2000; Evans 2024).
 
 <figure>
-  <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/m4P0Z0EZFGhFDBfffdx9m.png" alt="" loading="lazy" decoding="async">
+  <img src="images/Robe_Detail.png" alt="" loading="lazy" decoding="async">
   <figcaption>The "Three Villages Robe," housed in the Musée du Quai Branly-Jacques Chirac in Paris, is a rare indigenous artistic representation of European settlers in Arkansas. This segment of the image, rendered on painted buffalo hide, features the French settlement of <em>Poste des Arkansas</em>, situated adjacent to several Quapaw villages in the lower Arkansas Valley.</figcaption>
 </figure>
 
