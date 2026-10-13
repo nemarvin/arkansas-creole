@@ -1286,8 +1286,8 @@ Brothers Elijah Nelson Chenault and Benjamin Franklin Chenault, descendants of F
 These twentieth-century projects, which we cannot remove from their broader context of urban renewal and “white flight” during the Civil Rights Era, carry a particular irony. In aiming to celebrate European founding figures or borrowing glimmers of Frenchness in branding schemes, they further buried the memory of the French-speaking individuals and families who really lived and worked in the Little Rock region before and during the early years of American annexation...
 
 <figure>
-  <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/ZELU4qjTgHt4q7LogEquz.jpg" alt="" loading="lazy" decoding="async">
-  <figcaption>“Photograph of the La Petite Roche Sign,” undated, Downtown Little Rock Partnership records, 1984–2020 (UALR.MS.0294), University of Arkansas at Little Rock Center for Arkansas History and Culture.</figcaption>
+  <img src="images/lapetiterochesign.jpg" alt="" loading="lazy" decoding="async">
+  <figcaption>“Photograph of the 'La Petite Roche' Sign,” undated, Downtown Little Rock Partnership records, 1984–2020 (UALR.MS.0294), University of Arkansas at Little Rock Center for Arkansas History and Culture.</figcaption>
 </figure>
 
 <a id="le-petit-rocher"></a>
