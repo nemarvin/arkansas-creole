@@ -1303,8 +1303,8 @@ The site of the modern city of Little Rock sits at a natural narrowing bend of t
 French speakers referred to the smaller outcrop of rock—situated opposite the larger formation that La Harpe had called <em>le rocher français</em> (“the French Rock”)—as <em>le petit rocher</em>. This is not to be confused with <em>La Petite Roche</em>, the phrase widely used in contemporary signage, which is in fact a mid-20th-century invention (Worthen 2023). <em>Le petit rocher</em>, rendered in English as “the Little Rock,” was the name used for the landmark that marked the western boundary of the Quapaw reserve in the 1818 treaty.
 
 <figure>
-  <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/GWwljGN3TmV7iy-DulBez.png" alt="" loading="lazy" decoding="async">
-  <figcaption>Extract from an 1825 letter, in French, of Antoine Barraqué, French-born US government agent among the Quapaw, to George Izard, governor of Arkansas Territory.</figcaption>
+  <img src="images/barraque_letter.png" alt="" loading="lazy" decoding="async">
+<figcaption>Excerpt from an 1825 letter by Antoine Barraqué, French-born U.S. agent among the Quapaw, to George Izard, governor of Arkansas Territory, referring to Little Rock as “[le] petit Rocher.”</figcaption>
 </figure>
 
 Despite the wave of Anglo-American (and other) migrants unleashed by the Louisiana Purchase, the Arkansas Valley did not cease to be a Creole space overnight. In 1830, a French priest, Father Martin, composed a census of Catholics living along the Arkansas River. The report listed 38 “whites” and 3 “blacks” in “Petit Rocher,” most of whom would have been French speakers.
