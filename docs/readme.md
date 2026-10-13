@@ -1127,7 +1127,7 @@ html[data-reader-theme="dark"] .reader-toc-toggle {
 <a id="creole-arkansas"></a>
 ## Creole Arkansas
 
-French roots run deep in Arkansas. It was here, near the original site of Arkansas Post, in the late seventeenth century, that Sieur de la Salle envisioned the heart of France’s North American empire. What emerged—<em>La Louisiane</em>—did indeed include Arkansas: a vast arc of forts and settlements linking the Gulf of Mexico to the Great Lakes, and beyond to the North Atlantic and France itself. French officials hoped this network of outposts would serve as a bulwark against British expansion to the east and Spanish claims to the south and west.
+French roots run deep in Arkansas. It was here, near the original site of Arkansas Post, in the late seventeenth century, that Sieur de la Salle envisioned the heart of France’s North American empire. What emerged—<em>La Louisiane</em>—did indeed include Arkansas: a vast arc of forts and settlements linking the Gulf of Mexico to the Great Lakes and, via the St. Lawrence River, to the North Atlantic and France itself. French officials hoped these outposts would help secure France’s claims to the vast interior of North America against the competing ambitions of Britain to the east and Spain to the south and west.
 
 We think we know the rest of the story... French ambitions in North America came to a halt with their defeat by Great Britain in the Seven Years’ War. Although the Spanish takeover of <em>La Louisiane</em> preserved many cultural, religious, and legal norms, most remaining Francophone communities faded away after the 1803 Louisiana Purchase opened the door to rapid Anglo-American settlement.
 
