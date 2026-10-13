@@ -1296,7 +1296,7 @@ These twentieth-century projects, which we cannot remove from their broader cont
 The site of the modern city of Little Rock sits at a natural narrowing bend of the Arkansas River, where the foothills of the Ouachita and Ozark Mountains rise up from the flat alluvial plains of the Mississippi Delta to the east. Although no permanent French settlement existed at the present-day site of Little Rock, Arkansas Creoles regularly navigated this stretch of the river and established camps along its banks.
 
 <figure>
-  <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/1VKe-Uytk9AxzWo1c3TGI.png" alt="" loading="lazy" decoding="async">
+  <img src="images/zebulon_pike.png" alt="" loading="lazy" decoding="async">
   <figcaption>Detail from a map published in Philadelphia in 1810, based on Zebulon Pike’s explorations along the Arkansas River, identifies a cluster of “French hunting camps” near the present-day site of Little Rock (<a href="https://www.raremaps.com/gallery/detail/83485/the-first-part-of-captn-pikes-chart-of-the-internal-part-o-pike">RareMaps.com listing</a>)</figcaption>
 </figure>
 
