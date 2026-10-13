@@ -1310,8 +1310,8 @@ French speakers referred to the smaller outcrop of rock—situated opposite the 
 Despite the wave of Anglo-American (and other) migrants unleashed by the Louisiana Purchase, the Arkansas Valley did not cease to be a Creole space overnight. In 1830, a French priest, Father Martin, composed a census of Catholics living along the Arkansas River. The report listed 38 “whites” and 3 “blacks” in “Petit Rocher,” most of whom would have been French speakers.
 
 <figure>
-  <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/Ei2ZCTxuPCjUpUyse4uJq.png" alt="" loading="lazy" decoding="async">
-  <figcaption><em><strong>Above</strong></em><em>: Extract from an 1832 letter, in French, by Father Saulnier, communicating Fr. Martin's 1830 "census" of Arkansas Catholics (Saulnier 1832).  </em><em><strong>Below:</strong></em><em> Downtown Little Rock and Arkansas River bridges, as seen from Knoop Park, 2025. Author’s photo.</em></figcaption>
+  <img src="images/martin_letter.png" alt="" loading="lazy" decoding="async">
+  <figcaption><em><strong>Above</strong></em><em>: Extract from an 1832 letter, in French, by Father Saulnier, communicating Fr. Martin's 1830 "census" of Arkansas Catholics (Saulnier 1832).  </em><em><strong>Below:</strong></em><em> Downtown Little Rock and Arkansas River bridges, as seen from Knoop Park, 2025.</em></figcaption>
 </figure>
 
 <figure>
@@ -1411,14 +1411,14 @@ DeMun Township, in Randolph County  (Arkansas), was named for Lewis (Louis) de M
 
 <figure>
   <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/E6R7BeCEEOnDKT97i_MCQ.jpeg" alt="" loading="lazy" decoding="async">
-  <figcaption>View of Arkansas River from Petit Jean Mountain (Author's Photo)</figcaption>
+  <figcaption>View of Arkansas River from Petit Jean Mountain.</figcaption>
 </figure>
 
 The Petit Jean River—and the mountain that bears its name—offers a striking example of the cultural erasure, intentional or not, that accompanied generations of Anglo-American settlement. By the late nineteenth century, romantic legends had emerged to explain the name’s origin. In one version, Petit Jean is a young woman who disguised herself as a cabin boy aboard a French ship to follow her lover to <em>Louisiane</em>. In another, Jean is a French Revolutionary émigré driven mad by the loss of a family member. Both versions feature the help of friendly but nameless “Indians” and a lingering spectral presence—evoking a nostalgic vision of a bygone era when French settlers and their Native allies left only a fleeting, almost ghostly, imprint on the land, soon overtaken by Anglo-American expansion.
 
 <figure>
   <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/3HodeIZIj5zuy_64XXES7.jpg" alt="" loading="lazy" decoding="async">
-  <figcaption>Marker, "The Legend of Petit Jean," Petit Jean Mountain, 2024 (Author's Photo).</figcaption>
+  <figcaption>Marker, "The Legend of Petit Jean," Petit Jean Mountain, 2024.</figcaption>
 </figure>
 
 <a id="a-legendary-brand"></a>
@@ -1445,7 +1445,7 @@ With all the mystique surrounding the mountain, it’s tempting to dismiss the m
 
 <figure>
   <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/2su9ycCp4fmIj0QmHA0XP.jpg" alt="" loading="lazy" decoding="async">
-  <figcaption>Petit Jean Grave Site in 2019 (Author's Photo).</figcaption>
+  <figcaption>Petit Jean Grave Site in 2019.</figcaption>
 </figure>
 
 Historian Morris Arnold has proposed what is arguably the most plausible theory about the figure behind the name. Arnold locates an explicit mention of a “Petit Jean” in a French document describing an Osage attack on a French hunting party along the Arkansas River in the 1730s, upriver from Arkansas Post (Arnold 1994, ).
@@ -1511,7 +1511,7 @@ In the margin, the mark of the Minister himself: <em>"Approved. Continue to keep
 
 <figure>
   <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/TRko1VVYDbRXLDhwQ2zWb.png" alt="" loading="lazy" decoding="async">
-  <figcaption>Letter of Governor Bienville, New Orleans, 27 July 1734. in Archives Nationales d'Outre-Mer, COL C12A, fol. 226v (Author's Photo, taken in the Microfilm Gallery of the Archives Nationales, CARAN Site, Paris)</figcaption>
+  <figcaption>Letter of Governor Bienville, New Orleans, 27 July 1734. in Archives Nationales d'Outre-Mer, COL C12A, fol. 226v (Microfilm Gallery, Archives Nationales, CARAN Site, Paris)</figcaption>
 </figure>
 
 But what does it mean that Petit Jean is described in both documents—as one might say, the first directly, the second indirectly—as a <em>Bohème</em>? Why did Governor Bienville believe that once it was clarified the victims of the Osage attack were not eleven Frenchmen but “only” an unnamed slave and a <em>Bohème</em> with no surname, the Minister of the Navy—Jean-Frédéric Phélypeaux, comte de Maurepas, one of the most powerful figures in the French state—would <em>approve</em> of not seeking retribution for the killings?
