@@ -42,18 +42,14 @@
   .layer-box select{width:100%;font-size:11px;margin-top:4px}
   .river-label{background:rgba(255,255,255,.86);border:0;box-shadow:none;color:#173f55;font:600 10px/1.1 Arial,sans-serif;padding:1px 3px;white-space:nowrap;text-shadow:0 1px 0 #fff}
   .river-label.priority{font-size:11px;color:#0c4969;background:rgba(255,255,255,.94)}
-  .quapaw-river-label{
-    display:inline-block;
-    color:#173f55;
-    font:italic 600 12px/1.05 Georgia,"Times New Roman",serif;
-    white-space:nowrap;
-    text-shadow:
-      -1px -1px 0 rgba(255,255,255,.96),
-       1px -1px 0 rgba(255,255,255,.96),
-      -1px  1px 0 rgba(255,255,255,.96),
-       1px  1px 0 rgba(255,255,255,.96),
-       0 0 4px rgba(255,255,255,.96);
-    transform-origin:center center;
+  .quapaw-river-text{
+    fill:#173f55;
+    font:italic 600 12px Georgia,"Times New Roman",serif;
+    letter-spacing:.01em;
+    paint-order:stroke fill;
+    stroke:rgba(255,255,255,.96);
+    stroke-width:3px;
+    stroke-linejoin:round;
     pointer-events:none;
   }
   .native-tooltip{background:#2f2635;color:#fff;border:0;box-shadow:0 1px 4px rgba(0,0,0,.3);font-size:11px}
@@ -87,7 +83,7 @@
     </div>
 
     <div class="layer-box">
-      <label><input id="nativeToggle" type="checkbox"> Native Lands (Arkansas)</label>
+      <label><input id="nativeToggle" type="checkbox"> Native Lands (United States)</label>
       <label><input id="stateToggle" type="checkbox" checked> Current State Boundaries</label>
       <label style="margin-top:5px">Basemap
         <select id="basemapSelect">
@@ -119,9 +115,9 @@
         <strong>Treaty geometry:</strong> U.S. Government / Charles C. Royce,
         <em>Indian Land Cessions in the United States</em>.<br><br>
         <strong>Native Lands:</strong> <a href="https://native-land.ca/" target="_blank" rel="noopener" style="color:inherit">Native-Land.ca</a>.
-        Only territories overlapping present-day Arkansas are shown, clipped to the state boundary for display.
+        Territories are clipped to the present-day United States boundary for display.
         These are community-informed representations rather than treaty boundaries.<br><br>
-        <strong>1818 river geometry:</strong> North America Rivers open-data layer (project copy).<br>
+        <strong>1818 river geometry:</strong> North America Rivers open-data layer (project copy).<br><br>
         <strong>Quapaw river names:</strong> Everett Bandy, <em>O-Ga-Xpa Ma-Zhoⁿ: Quapaw Country</em> (2020), fig. 7.<br><br>
         <strong>1824 waterways:</strong> Arkansas GIS Office Water Base Layer.<br><br>
         <strong>Basemap:</strong> U.S. Geological Survey.
@@ -178,8 +174,13 @@ const stageCopy={
 
 let treatyData=null, treatyLayer=null, retainedOutline=null;
 let waterLayer=null, labelLayer=L.layerGroup().addTo(map), relatedSitesLayer=null;
-let quapaw1818RiverLayer=null, quapaw1818LabelLayer=L.layerGroup();
+let quapaw1818RiverLayer=null, quapaw1818LabelLayer=null;
 let nativeLayer=null, nativeData=null, statesLayer=null, stateHaloLayer=null;
+
+map.createPane("quapawRiverLabelsPane");
+map.getPane("quapawRiverLabelsPane").style.zIndex="625";
+map.getPane("quapawRiverLabelsPane").style.pointerEvents="none";
+const quapawRiverLabelRenderer=L.svg({pane:"quapawRiverLabelsPane"});
 let currentStage="1818";
 
 const styles={
@@ -274,7 +275,6 @@ function showTreaty(stage){
   if(stateHaloLayer && map.hasLayer(stateHaloLayer))stateHaloLayer.bringToFront();
   if(statesLayer && map.hasLayer(statesLayer))statesLayer.bringToFront();
   if(relatedSitesLayer && map.hasLayer(relatedSitesLayer))relatedSitesLayer.bringToFront();
-  if(map.hasLayer(quapaw1818LabelLayer))quapaw1818LabelLayer.bringToFront();
 }
 
 function esc(v){
@@ -346,11 +346,50 @@ function nativePopupHtml(features){
   return `<div class="native-popup-title">${title}</div><ul class="native-hit-list">${items}</ul>${note}`;
 }
 
+// Keep the Quapaw polygon foremost wherever Native-Land territories overlap.
 function bringQuapawNativeToFront(){
   if(!nativeLayer)return;
   nativeLayer.eachLayer(layer=>{
     if(isQuapawFeature(layer.feature) && layer.bringToFront)layer.bringToFront();
   });
+}
+
+function removeQuapawRiverText(layer){
+  if(layer && layer._quapawRiverText){
+    layer._quapawRiverText.remove();
+    layer._quapawRiverText=null;
+  }
+}
+
+function addQuapawRiverText(layer,properties){
+  removeQuapawRiverText(layer);
+  const path=layer && layer._path;
+  const renderer=layer && layer._renderer;
+  if(!path || !renderer || !renderer._rootGroup)return;
+
+  const ns="http://www.w3.org/2000/svg";
+  const xlink="http://www.w3.org/1999/xlink";
+  const safeId="quapaw-river-label-"+String(properties.ModernName||"river")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g,"-")
+    .replace(/^-|-$/g,"");
+
+  path.setAttribute("id",safeId);
+
+  const textEl=document.createElementNS(ns,"text");
+  textEl.setAttribute("class","quapaw-river-text");
+  textEl.setAttribute("dy",String(properties.dy ?? -3));
+
+  const textPath=document.createElementNS(ns,"textPath");
+  textPath.setAttribute("href","#"+safeId);
+  textPath.setAttributeNS(xlink,"xlink:href","#"+safeId);
+  textPath.setAttribute("startOffset",properties.startOffset||"50%");
+  textPath.setAttribute("text-anchor","middle");
+  textPath.textContent=properties.Label1818||properties.QuapawName||"";
+
+  textEl.appendChild(textPath);
+  renderer._rootGroup.appendChild(textEl);
+  layer._quapawRiverText=textEl;
 }
 
 Promise.all([
@@ -360,7 +399,7 @@ Promise.all([
   fetch("../data/quapaw-1824-related-sites.geojson").then(r=>r.json()),
   fetch("../data/quapaw-rivers-1818-7.geojson").then(r=>r.json()),
   fetch("../data/quapaw-river-labels-1818.geojson").then(r=>r.json()),
-  fetch("../data/native-land-arkansas-territories.geojson").then(r=>r.json()),
+  fetch("../data/native-land-us-territories.geojson").then(r=>r.json()),
   fetch("../data/us-state-outlines.geojson").then(r=>r.json())
 ]).then(([treaties,waters,labels,relatedSites,quapawRivers1818,quapawLabels1818,native,states])=>{
   treatyData=treaties;
@@ -396,20 +435,20 @@ Promise.all([
     }
   });
 
-  quapawLabels1818.features.forEach(f=>{
-    const p=f.properties||{};
-    const c=f.geometry?.coordinates;
-    if(!c || !p.Label1818)return;
-    const rotation=Number(p.rotation_deg)||0;
-    L.marker([c[1],c[0]],{
-      interactive:false,
-      icon:L.divIcon({
-        className:"",
-        html:`<div class="quapaw-river-label" style="transform:translate(-50%,-50%) rotate(${rotation}deg)">${esc(p.Label1818)}</div>`,
-        iconSize:null,
-        iconAnchor:[0,0]
-      })
-    }).addTo(quapaw1818LabelLayer);
+  quapaw1818LabelLayer=L.geoJSON(quapawLabels1818,{
+    renderer:quapawRiverLabelRenderer,
+    interactive:false,
+    style:{
+      color:"#000000",
+      weight:1,
+      opacity:0,
+      fillOpacity:0
+    },
+    onEachFeature:(f,l)=>{
+      const p=f.properties||{};
+      l.on("add",()=>requestAnimationFrame(()=>addQuapawRiverText(l,p)));
+      l.on("remove",()=>removeQuapawRiverText(l));
+    }
   });
 
   waterLayer=L.geoJSON(waters,{
@@ -532,7 +571,6 @@ document.getElementById("nativeToggle").addEventListener("change",e=>{
   if(stateHaloLayer && map.hasLayer(stateHaloLayer))stateHaloLayer.bringToFront();
   if(statesLayer && map.hasLayer(statesLayer))statesLayer.bringToFront();
   if(relatedSitesLayer && map.hasLayer(relatedSitesLayer))relatedSitesLayer.bringToFront();
-  if(map.hasLayer(quapaw1818LabelLayer))quapaw1818LabelLayer.bringToFront();
 });
 
 document.getElementById("stateToggle").addEventListener("change",e=>{
@@ -546,8 +584,7 @@ document.getElementById("stateToggle").addEventListener("change",e=>{
     stateHaloLayer.bringToFront();
     statesLayer.bringToFront();
     if(relatedSitesLayer && map.hasLayer(relatedSitesLayer))relatedSitesLayer.bringToFront();
-    if(map.hasLayer(quapaw1818LabelLayer))quapaw1818LabelLayer.bringToFront();
-  }else{
+    }else{
     if(stateHaloLayer && map.hasLayer(stateHaloLayer))map.removeLayer(stateHaloLayer);
     if(statesLayer && map.hasLayer(statesLayer))map.removeLayer(statesLayer);
   }
