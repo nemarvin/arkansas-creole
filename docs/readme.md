@@ -1340,7 +1340,7 @@ In 1825, Wright obtained a deed to the land, which included stipulations for “
 Joseph Bartholomew (Barthélémi) settled on the north side of the river, while Louis Bartholomew established himself to the south. The Coussat family also held riverfront properties, with Pierre Coussat owning land along the southern bank. Peter Lefèvre Jr. developed part of Jean Baptiste Imbeau Sr.’s former claim north of Little Rock into a significant plantation, which he later passed down to his children. Other settlers—including Martin Imbeau, Joseph Duchassin, and Joseph Leshee—also contributed to the growth of the community, though the precise locations of their properties remain uncertain. Many of these men can be found in the histoical record having Anglicized their first and even last names (Ross 1956, Ross 1957).
 
 <figure>
-  <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/rNnCrzfXt2yfaH-rF4pHS.jpeg" alt="" loading="lazy" decoding="async">
+  <img src="images/lefevre.jpeg" alt="" loading="lazy" decoding="async">
   <figcaption>Ambrotype portrait of Francis Godfrey Le Fevre (1800–1862), son of Pierre (“Peter”) Le Fevre. Photographer unknown. 3¾ × 3¼ in. Historic Arkansas Museum, Gift of Mr. and Mrs. A. Howard Stebbins III, accession no. 95.035.0005.</figcaption>
 </figure>
 
