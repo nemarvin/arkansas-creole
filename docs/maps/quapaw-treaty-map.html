@@ -116,8 +116,8 @@
         Territories are clipped to the present-day United States boundary for display.
         These are community-informed representations rather than treaty boundaries.<br><br>
         <strong>1818 river geometry:</strong> North America Rivers open-data layer (project copy).<br><br>
-        <strong>Quapaw river names:</strong> Everett Bandy, <em>O-Ga-Xpa Ma-Zhoⁿ: Quapaw Country</em> (2020), fig. 7.<br><br>
-        <strong>1824 waterways:</strong> Arkansas GIS Office Water Base Layer.<br><br>
+        <strong>Quapaw river names:</strong> Everett Bandy, <em>O-Ga-Xpa Ma-Zhoⁿ: Quapaw Country</em> (2020), fig. 7; <em>Canadien</em> follows period Quapaw sources cited by Bandy.<br><br>
+        <strong>Note on river courses and map alignment:</strong> The 1818 and 1824 treaty lands shown here were defined in part by rivers, with their northernmost extents following the Canadian and Arkansas rivers respectively. Those river channels have shifted over time, and differences among GIS datasets mean that treaty boundaries, modern river lines, and satellite imagery may not align exactly. These layers should be read as approximate guides rather than exact reconstructions of nineteenth-century channels.<br><br><strong>1824 waterways:</strong> Arkansas GIS Office Water Base Layer.<br><br>
         <strong>Basemap:</strong> U.S. Geological Survey.
       </div>
     </div>
@@ -347,7 +347,7 @@ Promise.all([
   fetch("../data/quapaw-1824-waterways.geojson").then(r=>r.json()),
   fetch("../data/quapaw-1824-water-labels.geojson").then(r=>r.json()),
   fetch("../data/quapaw-1824-related-sites.geojson").then(r=>r.json()),
-  fetch("../data/quapaw-rivers-1818-7.geojson").then(r=>r.json()),
+  fetch("../data/quapaw-rivers-1818-8.geojson").then(r=>r.json()),
   fetch("../data/native-land-us-territories.geojson").then(r=>r.json()),
   fetch("../data/us-state-outlines.geojson").then(r=>r.json())
 ]).then(([treaties,waters,labels,relatedSites,quapawRivers1818,native,states])=>{
