@@ -36,10 +36,18 @@
   .legend{position:absolute;z-index:930;right:12px;bottom:18px;background:rgba(255,255,255,.94);padding:9px 10px;border-radius:4px;box-shadow:0 1px 6px rgba(0,0,0,.2);font-size:11px;line-height:1.35;color:#333}
   .legend-row{display:flex;align-items:flex-start;gap:7px;margin:4px 0;max-width:265px}
   .swatch{width:18px;height:11px;border:1px solid rgba(0,0,0,.35)}
-  .ceded{background:#b75b46}.granted{background:#2d9b97}.native{background:rgba(131,83,165,.28);border-color:#76508e}.river{height:0;border:0;border-top:3px solid #2f8fbf;width:20px}
-  .layer-box{position:absolute;z-index:940;right:12px;top:12px;background:rgba(255,255,255,.95);padding:8px 10px;border-radius:4px;box-shadow:0 1px 6px rgba(0,0,0,.2);font-size:11px;line-height:1.5;color:#333}
-  .layer-box label{display:block;white-space:nowrap}
-  .layer-box select{width:100%;font-size:11px;margin-top:4px}
+  .ceded{background:#b75b46}.granted{background:#2d9b97}.native{background:rgba(131,83,165,.28);border-color:#76508e}
+  .layer-box{
+    position:absolute;z-index:940;right:12px;top:12px;
+    width:245px;max-width:calc(100% - 24px);box-sizing:border-box;
+    background:rgba(255,255,255,.95);padding:8px 10px;border-radius:4px;
+    box-shadow:0 1px 6px rgba(0,0,0,.2);font-size:11px;line-height:1.5;color:#333
+  }
+  .layer-box label{display:block;white-space:nowrap;max-width:100%;box-sizing:border-box}
+  .layer-box select{
+    display:block;width:100%;max-width:100%;box-sizing:border-box;
+    font-size:11px;margin-top:4px
+  }
   .river-label{background:rgba(255,255,255,.86);border:0;box-shadow:none;color:#173f55;font:600 10px/1.1 Arial,sans-serif;padding:1px 3px;white-space:nowrap;text-shadow:0 1px 0 #fff}
   .river-label.priority{font-size:11px;color:#0c4969;background:rgba(255,255,255,.94)}
   .native-tooltip{background:#2f2635;color:#fff;border:0;box-shadow:0 1px 4px rgba(0,0,0,.3);font-size:11px}
@@ -59,6 +67,7 @@
     .shell{grid-template-columns:1fr;grid-template-rows:minmax(520px,65vh) auto;height:auto;min-height:100%}
     .details{height:auto;border-left:0;border-top:1px solid #191919}
     .map-wrap{min-height:520px}
+    .layer-box{width:245px;max-width:calc(100% - 24px)}
     .legend{display:none}
   }
 </style>
@@ -92,7 +101,6 @@
     <div class="legend">
       <div class="legend-row"><span class="swatch ceded"></span> Quapaw land ceded under pressure to the United States</div>
       <div class="legend-row"><span class="swatch granted"></span> Land assigned to Quapaw</div>
-      <div class="legend-row" id="quapawRiverLegend"><span class="swatch river"></span> Rivers labeled with Quapaw names (1818 view)</div>
     </div>
   </div>
 
@@ -227,9 +235,6 @@ function showTreaty(stage){
     if(map.hasLayer(labelLayer))map.removeLayer(labelLayer);
     if(relatedSitesLayer && map.hasLayer(relatedSitesLayer))map.removeLayer(relatedSitesLayer);
   }
-
-  const quapawRiverLegend=document.getElementById("quapawRiverLegend");
-  if(quapawRiverLegend)quapawRiverLegend.style.display=stage==="1818"?"flex":"none";
 
 
   // Automatic stage-specific framing.
