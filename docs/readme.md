@@ -1389,12 +1389,12 @@ Arkansas Creoles were also involved in efforts to seek assistance from the U.S. 
 Several families of Haitian Revolution refugees settled in Arkansas through more roundabout ways during the nineteenth century. Among them was the Thibault family, whose name survives today in the name of a road southeast of Little Rock, on Fourche Island. Félix Thibault and his brothers were the children of émigrés who had fled from Léogâne (in present-day Haiti) to Philadelphia in the 1790s, where the family became successful silversmiths. Félix eventually settled on Fourche Island in Arkansas. Notably, short story writer David Thibault (1892–1933), one of Arkansas’s most influential literary figures, was born on this plantation and spent much of his life there—though the original buildings no longer survive.
 
 <figure>
-  <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/DbTuK1WRBarCnMU1QlB5x.jpeg" alt="" loading="lazy" decoding="async">
+  <img src="images/thibault_bros.jpeg" alt="" loading="lazy" decoding="async">
   <figcaption>Brand engraving from Thibault Brothers Co., silver coin flatware, Philadelphia, 1810-1836</figcaption>
 </figure>
 
 <figure>
-  <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/6I75JG6GSvmBvvIbt1vZL.jpeg" alt="" loading="lazy" decoding="async">
+  <img src="images/thibault_house.jpeg" alt="" loading="lazy" decoding="async">
   <figcaption>The Thibault House (courtesy of the UA Little Rock Center for Arkansas History and Culture).</figcaption>
 </figure>
 
