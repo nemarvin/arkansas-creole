@@ -1350,7 +1350,7 @@ Joseph Bartholomew (Barthélémi) settled on the north side of the river, while 
 Part of the logic behind the 1818 treaty between the United States and the Quapaw was that white settlers should not be allowed to encroach on land reserved for the Quapaw Nation—land demarcated by an actual line running south from the Little Rock outcropping itself. The 1824 treaty, by allowing eleven property-holders who were not Quapaw members per se but labeled “Indian by descent” to retain land on the east side of that line, more or less confirmed the earlier logic—and reinforced the notion that families of mixed European and Indigenous heritage could not, and should not, be construed as fully equal to American citizens.
 
 <figure>
-  <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/X7i_jMaxuvw0K5WWZIJpI.png" alt="" loading="lazy" decoding="async">
+  <img src="images/quapaw_line.png" alt="" loading="lazy" decoding="async">
   <figcaption>The Quapaw Line, surveyed in the early 1800s, divided Quapaw land from white settlement. Its traces remain visible in Little Rock’s River Market and Quapaw Quarter neighborhoods.</figcaption>
 </figure>
 
@@ -1367,7 +1367,7 @@ Only one of these French residents was recorded as owning slaves—an auspicious
 (Sources: Arnold 2015a; Ross 1956; Ross 1957; Williams, n.d.)
 
 <figure>
-  <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/zgBO5ccI6qYOi-S7_HZk8.jpg" alt="" loading="lazy" decoding="async">
+  <img src="images/wilson_map1.png" alt="" loading="lazy" decoding="async">
   <figcaption><em><strong>Image:</strong></em><em> 1872 map of Jefferson County, Arkansas, created by real estate broker W.H.D. Wilson. The map highlights land divisions and ownership, offering a snapshot of the county’s layout and land management in the late 19th century. Courtesy of the Library of Congress, Geography and Map Division.</em></figcaption>
 </figure>
 
