@@ -26,6 +26,8 @@
   .stage-list a{color:#c9e2e8;text-decoration:underline;text-underline-offset:2px}
   .source-box{margin-top:18px;padding-top:15px;border-top:1px solid #4a4a4a;font-size:11px;line-height:1.5;color:#bcbcbc}
   .source-box strong{color:#ddd}
+  .river-course-note{margin-top:18px;padding-top:15px;border-top:1px solid #4a4a4a;font-size:11px;line-height:1.5;color:#bcbcbc}
+  .river-course-note strong{color:#ddd}
   .map-title{position:absolute;z-index:900;top:12px;left:52px;background:rgba(255,255,255,.94);padding:8px 11px;border-radius:3px;box-shadow:0 1px 5px rgba(0,0,0,.2);pointer-events:none}
   .map-title strong{display:block;font:600 17px/1.2 Georgia,"Times New Roman",serif;color:#333}
   .map-title span{display:block;margin-top:2px;font-size:11px;color:#666}
@@ -115,11 +117,12 @@
         <strong>Native Lands:</strong> <a href="https://native-land.ca/" target="_blank" rel="noopener" style="color:inherit">Native-Land.ca</a>.
         Territories are clipped to the present-day United States boundary for display.
         These are community-informed representations rather than treaty boundaries.<br><br>
-        <strong>1818 river geometry:</strong> North America Rivers open-data layer (project copy).<br><br>
-        <strong>Quapaw river names:</strong> Everett Bandy, <em>O-Ga-Xpa Ma-Zhoⁿ: Quapaw Country</em> (2020), fig. 7; <em>Canadien</em> follows period Quapaw sources cited by Bandy.<br><br>
-        <strong>Note on river courses and map alignment:</strong> The 1818 and 1824 treaty lands shown here were defined in part by rivers, with their northernmost extents following the Canadian and Arkansas rivers respectively. Those river channels have shifted over time, and differences among GIS datasets mean that treaty boundaries, modern river lines, and satellite imagery may not align exactly. These layers should be read as approximate guides rather than exact reconstructions of nineteenth-century channels.<br><br><strong>1824 waterways:</strong> Arkansas GIS Office Water Base Layer.<br><br>
+        <strong>1818 river geometry:</strong> Esri Data and Maps, <em>USA Rivers and Streams</em> (ArcGIS Hub).<br><br>
+        <strong>Quapaw river names:</strong> Everett Bandy, <em>O-Ga-Xpa Ma-Zhoⁿ: Quapaw Country</em> (2020), fig. 7; <em>Canadian</em> follows period Quapaw sources cited by Bandy.<br><br>
+        <strong>1824 waterways:</strong> Arkansas GIS Office Water Base Layer.<br><br>
         <strong>Basemap:</strong> U.S. Geological Survey.
       </div>
+      <div class="river-course-note" id="riverCourseNote"></div>
     </div>
   </aside>
 </div>
@@ -190,6 +193,15 @@ function setCard(stage){
      <h2 class="stage-title">${x.title}</h2>
      <p class="stage-copy">${x.copy}</p>
      ${x.extra||""}`;
+
+  const riverNote=document.getElementById("riverCourseNote");
+  if(stage==="1818" || stage==="1824"){
+    riverNote.style.display="block";
+    riverNote.innerHTML=`<strong>Note on river courses:</strong> The 1818 and 1824 treaty lands were bounded to the north by the Canadian and Arkansas rivers, respectively. River channels have shifted, dams have created reservoirs, and GIS sources map waterways differently, so treaty boundaries, modern river lines, and satellite imagery may not align exactly. These layers should be read as approximate guides rather than exact reconstructions of nineteenth-century channels.`;
+  }else{
+    riverNote.style.display="none";
+    riverNote.innerHTML="";
+  }
 }
 
 function treatyFeature(stage){
