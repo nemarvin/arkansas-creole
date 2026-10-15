@@ -1979,7 +1979,7 @@ The Register of St. Mary's Cemetery, first compiled by Father John Michael Lucey
 Most references to French-speaking Black Arkansans appear not in church records but in property inventories—a reminder of the ways enslaved people were denied autonomy and dignity. One of the most renowned Creole Arkansans of African descent—who may well have been a regular parishioner at St. Mary’s—was Marie Jeanne. Born around 1788 (she was listed as 62 years old in the 1850 census), she was originally recorded as the enslaved property of the prominent Vaugine family. She died in 1857 with a new name—“Mary John”—a free woman who had purchased her liberty from a later Anglophone owner. Sold for 800 piastres (dollars), she bought her freedom for the same amount on September 13, 1840. By the time of her death, Mary John was a well-known business owner in the region. Although the <em>Arkansas Gazette</em>’s obituary was filled with the era’s patronizing language, it nonetheless described her as “much respected” and renowned for her hospitality—especially her meals of coffee and venison steaks (Bohnert, 2023).
 
 <figure>
-  <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/re77pMxFsDOTcN7-vQA-C.jpg" alt="A small cemetery with three gravestones surrounded by greenery and a chain-link fence." loading="lazy" decoding="async">
+  <img src="images/st_mary_cemetery.jpg" alt="A small cemetery with three gravestones surrounded by greenery and a chain-link fence." loading="lazy" decoding="async">
   <figcaption>Graves in St. Mary's Cemetery, Plum Bayou, Jefferson County, Ark. April 2025.</figcaption>
 </figure>
 
