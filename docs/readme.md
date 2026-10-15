@@ -1436,16 +1436,16 @@ Petit Jean’s breathtaking scenery and relative isolation also made it a retrea
 
 With all the mystique surrounding the mountain, it’s tempting to dismiss the many versions of the Petit Jean legend—the story of its namesake—as pure fabrication. Indeed, some scholars have done just that. It’s true that one would search in vain for the supposed “French” names of the legend’s key figures in ship manifests, early censuses, or sacramental registers. Yet, as with many enduring legends, a grain of truth often lies at the core. So we’re left to wonder: was there ever a historical figure named Petit Jean?
 
-<figure>
-  <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/2su9ycCp4fmIj0QmHA0XP.jpg" alt="" loading="lazy" decoding="async">
-  <figcaption>Petit Jean Grave Site in 2019.</figcaption>
-</figure>
-
 Historian Morris Arnold has proposed what is arguably the most plausible theory about the figure behind the name. Arnold locates an explicit mention of a “Petit Jean” in a French document describing an Osage attack on a French hunting party along the Arkansas River in the 1730s, upriver from Arkansas Post (Arnold 1994, ).
 
 As Arnold notes, “Petit Jean” (French for “Little John”) was a popular nickname among eighteenth-century French soldiers and settlers, and multiple individuals bearing this name appear in documentary records across the region. Still, the "Petit Jean" of the 1730s stands out as the most likely candidate for the river and mountain’s namesake, due to striking parallels between the archival references and oral traditions that surfaced nearly a century later.
 
 So who was this Petit Jean, and what were the circumstances of the violent episode in which his name appears?
+
+<figure>
+  <img src="images/gravesite.jpg" alt="" loading="lazy" decoding="async">
+  <figcaption>Petit Jean Grave Site in 2019.</figcaption>
+</figure>
 
 <a id="contested-sovereignty"></a>
 ### Contested Sovereignty
