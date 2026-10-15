@@ -1984,7 +1984,7 @@ Most references to French-speaking Black Arkansans appear not in church records 
 </figure>
 
 <figure>
-  <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/tEtwvmSgAXs_HUu7JpQhP.png" alt="" loading="lazy" decoding="async">
+  <img src="images/st_mary_move.png" alt="" loading="lazy" decoding="async">
 </figure>
 
 [↑ Back to Contents](#contents)
