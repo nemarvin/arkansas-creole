@@ -1726,7 +1726,7 @@ The outcomes were mixed. Compared to Creole communities in cities like St. Louis
 Some Arkansas Creoles made modest fortunes by tapping into Anglophone business networks, sometimes through marriage into the families of Protestant newcomers—much to the dismay of parish priests at Arkansas Post (Woods 1989). Indeed, in the older-settled southeastern part of the territory, it was a common strategy of cultural and financial survival for daughters of Creole families to marry English-speaking newcomers (especially if they were Catholic), but the reverse was much rarer. François Lefevre, however, did just that. A resident of the Little Rock area and member of a well-known family of Canadian settlers who had become farmers and traders at Arkansas Post before relocating upriver to the new territorial capital in 1821, he married Polly Jones in the city and went on to become an important businessman in the growing frontier town.
 
 <figure>
-  <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/fcm8HArcQS3FFpBp95-z_.jpeg" alt="" loading="lazy" decoding="async">
+  <img src="images/Polly_Jones.jpeg" alt="" loading="lazy" decoding="async">
   <figcaption>Cunningham, M. Marriage certificate by justice of the peace certifying that François [Godefroy] Le Fevre and Polly Jones were married by him on October 5, 1821, 1821, collection of Historic Arkansas Museum, Gift of Mr. and Mrs. A. Howard Stebbins III, 92.036.</figcaption>
 </figure>
 
