@@ -1409,11 +1409,6 @@ DeMun Township, in Randolph County  (Arkansas), was named for Lewis (Louis) de M
 <a id="looking-for-petit-jean"></a>
 ## Looking for Petit Jean
 
-<figure>
-  <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/E6R7BeCEEOnDKT97i_MCQ.jpeg" alt="" loading="lazy" decoding="async">
-  <figcaption>View of Arkansas River from Petit Jean Mountain.</figcaption>
-</figure>
-
 The Petit Jean River—and the mountain that bears its name—offers a striking example of the cultural erasure, intentional or not, that accompanied generations of Anglo-American settlement. By the late nineteenth century, romantic legends had emerged to explain the name’s origin. In one version, Petit Jean is a young woman who disguised herself as a cabin boy aboard a French ship to follow her lover to <em>Louisiane</em>. In another, Jean is a French Revolutionary émigré driven mad by the loss of a family member. Both versions feature the help of friendly but nameless “Indians” and a lingering spectral presence—evoking a nostalgic vision of a bygone era when French settlers and their Native allies left only a fleeting, almost ghostly, imprint on the land, soon overtaken by Anglo-American expansion.
 
 <figure>
@@ -1703,6 +1698,11 @@ Below is a timeline of allusions to Petit Jean in non-academic print sources—r
   <p class="timeline-year">2023</p>
   <p>The Arkansas State Parks website, in an informational brochure for Petit Jean State Park, presents the story of a French woman stowaway, set during the French colonial period.</p>
 </div>
+
+<figure>
+  <img src="images/ark_valley_pj.jpeg" alt="" loading="lazy" decoding="async">
+  <figcaption>View of Arkansas River from Petit Jean Mountain.</figcaption>
+</figure>
 
 [↑ Back to Contents](#contents)
 
