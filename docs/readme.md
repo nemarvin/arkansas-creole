@@ -1012,8 +1012,8 @@ html[data-reader-theme="dark"] .reader-toc-toggle {
       <fieldset>
         <legend>Theme</legend>
         <div class="reader-options">
-          <button type="button" class="reader-setting-button" data-reader-setting="theme" data-reader-value="light" aria-pressed="true">Light</button>
-          <button type="button" class="reader-setting-button" data-reader-setting="theme" data-reader-value="paper" aria-pressed="false">Paper</button>
+          <button type="button" class="reader-setting-button" data-reader-setting="theme" data-reader-value="light" aria-pressed="false">Light</button>
+          <button type="button" class="reader-setting-button" data-reader-setting="theme" data-reader-value="paper" aria-pressed="true">Paper</button>
           <button type="button" class="reader-setting-button" data-reader-setting="theme" data-reader-value="dark" aria-pressed="false">Dark</button>
         </div>
       </fieldset>
@@ -2313,7 +2313,7 @@ The following document lays out the decision-making that went into the design of
     width: 'default',
     spacing: 'default',
     font: 'serif',
-    theme: 'light'
+    theme: 'paper'
   };
 
   var attributes = {
