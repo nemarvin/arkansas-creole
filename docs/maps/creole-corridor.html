@@ -446,6 +446,10 @@
         return response.json();
       })
       .then(riverData => {
+        const labelNames = new Set([
+          "Mississippi", "Missouri", "Ohio", "Arkansas", "Saint Lawrence", "Tennessee"
+        ]);
+
         riversLayer = L.geoJSON(riverData, {
           style: function(feature) {
             return {
@@ -453,44 +457,24 @@
               weight: riverWeight(feature.properties?.scalerank),
               opacity: .78,
               lineCap: "round",
-              lineJoin: "round",
-              interactive: false
+              lineJoin: "round"
             };
+          },
+          onEachFeature: function(feature, layer) {
+            const name = feature.properties?.name_en || feature.properties?.name;
+            if (!labelNames.has(name)) return;
+
+            layer.bindTooltip(esc(name), {
+              sticky: true,
+              direction: "top",
+              opacity: .96,
+              className: "creole-label"
+            });
           }
         }).addTo(map);
 
         // Keep waterways behind settlement symbols.
         riversLayer.bringToBack();
-
-        // Add a few restrained labels for waterways central to the corridor.
-        const labelNames = new Set([
-          "Mississippi", "Missouri", "Ohio", "Arkansas", "Saint Lawrence", "Tennessee"
-        ]);
-
-        riverData.features.forEach(feature => {
-          const name = feature.properties?.name_en || feature.properties?.name;
-          if (!labelNames.has(name) || !feature.geometry) return;
-
-          // Find a representative midpoint from the longest line component.
-          let coords = feature.geometry.coordinates;
-          if (feature.geometry.type === "MultiLineString") {
-            coords = coords.reduce((a, b) => (a.length >= b.length ? a : b), []);
-          }
-          if (!Array.isArray(coords) || coords.length < 2) return;
-
-          const mid = coords[Math.floor(coords.length / 2)];
-          if (!Array.isArray(mid) || mid.length < 2) return;
-
-          L.marker([mid[1], mid[0]], {
-            interactive: false,
-            icon: L.divIcon({
-              className: "river-label-icon",
-              html: `<span class="river-label">${name}</span>`,
-              iconSize: [100, 16],
-              iconAnchor: [50, 8]
-            })
-          }).addTo(map);
-        });
       })
       .catch(error => console.warn("River layer could not be loaded:", error));
 
@@ -584,9 +568,9 @@
 
             return L.circleMarker(latlng, {
               radius: isArkansasPost ? 6.5 : 4.5,
-              weight: isArkansasPost ? 1.5 : 1,
-              color: "#138dbd",
-              fillColor: "#29a9e0",
+              weight: isArkansasPost ? 1.8 : 1,
+              color: isArkansasPost ? "#a85f67" : "#138dbd",
+              fillColor: isArkansasPost ? "#e7cbd1" : "#29a9e0",
               fillOpacity: .95
             });
           },
