@@ -1947,13 +1947,11 @@ St. Mary’s Church owes its survival, in part, to the preservation efforts of E
 Today, the church and its cemetery stand as a powerful testament to Creole Arkansas—guardians of traditions and family histories amid the sweeping demographic and political changes of the nineteenth century.
 
 <figure>
-  <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/Pn09vzh7BQCFHRq8t9B3z.jpeg" alt="Interior of a chapel with white pews and a car visible through the open door at the end." loading="lazy" decoding="async">
-  <figcaption>Interior of St. Mary's Church. Photo 2023. <a href="https://www.stjosephpinebluff.org/st-mary-catholic-church.html"> https://www.stjosephpinebluff.org/st-mary-catholic-church.html </a></figcaption>
-</figure>
-
-<figure>
-  <a href="https://www.arkansas-catholic.org/news/article/7973/Mass-resumes-at-oldest-Catholic-church-after-repairs" target="_blank" rel="noopener"><img src="https://www.arkansas-catholic.org/photos/7973/0909-plum-bayou-2.jpg" alt="" loading="lazy" decoding="async"></a>
-  <figcaption><a href="https://www.arkansas-catholic.org/news/article/7973/Mass-resumes-at-oldest-Catholic-church-after-repairs" target="_blank" rel="noopener">Mass resumes at oldest Catholic church after repairs - Arkansas Catholic - September 8, 2023</a> — While the community of Plum Bayou is redefining its future, it is cherishing its past. Until recently, St. Mary Church sat with nothing but a collection of headstones to keep it company. That is, until Father Joseph Marconi decided that it was time for a fresh start.</figcaption>
+  <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/Pn09vzh7BQCFHRq8t9B3z.jpeg" alt="Interior of St. Mary's Church." loading="lazy" decoding="async">
+  <figcaption>
+    Interior of St. Mary's Church. Photo, 2023.
+    <a href="https://www.stjosephpinebluff.org/st-mary-catholic-church.html">St. Joseph Catholic Church, Pine Bluff</a>.
+  </figcaption>
 </figure>
 
 <a id="baptisms-and-burials"></a>
