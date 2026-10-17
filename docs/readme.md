@@ -1932,7 +1932,7 @@ A letter from a confrere—and fellow French émigré—foretold Janin’s depar
 
 <blockquote><em>“Father Janin...might well accept a position on the Spanish side... [He] has yet to receive anything from Congress, which had promised him two hundred dollars... He thinks, by accepting support on the other shore [of the Mississippi], he is not failing either Congress or the inhabitants of Kaskaskia...” </em></blockquote>
 
-— Letter from Gabriel Richard to Bishop John Carroll, Prairie du Rocher, 24 January 1796. Associated Archives of Saint Mary’s, 7B1.
+— Letter from Gabriel Richard to Bishop John Carroll, Prairie du Rocher, 24 January 1796, <em>Letters to Abp. Carroll (1786–1815)</em>, 7B1, Associated Archives at St. Mary’s Seminary &amp; University, Baltimore, Maryland.
 
 Indeed, Father Janin absconded to Arkansas and immediately set to work reviving parish life in this long-neglected corner of the Spanish empire. He helped rebuild the old chapel in 1796 (Holweck 1919). He officiated a number of long-overdue marriages. Though fragmentary, the surviving records—seventeen bearing his signature between February 1797 and July 1802—are highly revealing. Alongside five additional entries recorded by his Irish successor, Father Juan (John) Brady, these marriage records offer an unparalleled glimpse into the social and cultural fabric of community life in Creole Arkansas.
 
