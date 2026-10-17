@@ -1350,7 +1350,7 @@ Joseph Bartholomew (Barthélémi) settled on the north side of the river, while 
 Part of the logic behind the 1818 treaty between the United States and the Quapaw was that white settlers should not be allowed to encroach on land reserved for the Quapaw Nation—land demarcated by an actual line running south from the Little Rock outcropping itself. The 1824 treaty, by allowing eleven property-holders who were not Quapaw members per se but labeled “Indian by descent” to retain land on the east side of that line, more or less confirmed the earlier logic—and reinforced the notion that families of mixed European and Indigenous heritage could not, and should not, be construed as fully equal to American citizens.
 
 <figure>
-  <img src="images/quapaw_line.png" alt="" loading="lazy" decoding="async">
+  <img src="images/quapawline.png" alt="" loading="lazy" decoding="async">
   <figcaption>The Quapaw Line, surveyed in the early 1800s, divided Quapaw land from white settlement. Its traces remain visible in Little Rock’s River Market and Quapaw Quarter neighborhoods.</figcaption>
 </figure>
 
