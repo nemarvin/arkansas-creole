@@ -1161,7 +1161,7 @@ Although there were perhaps never more than a thousand subjects of the Spanish e
 
 <p>What is a "Creole"? What is an "Arkansas Creole"? In their historical dictionary of Louisiana vocabulary, <em>A Creole Lexicon</em>, scholars Glenn R. Edwards, Jay Dearborn Edwards, and Nicolas Kariouk Pecquet du Bellay de Verton show how the meaning of the term "Creole" evolved over time. In the fifteenth through eighteenth centuries, the term generally referred to people born in European colonies—places like Louisiana, Brazil, the West Indies, or France's Indian Ocean colonies—who descended from European or African settlers. In Upper Louisiana, the term was often used more narrowly to describe white descendants of French colonists, a meaning that lingered well into the twentieth century—even as far north as Canada, where it still described residents of the Great Lakes region.</p>
 
-<blockquote><em>"</em><em><strong>Creole</strong></em><em> (En; adj); </em><em><strong>Créole</strong></em><em> (Fr n, m/f; adj); </em><em><strong>Kreyol, Kreol</strong></em><em> (FC n, m/f; adj); </em><em><strong>Criollo</strong></em><em> (Sp n, m/f; adj); </em><em><strong>Crioulo</strong></em><em> (P n, m/f; adj)... From L[atin] adj. 'Something bred or raised.' </em></blockquote>
+<blockquote><em>“</em><em><strong>Creole</strong></em><em> (E n; adj); </em><em><strong>Créole</strong></em><em> (Fr n, m/f; adj); </em><em><strong>Kreyòl, Kréòl</strong></em><em> (FC n, m/f; adj); </em><em><strong>Criollo/a</strong></em><em> (Sp n, m/f; adj); </em><em><strong>Crioulo/a</strong></em><em> (P n, m/f; adj)... From L[atin] adj. ‘Something bred or raised.’”</em></blockquote>
 
 —<em> A Creole Lexicon </em>(LSU Press, 2004)
 
