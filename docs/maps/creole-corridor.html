@@ -389,7 +389,7 @@
 
       <div class="map-heading">
         <strong>The Creole Corridor</strong>
-        <span>Click a settlement to explore its history. Major rivers shown from Natural Earth.</span>
+        <span>Click a settlement to explore its history. Major rivers shown for reference.</span>
       </div>
     </div>
 
@@ -419,11 +419,12 @@
     });
 
     L.tileLayer(
-      "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+      "https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png",
       {
-        maxZoom: 19,
+        subdomains: "abcd",
+        maxZoom: 20,
         attribution:
-          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
       }
     ).addTo(map);
 
@@ -545,7 +546,7 @@
           <div style="margin-top:${founded ? "10px" : "0"}">
             Settlement data source: Jay Gitlin,
             <em>The Bourgeois Frontier: French Towns, French Traders, and American Expansion</em>
-            (New Haven: Yale University Press, 2010), xv.<br><br>River data: Natural Earth, 1:50m Rivers + Lake Centerlines (public domain).
+            (New Haven: Yale University Press, 2010), xv.<br><br>River data: Natural Earth, 1:50m Rivers + Lake Centerlines (public domain); Wabash River geometry: Esri Data and Maps, USA Rivers and Streams.
           </div>
         </div>
       `;
