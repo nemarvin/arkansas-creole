@@ -1066,7 +1066,6 @@ html[data-reader-theme="dark"] .reader-toc-toggle {
       <ul>
         <li><a href="#le-petit-rocher">Le Petit Rocher</a></li>
         <li><a href="#french-speaking-settlers-in-little-rock">French-Speaking Settlers in Little Rock</a></li>
-        <li><a href="#creole-land-claims-and-the-1818-quapaw-treaty-line">Creole Land Claims and the 1818 Quapaw Treaty Line</a></li>
         <li><a href="#haitian-revolution-emigr-s">Haitian Revolution Emigrés</a></li>
       </ul>
     </li>
@@ -1343,9 +1342,6 @@ Joseph Bartholomew (Barthélémi) settled on the north side of the river, while 
   <img src="images/lefevre.jpeg" alt="" loading="lazy" decoding="async">
   <figcaption>Ambrotype portrait of Francis Godfrey Le Fevre (1800–1862), son of Pierre (“Peter”) Le Fevre. Photographer unknown. 3¾ × 3¼ in. Historic Arkansas Museum, Gift of Mr. and Mrs. A. Howard Stebbins III, accession no. 95.035.0005.</figcaption>
 </figure>
-
-<a id="creole-land-claims-and-the-1818-quapaw-treaty-line"></a>
-### Creole Land Claims and the 1818 Quapaw Treaty Line
 
 Part of the logic behind the 1818 treaty between the United States and the Quapaw was that white settlers should not be allowed to encroach on land reserved for the Quapaw Nation—land demarcated by an actual line running south from the Little Rock outcropping itself. The 1824 treaty, by allowing eleven property-holders who were not Quapaw members per se but labeled “Indian by descent” to retain land on the east side of that line, more or less confirmed the earlier logic—and reinforced the notion that families of mixed European and Indigenous heritage could not, and should not, be construed as fully equal to American citizens.
 
