@@ -1406,7 +1406,7 @@ DeMun Township, in Randolph County  (Arkansas), was named for Lewis (Louis) de M
 The Petit Jean River—and the mountain that bears its name—offers a striking example of the cultural erasure, intentional or not, that accompanied generations of Anglo-American settlement. By the late nineteenth century, romantic legends had emerged to explain the name’s origin. In one version, Petit Jean is a young woman who disguised herself as a cabin boy aboard a French ship to follow her lover to <em>Louisiane</em>. In another, Jean is a French Revolutionary émigré driven mad by the loss of a family member. Both versions feature the help of friendly but nameless “Indians” and a lingering spectral presence—evoking a nostalgic vision of a bygone era when French settlers and their Native allies left only a fleeting, almost ghostly, imprint on the land, soon overtaken by Anglo-American expansion.
 
 <figure>
-  <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/3HodeIZIj5zuy_64XXES7.jpg" alt="" loading="lazy" decoding="async">
+  <img src="images/signage.jpg" alt="" loading="lazy" decoding="async">
   <figcaption>Marker, "The Legend of Petit Jean," Petit Jean Mountain, 2024.</figcaption>
 </figure>
 
@@ -1416,14 +1416,14 @@ The Petit Jean River—and the mountain that bears its name—offers a striking 
 As many Arkansans will tell you, Petit Jean is the crown jewel of the state park system—Arkansas’s oldest park and one of the most popular in the South, drawing over 800,000 visitors annually. But its iconic status didn’t happen overnight. Petit Jean has been carefully developed as a tourist destination for more than a century. Today, the name itself is a recognizable brand, appearing on everything from craft brewery labels to artisanal butcher products.
 
 <figure>
-  <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/G48Ig3XUrQNZRyWPeyyfl.png" alt="" loading="lazy" decoding="async">
+  <img src="images/pilsner.png" alt="" loading="lazy" decoding="async">
   <figcaption>Petit Jean Pilsner, Point Remove Brewery (<a href="https://pointremovebrewingcompany.com">https://pointremovebrewingcompany.com</a>)</figcaption>
 </figure>
 
 Petit Jean’s breathtaking scenery and relative isolation also made it a retreat for gentlemen farmers in the twentieth century—including, beginning in the 1950s, the homestead of one of Arkansas’s most influential political figures, Winthrop Rockefeller, who served as governor from 1967 to 1971 (Kirk 2022).
 
 <figure>
-  <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/GqwHaUqPdLMr9IRBN3ibH.jpeg" alt="" loading="lazy" decoding="async">
+  <img src="images/time.jpeg" alt="" loading="lazy" decoding="async">
   <figcaption>1966 Time Magazine cover featuring an illustration of Winthrop Rockefeller on Petit Jean Mountain.</figcaption>
 </figure>
 
@@ -1482,7 +1482,7 @@ The Osage acknowledged responsibility for both deaths. However, regarding the se
 Several terms are essential for understanding these documents in context. Among them are "<em>Voyageur" </em>and <em>"Engagé." Voyageurs </em>were officially licensed canoemen tasked with transporting goods between posts. <em>Engagé</em> refers to indentured servants employed by voyageurs, responsible for a range of duties from paddling and maintenance to navigating and setting up camp. These terms defined roles within the fur trade in Louisiana and New France. Lewis and Clark, on their expedition, employed <em>engagé</em>s to crew their canoes and manage their camps. Petit Jean was described in one part of the governor's report that he had been <em>engagé </em>with the<em> voyageurs.</em>
 
 <figure>
-  <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/ym12l-3BJYPO5dgW8s38E.jpg" alt="" loading="lazy" decoding="async">
+  <img src="images/contract.jpg" alt="" loading="lazy" decoding="async">
   <figcaption>It may not be possible to recover the specific contract whereby Petit Jean became “engaged” to provide services for <em>voyageurs</em> along the Arkansas, but this document offers a close parallel. Drawn up in New Orleans in 1746, it records the voluntary engagement of two men, Louis Dardenne and Jean Saguin, to accompany the <em>voyageur</em> “<em>Sieur</em> Pierre Clermont on the [hunting] trip he will take in Arkansas (<em>aux arkansas</em>).” Like many such agreements in the French colonial world, the contract specifies the terms of service—one year of labor in exchange for provisions during the voyage and monetary wages upon return. It also reveals the unequal power dynamics underpinning these arrangements. The <em>engagés</em>, who declared that they could not sign their names, are not accorded the honorific “sir” given to Clermont; they agree to obey all that he will “order” them to do for the duration of the contract. Source: “Cantrelle Witnesses a Letter for Engagés,” March 10, 1746, Colonial Arkansas Post Ancestry Collection, University of Arkansas Libraries.</figcaption>
 </figure>
 
