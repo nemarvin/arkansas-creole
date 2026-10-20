@@ -1861,7 +1861,7 @@ The "carve-out" for local Creoles was brokered by French-speaking newcomers from
 Those familiar with Southeast Arkansas will recognize some of these names. They still appear on maps and markers in territory that was once Quapaw land, designated as Cession 121 in the 1824 Treaty.
 
 <figure>
-  <img src="https://www.arcgis.com/sharing/rest/content/items/ab8d60a903104d4ba8e2f21e60602b5d/resources/dAfaJsBsYS9apT44S9UWq.png" alt="" loading="lazy" decoding="async">
+  <img src="images/1824_treaty.png" alt="" loading="lazy" decoding="async">
   <figcaption><strong>Above</strong>: Detail from an original copy of the 1824 Treaty between the Quapaw and the US Government, with partial list of signatories and portion indicating the grants from the land being seized to be awarded to several Arkansas Creoles "being Indians by descent," including Barthelemy (Louis), Bonne (Joseph and Baptiste), Coussot (François), Duchassin (Joseph and Antoine), Imbeau (François and Baptiste), Saracen, and Saucier (Baptiste).</figcaption>
 </figure>
 
