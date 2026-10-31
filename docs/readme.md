@@ -2276,7 +2276,7 @@ Most references to French-speaking Black Arkansans appear not in church records 
 <a id="acknowledgements"></a>
 ## Acknowledgements
 
-I am immensely grateful to the following people for lending their support and expertise: Buzz Arnold, Andy Beaupré, Everett Bandy, Victoria Chandler, John Gill, Jay Gitlin, Kimberly Green, Austin Headlee, Barclay Key, Harrison Mitchell, Kristin Mann, Terry Rasco, Jim Ross, Curtis Smith, Cheryl Vassaur, and the staffs of the Arkansas State Archives, UCA Archives &amp; Special Collections, and Archives Nationales d'Outre-mer.
+I am immensely grateful to the following people for lending their support and expertise: Buzz Arnold, Andy Beaupré, Everett Bandy, Victoria Chandler, John Gill, Jay Gitlin, Kimberly Green, Austin Headlee, Barclay Key, Harrison Mitchell, Kristin Mann, Terry Rasco, Jim Ross, Curtis Smith, Cheryl Vassaur, and the staffs of the Arkansas State Archives, UCA Archives &amp; Special Collections, Butler Center for Arkansas Studies (CALS), Center for Arkansas History and Culture, Pine Bluff Public Library, Huntington Library, and the Archives Nationales d'Outre-mer.
 
 <a id="community-sourcing"></a>
 ## Community Sourcing
